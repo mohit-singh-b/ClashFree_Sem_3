@@ -23,10 +23,10 @@ public:
     CourseType getType() const { return type; }
     bool isLab() const { return type == CourseType::LAB; }
 
-    std::string toString() const { //for debigging
-        return "id " + std::to_string(id) + ": " + name +
-               ", hrs : " + std::to_string(load_hours) +
-               ", type : " + (isLab() ? "LAB" : "THEORY");
+    std::string toString() const { 
+    return "id " + std::to_string(id) + ": " + name +
+           ", hrs : " + std::to_string(load_hours) +
+           ", type : " + (isLab() ? "LAB" : "THEORY");
     }
 };
 
