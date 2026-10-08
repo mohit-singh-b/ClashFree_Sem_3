@@ -3,10 +3,10 @@
 
 #include <string>
 #include <set>
-#include "Course.hpp"
-#include "Faculty.hpp"
-#include "Section.hpp"
-#include "TimeSlot.hpp"
+#include "models/Course.hpp"
+#include "models/Faculty.hpp"
+#include "models/Section.hpp"
+#include "models/TimeSlot.hpp"
 
 class Node {
 public:
