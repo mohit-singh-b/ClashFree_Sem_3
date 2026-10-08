@@ -9,7 +9,6 @@ build/
 cmake-build-*/
 CMakeCache.txt
 CMakeFiles/
-edges.txt
 *.aux
 *.log
 *.toc

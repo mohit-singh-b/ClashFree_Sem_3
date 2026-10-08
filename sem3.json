@@ -1,0 +1,8703 @@
+{
+  "config": {
+    "days": 6,
+    "periodsPerDay": 9
+  },
+  "faculty": [
+    {
+      "id": 1,
+      "name": "Dr. Hemant Singh Pokhariya",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Mr. Akshay Rajput",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Dr. Amit Kumar",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Dr. Anand Chauhan",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Dr. Niraj Kumar",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Mr. Upendra Aswal",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Mr. Kuldeep Nautiyal",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Dr. Neeraj Dhiman",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Mr. Pareshwar Prasad Barmola",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Dr. Vidit Kumar",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Dr. Abhay Sharma",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Dr. B. P. Mishra",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Dr. Pradeep Juneja",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Dr. Jyoti Agarwal",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Dr. Vikas Rathi",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Dr. Seema Saini",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Dr. Vinay Kumar",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Mr. Sanjeev Kukreti",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Ms. Alankrita Joshi",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Dr. Siddhant Thapliyal",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Dr. Mridul Gupta",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Mr. Piyush Agarwal",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Dr. Hriday Kumar Gupta",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Dr. Pawan Kumar Mishra",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Dr. Deepak Asrani",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Ms. Meenakshi Maindola",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Mr. Kamal Kumar Gola",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Dr. Sribidhya Mohanty",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Dr. Teekam Singh",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Ms. Poonam Raturi",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Dr. Ravi",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Ms. Neha Belwal",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Mr. Kireet Joshi",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Dr. Mohammad Wazid",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Mr. Mukesh Singh",
+      "maxLoad": 54,
+      "availableSlots": [
+        {
+          "day": "MON",
+          "period": 1
+        },
+        {
+          "day": "MON",
+          "period": 2
+        },
+        {
+          "day": "MON",
+          "period": 3
+        },
+        {
+          "day": "MON",
+          "period": 4
+        },
+        {
+          "day": "MON",
+          "period": 5
+        },
+        {
+          "day": "MON",
+          "period": 6
+        },
+        {
+          "day": "MON",
+          "period": 7
+        },
+        {
+          "day": "MON",
+          "period": 8
+        },
+        {
+          "day": "MON",
+          "period": 9
+        },
+        {
+          "day": "TUE",
+          "period": 1
+        },
+        {
+          "day": "TUE",
+          "period": 2
+        },
+        {
+          "day": "TUE",
+          "period": 3
+        },
+        {
+          "day": "TUE",
+          "period": 4
+        },
+        {
+          "day": "TUE",
+          "period": 5
+        },
+        {
+          "day": "TUE",
+          "period": 6
+        },
+        {
+          "day": "TUE",
+          "period": 7
+        },
+        {
+          "day": "TUE",
+          "period": 8
+        },
+        {
+          "day": "TUE",
+          "period": 9
+        },
+        {
+          "day": "WED",
+          "period": 1
+        },
+        {
+          "day": "WED",
+          "period": 2
+        },
+        {
+          "day": "WED",
+          "period": 3
+        },
+        {
+          "day": "WED",
+          "period": 4
+        },
+        {
+          "day": "WED",
+          "period": 5
+        },
+        {
+          "day": "WED",
+          "period": 6
+        },
+        {
+          "day": "WED",
+          "period": 7
+        },
+        {
+          "day": "WED",
+          "period": 8
+        },
+        {
+          "day": "WED",
+          "period": 9
+        },
+        {
+          "day": "THU",
+          "period": 1
+        },
+        {
+          "day": "THU",
+          "period": 2
+        },
+        {
+          "day": "THU",
+          "period": 3
+        },
+        {
+          "day": "THU",
+          "period": 4
+        },
+        {
+          "day": "THU",
+          "period": 5
+        },
+        {
+          "day": "THU",
+          "period": 6
+        },
+        {
+          "day": "THU",
+          "period": 7
+        },
+        {
+          "day": "THU",
+          "period": 8
+        },
+        {
+          "day": "THU",
+          "period": 9
+        },
+        {
+          "day": "FRI",
+          "period": 1
+        },
+        {
+          "day": "FRI",
+          "period": 2
+        },
+        {
+          "day": "FRI",
+          "period": 3
+        },
+        {
+          "day": "FRI",
+          "period": 4
+        },
+        {
+          "day": "FRI",
+          "period": 5
+        },
+        {
+          "day": "FRI",
+          "period": 6
+        },
+        {
+          "day": "FRI",
+          "period": 7
+        },
+        {
+          "day": "FRI",
+          "period": 8
+        },
+        {
+          "day": "FRI",
+          "period": 9
+        },
+        {
+          "day": "SAT",
+          "period": 1
+        },
+        {
+          "day": "SAT",
+          "period": 2
+        },
+        {
+          "day": "SAT",
+          "period": 3
+        },
+        {
+          "day": "SAT",
+          "period": 4
+        },
+        {
+          "day": "SAT",
+          "period": 5
+        },
+        {
+          "day": "SAT",
+          "period": 6
+        },
+        {
+          "day": "SAT",
+          "period": 7
+        },
+        {
+          "day": "SAT",
+          "period": 8
+        },
+        {
+          "day": "SAT",
+          "period": 9
+        }
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "id": 101,
+      "code": "TCS-302",
+      "name": "Data Structures with C",
+      "loadHours": 4,
+      "type": "THEORY"
+    },
+    {
+      "id": 102,
+      "code": "TCS-307",
+      "name": "Object Oriented Programming with C++",
+      "loadHours": 4,
+      "type": "THEORY"
+    },
+    {
+      "id": 103,
+      "code": "TCS-308",
+      "name": "Logic Design and Computer Organization",
+      "loadHours": 4,
+      "type": "THEORY"
+    },
+    {
+      "id": 104,
+      "code": "TMA-316",
+      "name": "Discrete Structures and Combinatorics",
+      "loadHours": 3,
+      "type": "THEORY"
+    },
+    {
+      "id": 105,
+      "code": "TCS-368",
+      "name": "Advance Probability for AI",
+      "loadHours": 4,
+      "type": "THEORY"
+    },
+    {
+      "id": 106,
+      "code": "TCS-324",
+      "name": "Information Security Foundations",
+      "loadHours": 4,
+      "type": "THEORY"
+    },
+    {
+      "id": 107,
+      "code": "PCS-302",
+      "name": "Data Structures Lab",
+      "loadHours": 4,
+      "type": "LAB"
+    },
+    {
+      "id": 108,
+      "code": "PCS-307",
+      "name": "OOPS with C++ Lab",
+      "loadHours": 2,
+      "type": "LAB"
+    },
+    {
+      "id": 109,
+      "code": "PCS-308",
+      "name": "Logic Design and Computer Organization Lab",
+      "loadHours": 2,
+      "type": "LAB"
+    },
+    {
+      "id": 110,
+      "code": "PCS-324",
+      "name": "Information Security Foundations Lab",
+      "loadHours": 4,
+      "type": "LAB"
+    }
+  ],
+  "rooms": [
+    {
+      "id": 1,
+      "name": "LT-1",
+      "capacity": 255,
+      "type": "THEORY"
+    },
+    {
+      "id": 2,
+      "name": "LT-2",
+      "capacity": 255,
+      "type": "THEORY"
+    },
+    {
+      "id": 3,
+      "name": "LT-5",
+      "capacity": 255,
+      "type": "THEORY"
+    },
+    {
+      "id": 4,
+      "name": "LT-6",
+      "capacity": 255,
+      "type": "THEORY"
+    },
+    {
+      "id": 5,
+      "name": "LT-7",
+      "capacity": 255,
+      "type": "THEORY"
+    },
+    {
+      "id": 6,
+      "name": "LT-9",
+      "capacity": 255,
+      "type": "THEORY"
+    },
+    {
+      "id": 7,
+      "name": "CR-2",
+      "capacity": 90,
+      "type": "THEORY"
+    },
+    {
+      "id": 8,
+      "name": "CR-3",
+      "capacity": 90,
+      "type": "THEORY"
+    },
+    {
+      "id": 9,
+      "name": "CR-4",
+      "capacity": 90,
+      "type": "THEORY"
+    },
+    {
+      "id": 10,
+      "name": "CR-5",
+      "capacity": 90,
+      "type": "THEORY"
+    },
+    {
+      "id": 11,
+      "name": "CR-6",
+      "capacity": 90,
+      "type": "THEORY"
+    },
+    {
+      "id": 12,
+      "name": "CR-7",
+      "capacity": 90,
+      "type": "THEORY"
+    },
+    {
+      "id": 13,
+      "name": "CR-8",
+      "capacity": 90,
+      "type": "THEORY"
+    },
+    {
+      "id": 14,
+      "name": "CR-12",
+      "capacity": 90,
+      "type": "THEORY"
+    },
+    {
+      "id": 15,
+      "name": "CR-17",
+      "capacity": 90,
+      "type": "THEORY"
+    },
+    {
+      "id": 16,
+      "name": "B.Tech Block LT-13",
+      "capacity": 255,
+      "type": "THEORY"
+    },
+    {
+      "id": 17,
+      "name": "B.Tech Block LT-14",
+      "capacity": 255,
+      "type": "THEORY"
+    },
+    {
+      "id": 18,
+      "name": "B.Tech Block LT-15",
+      "capacity": 255,
+      "type": "THEORY"
+    },
+    {
+      "id": 19,
+      "name": "Digital Lab-1",
+      "capacity": 90,
+      "type": "LAB"
+    },
+    {
+      "id": 20,
+      "name": "Digital Lab-2",
+      "capacity": 90,
+      "type": "LAB"
+    },
+    {
+      "id": 21,
+      "name": "New Lab-1",
+      "capacity": 90,
+      "type": "LAB"
+    },
+    {
+      "id": 22,
+      "name": "New Lab-2",
+      "capacity": 90,
+      "type": "LAB"
+    },
+    {
+      "id": 23,
+      "name": "Lab-1",
+      "capacity": 90,
+      "type": "LAB"
+    },
+    {
+      "id": 24,
+      "name": "Lab-2",
+      "capacity": 90,
+      "type": "LAB"
+    },
+    {
+      "id": 25,
+      "name": "Lab-5",
+      "capacity": 90,
+      "type": "LAB"
+    },
+    {
+      "id": 26,
+      "name": "Lab-6",
+      "capacity": 90,
+      "type": "LAB"
+    },
+    {
+      "id": 27,
+      "name": "Lab-7",
+      "capacity": 90,
+      "type": "LAB"
+    },
+    {
+      "id": 28,
+      "name": "Aryabhatt Ground Floor Lab",
+      "capacity": 90,
+      "type": "LAB"
+    },
+    {
+      "id": 29,
+      "name": "Param Ground Floor Lab",
+      "capacity": 90,
+      "type": "LAB"
+    },
+    {
+      "id": 30,
+      "name": "B.Tech Block IInd Floor Lab-1",
+      "capacity": 90,
+      "type": "LAB"
+    }
+  ],
+  "sections": [
+    {
+      "id": 1,
+      "name": "CSE-A",
+      "studentCount": 85,
+      "courses": [
+        {
+          "courseId": 101,
+          "facultyId": 2
+        },
+        {
+          "courseId": 102,
+          "facultyId": 3
+        },
+        {
+          "courseId": 103,
+          "facultyId": 1
+        },
+        {
+          "courseId": 104,
+          "facultyId": 4
+        },
+        {
+          "courseId": 107,
+          "facultyId": 6
+        },
+        {
+          "courseId": 108,
+          "facultyId": 3
+        },
+        {
+          "courseId": 109,
+          "facultyId": 5
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "CSE-B",
+      "studentCount": 85,
+      "courses": [
+        {
+          "courseId": 101,
+          "facultyId": 2
+        },
+        {
+          "courseId": 102,
+          "facultyId": 3
+        },
+        {
+          "courseId": 103,
+          "facultyId": 1
+        },
+        {
+          "courseId": 104,
+          "facultyId": 4
+        },
+        {
+          "courseId": 107,
+          "facultyId": 6
+        },
+        {
+          "courseId": 108,
+          "facultyId": 7
+        },
+        {
+          "courseId": 109,
+          "facultyId": 5
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "CSE-C",
+      "studentCount": 85,
+      "courses": [
+        {
+          "courseId": 101,
+          "facultyId": 6
+        },
+        {
+          "courseId": 102,
+          "facultyId": 3
+        },
+        {
+          "courseId": 103,
+          "facultyId": 1
+        },
+        {
+          "courseId": 104,
+          "facultyId": 8
+        },
+        {
+          "courseId": 107,
+          "facultyId": 9
+        },
+        {
+          "courseId": 108,
+          "facultyId": 10
+        },
+        {
+          "courseId": 109,
+          "facultyId": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "CSE-D",
+      "studentCount": 85,
+      "courses": [
+        {
+          "courseId": 101,
+          "facultyId": 6
+        },
+        {
+          "courseId": 102,
+          "facultyId": 3
+        },
+        {
+          "courseId": 103,
+          "facultyId": 11
+        },
+        {
+          "courseId": 104,
+          "facultyId": 8
+        },
+        {
+          "courseId": 107,
+          "facultyId": 9
+        },
+        {
+          "courseId": 108,
+          "facultyId": 10
+        },
+        {
+          "courseId": 109,
+          "facultyId": 12
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "CSE-E",
+      "studentCount": 85,
+      "courses": [
+        {
+          "courseId": 101,
+          "facultyId": 6
+        },
+        {
+          "courseId": 102,
+          "facultyId": 14
+        },
+        {
+          "courseId": 103,
+          "facultyId": 13
+        },
+        {
+          "courseId": 104,
+          "facultyId": 8
+        },
+        {
+          "courseId": 107,
+          "facultyId": 9
+        },
+        {
+          "courseId": 108,
+          "facultyId": 7
+        },
+        {
+          "courseId": 109,
+          "facultyId": 13
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "CSE-F",
+      "studentCount": 85,
+      "courses": [
+        {
+          "courseId": 101,
+          "facultyId": 6
+        },
+        {
+          "courseId": 102,
+          "facultyId": 14
+        },
+        {
+          "courseId": 103,
+          "facultyId": 15
+        },
+        {
+          "courseId": 104,
+          "facultyId": 16
+        },
+        {
+          "courseId": 107,
+          "facultyId": 9
+        },
+        {
+          "courseId": 108,
+          "facultyId": 18
+        },
+        {
+          "courseId": 109,
+          "facultyId": 17
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "CSE-G",
+      "studentCount": 85,
+      "courses": [
+        {
+          "courseId": 101,
+          "facultyId": 6
+        },
+        {
+          "courseId": 102,
+          "facultyId": 14
+        },
+        {
+          "courseId": 103,
+          "facultyId": 13
+        },
+        {
+          "courseId": 104,
+          "facultyId": 16
+        },
+        {
+          "courseId": 107,
+          "facultyId": 20
+        },
+        {
+          "courseId": 108,
+          "facultyId": 14
+        },
+        {
+          "courseId": 109,
+          "facultyId": 19
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "CSE-H",
+      "studentCount": 85,
+      "courses": [
+        {
+          "courseId": 101,
+          "facultyId": 6
+        },
+        {
+          "courseId": 102,
+          "facultyId": 14
+        },
+        {
+          "courseId": 103,
+          "facultyId": 21
+        },
+        {
+          "courseId": 104,
+          "facultyId": 8
+        },
+        {
+          "courseId": 107,
+          "facultyId": 9
+        },
+        {
+          "courseId": 108,
+          "facultyId": 22
+        },
+        {
+          "courseId": 109,
+          "facultyId": 21
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "CSE-I",
+      "studentCount": 85,
+      "courses": [
+        {
+          "courseId": 101,
+          "facultyId": 23
+        },
+        {
+          "courseId": 102,
+          "facultyId": 24
+        },
+        {
+          "courseId": 103,
+          "facultyId": 13
+        },
+        {
+          "courseId": 104,
+          "facultyId": 4
+        },
+        {
+          "courseId": 107,
+          "facultyId": 9
+        },
+        {
+          "courseId": 108,
+          "facultyId": 7
+        },
+        {
+          "courseId": 109,
+          "facultyId": 12
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "CSE-J",
+      "studentCount": 85,
+      "courses": [
+        {
+          "courseId": 101,
+          "facultyId": 23
+        },
+        {
+          "courseId": 102,
+          "facultyId": 25
+        },
+        {
+          "courseId": 103,
+          "facultyId": 21
+        },
+        {
+          "courseId": 104,
+          "facultyId": 16
+        },
+        {
+          "courseId": 107,
+          "facultyId": 26
+        },
+        {
+          "courseId": 108,
+          "facultyId": 10
+        },
+        {
+          "courseId": 109,
+          "facultyId": 17
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "CSE-K",
+      "studentCount": 85,
+      "courses": [
+        {
+          "courseId": 101,
+          "facultyId": 23
+        },
+        {
+          "courseId": 102,
+          "facultyId": 27
+        },
+        {
+          "courseId": 103,
+          "facultyId": 19
+        },
+        {
+          "courseId": 104,
+          "facultyId": 16
+        },
+        {
+          "courseId": 107,
+          "facultyId": 26
+        },
+        {
+          "courseId": 108,
+          "facultyId": 10
+        },
+        {
+          "courseId": 109,
+          "facultyId": 19
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "AI-DS1",
+      "studentCount": 85,
+      "courses": [
+        {
+          "courseId": 101,
+          "facultyId": 6
+        },
+        {
+          "courseId": 102,
+          "facultyId": 24
+        },
+        {
+          "courseId": 103,
+          "facultyId": 28
+        },
+        {
+          "courseId": 105,
+          "facultyId": 29
+        },
+        {
+          "courseId": 107,
+          "facultyId": 20
+        },
+        {
+          "courseId": 108,
+          "facultyId": 24
+        },
+        {
+          "courseId": 109,
+          "facultyId": 28
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "AI-DS2",
+      "studentCount": 85,
+      "courses": [
+        {
+          "courseId": 101,
+          "facultyId": 6
+        },
+        {
+          "courseId": 102,
+          "facultyId": 24
+        },
+        {
+          "courseId": 103,
+          "facultyId": 28
+        },
+        {
+          "courseId": 105,
+          "facultyId": 29
+        },
+        {
+          "courseId": 107,
+          "facultyId": 31
+        },
+        {
+          "courseId": 108,
+          "facultyId": 10
+        },
+        {
+          "courseId": 109,
+          "facultyId": 30
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "AI-ML1",
+      "studentCount": 85,
+      "courses": [
+        {
+          "courseId": 101,
+          "facultyId": 23
+        },
+        {
+          "courseId": 102,
+          "facultyId": 27
+        },
+        {
+          "courseId": 103,
+          "facultyId": 32
+        },
+        {
+          "courseId": 105,
+          "facultyId": 29
+        },
+        {
+          "courseId": 107,
+          "facultyId": 23
+        },
+        {
+          "courseId": 108,
+          "facultyId": 33
+        },
+        {
+          "courseId": 109,
+          "facultyId": 32
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "AI-ML2",
+      "studentCount": 85,
+      "courses": [
+        {
+          "courseId": 101,
+          "facultyId": 23
+        },
+        {
+          "courseId": 102,
+          "facultyId": 18
+        },
+        {
+          "courseId": 103,
+          "facultyId": 17
+        },
+        {
+          "courseId": 105,
+          "facultyId": 29
+        },
+        {
+          "courseId": 107,
+          "facultyId": 23
+        },
+        {
+          "courseId": 108,
+          "facultyId": 18
+        },
+        {
+          "courseId": 109,
+          "facultyId": 17
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "AI-ML3",
+      "studentCount": 85,
+      "courses": [
+        {
+          "courseId": 101,
+          "facultyId": 23
+        },
+        {
+          "courseId": 102,
+          "facultyId": 18
+        },
+        {
+          "courseId": 103,
+          "facultyId": 32
+        },
+        {
+          "courseId": 105,
+          "facultyId": 29
+        },
+        {
+          "courseId": 107,
+          "facultyId": 26
+        },
+        {
+          "courseId": 108,
+          "facultyId": 18
+        },
+        {
+          "courseId": 109,
+          "facultyId": 32
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "AI-ML4",
+      "studentCount": 85,
+      "courses": [
+        {
+          "courseId": 101,
+          "facultyId": 23
+        },
+        {
+          "courseId": 102,
+          "facultyId": 33
+        },
+        {
+          "courseId": 103,
+          "facultyId": 11
+        },
+        {
+          "courseId": 105,
+          "facultyId": 29
+        },
+        {
+          "courseId": 107,
+          "facultyId": 31
+        },
+        {
+          "courseId": 108,
+          "facultyId": 33
+        },
+        {
+          "courseId": 109,
+          "facultyId": 32
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Cyber",
+      "studentCount": 85,
+      "courses": [
+        {
+          "courseId": 101,
+          "facultyId": 23
+        },
+        {
+          "courseId": 102,
+          "facultyId": 33
+        },
+        {
+          "courseId": 103,
+          "facultyId": 21
+        },
+        {
+          "courseId": 106,
+          "facultyId": 34
+        },
+        {
+          "courseId": 107,
+          "facultyId": 26
+        },
+        {
+          "courseId": 108,
+          "facultyId": 33
+        },
+        {
+          "courseId": 109,
+          "facultyId": 32
+        },
+        {
+          "courseId": 110,
+          "facultyId": 35
+        }
+      ]
+    }
+  ]
+}
