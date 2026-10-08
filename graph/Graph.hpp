@@ -3,10 +3,13 @@
 
 #include <vector>
 #include <memory>
+#include <fstream>
+#include <string>
 #include "Node.hpp"
-#include "Course.hpp"
-#include "Section.hpp"
-#include "Faculty.hpp"
+#include "models/Course.hpp"
+#include "models/Section.hpp"
+#include "models/Faculty.hpp"
+#include "models/Dataset.hpp"
 
 class Graph {
 private:
@@ -21,6 +24,13 @@ public:
         return ptr;
     }
 
+    void buildFromDataset(const Dataset& dataset) {
+        for (const auto& [sec, course, fac] : dataset.getNodeSpecs()) {
+            addNode(course, sec, fac);
+        }
+        buildEdges();
+    }
+
     const std::vector<std::unique_ptr<Node>>& getNodes() const { return nodes; }
 
     int size() const { return nodes.size(); }
@@ -30,7 +40,7 @@ public:
             for (size_t j = i + 1; j < nodes.size(); j++) {
                 Node* a = nodes[i].get();
                 Node* b = nodes[j].get();
-                if ( a == b) continue;
+                if (a == b) continue;
 
                 if (conflicts(a, b)) {
                     a->addNeighbor(b);
@@ -41,22 +51,22 @@ public:
     }
 
     void exportEdgeList(const std::string& filename) const {
-    std::ofstream out(filename);
-    for (auto& nodePtr : nodes) {
-        Node* n = nodePtr.get();
-        for (Node* neighbor : n->getNeighbors()) {
-            if (n->getId() < neighbor->getId()) {
-                out << n->getId() << " " << neighbor->getId() << "\n";
+        std::ofstream out(filename);
+        for (auto& nodePtr : nodes) {
+            Node* n = nodePtr.get();
+            for (Node* neighbor : n->getNeighbors()) {
+                if (n->getId() < neighbor->getId()) {
+                    out << n->getId() << " " << neighbor->getId() << "\n";
+                }
             }
         }
+        out.close();
     }
-    out.close();
-}
 
 private:
     bool conflicts(Node* a, Node* b) const {
         bool sameSection = (a->getSection()->getId() == b->getSection()->getId());
-        bool sameFaculty  = (a->getFaculty()->getId() == b->getFaculty()->getId());
+        bool sameFaculty = (a->getFaculty()->getId() == b->getFaculty()->getId());
         return sameSection || sameFaculty;
     }
 };
