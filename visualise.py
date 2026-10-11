@@ -2,7 +2,7 @@ import json
 import networkx as nx
 import matplotlib.pyplot as plt
 
-with open('data.json', 'r') as f:
+with open('sem3.json', 'r') as f:
     data = json.load(f)
 
 course_names = {c['id']: c['name'] for c in data['courses']}
