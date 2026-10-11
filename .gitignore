@@ -1,4 +1,6 @@
 staging/
+edges.txt
+clashfree.txt
 *.exe
 *.o
 *.obj
