@@ -3,16 +3,7 @@
 #include "models/Dataset.hpp"
 #include "graph/Graph.hpp"
 #include "models/TimeSlotPool.hpp"
-
-void printAdjacencyList(const Graph& graph) {
-    for (auto& nodePtr : graph.getNodes()) {
-        std::cout << nodePtr->section->getName() << " " << nodePtr->course->getId() << " :  [ ";
-        for (auto& neibourNode : nodePtr->getNeighbors()) {
-            std::cout << neibourNode->section->getName() << " " << neibourNode->course->getId() << " , ";
-        }
-        std::cout << " ] " << std::endl;
-    }
-}
+#include "scheduler/GreedyScheduler.hpp"
 
 int main(int argc, char* argv[]) {
     std::string filepath = "data.json";
@@ -42,9 +33,33 @@ int main(int argc, char* argv[]) {
             return 1;
         }
 
-        printAdjacencyList(graph);
+        GreedyScheduler scheduler;
+        const ScheduleResult result = scheduler.schedule(graph, pool);
 
-        std::cout << "\nGraph loaded and validated successfully.\n";
+        std::cout << "\nAlgorithm: " << scheduler.name() << "\n"
+                  << "Scheduling " << (result.success ? "succeeded" : "could not place every session") << ".\n"
+                  << "Sessions assigned: " << result.timetable.assignedCount()
+                  << " / " << graph.size() << "\n"
+                  << "Time slots used: " << result.slotsUsed << "\n"
+                  << "Runtime: " << result.runtimeMs << " ms\n\n";
+
+        const char* dayNames[] = {"MON", "TUE", "WED", "THU", "FRI", "SAT"};
+        for (const auto& nodePtr : graph.getNodes()) {
+            const Node& node = *nodePtr;
+            if (!result.timetable.isAssigned(node.getId())) {
+                std::cout << "UNASSIGNED  " << node.getSection()->getName()
+                          << "  course " << node.getCourse()->getId()
+                          << "  faculty " << node.getFaculty()->getName() << "\n";
+                continue;
+            }
+
+            const TimeSlot& slot = result.timetable.slotAt(node.getId());
+            const int dayIndex = static_cast<int>(slot.getDay());
+            std::cout << dayNames[dayIndex] << " period " << slot.getPeriod()
+                      << "  " << node.getSection()->getName()
+                      << "  course " << node.getCourse()->getId()
+                      << "  faculty " << node.getFaculty()->getName() << "\n";
+        }
 
         graph.exportEdgeList("edges.txt");
 
