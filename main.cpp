@@ -3,7 +3,7 @@
 #include "models/Dataset.hpp"
 #include "graph/Graph.hpp"
 #include "models/TimeSlotPool.hpp"
-#include "scheduler/GreedyScheduler.hpp"
+#include "scheduler/DSATURScheduler.hpp"
 
 int main(int argc, char* argv[]) {
     std::string filepath = "data.json";
@@ -33,7 +33,7 @@ int main(int argc, char* argv[]) {
             return 1;
         }
 
-        GreedyScheduler scheduler;
+        DSATURScheduler scheduler;
         const ScheduleResult result = scheduler.schedule(graph, pool);
 
         std::cout << "\nAlgorithm: " << scheduler.name() << "\n"
