@@ -1,4 +1,6 @@
+#include <fstream>
 #include <iostream>
+#include "json.hpp"
 #include "loader/DataLoader.hpp"
 #include "models/Dataset.hpp"
 #include "graph/Graph.hpp"
@@ -44,9 +46,17 @@ int main(int argc, char* argv[]) {
                   << "Runtime: " << result.runtimeMs << " ms\n\n";
 
         const char* dayNames[] = {"MON", "TUE", "WED", "THU", "FRI", "SAT"};
+        nlohmann::json assignments = nlohmann::json::array();
+        nlohmann::json unassigned = nlohmann::json::array();
         for (const auto& nodePtr : graph.getNodes()) {
             const Node& node = *nodePtr;
+            nlohmann::json entry = {{"node", node.getId()},
+                                    {"section", node.getSection()->getName()},
+                                    {"courseId", node.getCourse()->getId()},
+                                    {"facultyId", node.getFaculty()->getId()},
+                                    {"faculty", node.getFaculty()->getName()}};
             if (!result.timetable.isAssigned(node.getId())) {
+                unassigned.push_back(entry);
                 std::cout << "UNASSIGNED  " << node.getSection()->getName()
                           << "  course " << node.getCourse()->getId()
                           << "  faculty " << node.getFaculty()->getName() << "\n";
@@ -55,11 +65,24 @@ int main(int argc, char* argv[]) {
 
             const TimeSlot& slot = result.timetable.slotAt(node.getId());
             const int dayIndex = static_cast<int>(slot.getDay());
+            entry["day"] = dayNames[dayIndex];
+            entry["period"] = slot.getPeriod();
+            assignments.push_back(entry);
             std::cout << dayNames[dayIndex] << " period " << slot.getPeriod()
                       << "  " << node.getSection()->getName()
                       << "  course " << node.getCourse()->getId()
                       << "  faculty " << node.getFaculty()->getName() << "\n";
         }
+
+        nlohmann::json report = {{"algorithm", scheduler.name()},
+                                 {"success", result.success},
+                                 {"assigned", result.timetable.assignedCount()},
+                                 {"total", graph.size()},
+                                 {"slotsUsed", result.slotsUsed},
+                                 {"runtimeMs", result.runtimeMs},
+                                 {"assignments", assignments},
+                                 {"unassigned", unassigned}};
+        std::ofstream("timetable.json") << report.dump(2);
 
         graph.exportEdgeList("edges.txt");
 

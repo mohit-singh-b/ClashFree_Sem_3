@@ -1,0 +1,1154 @@
+{
+  "algorithm": "Greedy",
+  "assigned": 127,
+  "assignments": [
+    {
+      "courseId": 101,
+      "day": "MON",
+      "faculty": "Mr. Akshay Rajput",
+      "facultyId": 2,
+      "node": 0,
+      "period": 6,
+      "section": "CSE-A"
+    },
+    {
+      "courseId": 102,
+      "day": "MON",
+      "faculty": "Dr. Amit Kumar",
+      "facultyId": 3,
+      "node": 1,
+      "period": 4,
+      "section": "CSE-A"
+    },
+    {
+      "courseId": 103,
+      "day": "MON",
+      "faculty": "Dr. Hemant Singh Pokhariya",
+      "facultyId": 1,
+      "node": 2,
+      "period": 2,
+      "section": "CSE-A"
+    },
+    {
+      "courseId": 104,
+      "day": "MON",
+      "faculty": "Dr. Anand Chauhan",
+      "facultyId": 4,
+      "node": 3,
+      "period": 3,
+      "section": "CSE-A"
+    },
+    {
+      "courseId": 107,
+      "day": "MON",
+      "faculty": "Mr. Upendra Aswal",
+      "facultyId": 6,
+      "node": 4,
+      "period": 1,
+      "section": "CSE-A"
+    },
+    {
+      "courseId": 108,
+      "day": "MON",
+      "faculty": "Dr. Amit Kumar",
+      "facultyId": 3,
+      "node": 5,
+      "period": 5,
+      "section": "CSE-A"
+    },
+    {
+      "courseId": 109,
+      "day": "MON",
+      "faculty": "Dr. Niraj Kumar",
+      "facultyId": 5,
+      "node": 6,
+      "period": 7,
+      "section": "CSE-A"
+    },
+    {
+      "courseId": 101,
+      "day": "MON",
+      "faculty": "Mr. Akshay Rajput",
+      "facultyId": 2,
+      "node": 7,
+      "period": 7,
+      "section": "CSE-B"
+    },
+    {
+      "courseId": 102,
+      "day": "MON",
+      "faculty": "Dr. Amit Kumar",
+      "facultyId": 3,
+      "node": 8,
+      "period": 1,
+      "section": "CSE-B"
+    },
+    {
+      "courseId": 103,
+      "day": "MON",
+      "faculty": "Dr. Hemant Singh Pokhariya",
+      "facultyId": 1,
+      "node": 9,
+      "period": 3,
+      "section": "CSE-B"
+    },
+    {
+      "courseId": 104,
+      "day": "MON",
+      "faculty": "Dr. Anand Chauhan",
+      "facultyId": 4,
+      "node": 10,
+      "period": 4,
+      "section": "CSE-B"
+    },
+    {
+      "courseId": 107,
+      "day": "MON",
+      "faculty": "Mr. Upendra Aswal",
+      "facultyId": 6,
+      "node": 11,
+      "period": 2,
+      "section": "CSE-B"
+    },
+    {
+      "courseId": 108,
+      "day": "MON",
+      "faculty": "Mr. Kuldeep Nautiyal",
+      "facultyId": 7,
+      "node": 12,
+      "period": 5,
+      "section": "CSE-B"
+    },
+    {
+      "courseId": 109,
+      "day": "MON",
+      "faculty": "Dr. Niraj Kumar",
+      "facultyId": 5,
+      "node": 13,
+      "period": 6,
+      "section": "CSE-B"
+    },
+    {
+      "courseId": 101,
+      "day": "MON",
+      "faculty": "Mr. Upendra Aswal",
+      "facultyId": 6,
+      "node": 14,
+      "period": 3,
+      "section": "CSE-C"
+    },
+    {
+      "courseId": 102,
+      "day": "MON",
+      "faculty": "Dr. Amit Kumar",
+      "facultyId": 3,
+      "node": 15,
+      "period": 2,
+      "section": "CSE-C"
+    },
+    {
+      "courseId": 103,
+      "day": "MON",
+      "faculty": "Dr. Hemant Singh Pokhariya",
+      "facultyId": 1,
+      "node": 16,
+      "period": 6,
+      "section": "CSE-C"
+    },
+    {
+      "courseId": 104,
+      "day": "MON",
+      "faculty": "Dr. Neeraj Dhiman",
+      "facultyId": 8,
+      "node": 17,
+      "period": 5,
+      "section": "CSE-C"
+    },
+    {
+      "courseId": 107,
+      "day": "MON",
+      "faculty": "Mr. Pareshwar Prasad Barmola",
+      "facultyId": 9,
+      "node": 18,
+      "period": 1,
+      "section": "CSE-C"
+    },
+    {
+      "courseId": 108,
+      "day": "MON",
+      "faculty": "Dr. Vidit Kumar",
+      "facultyId": 10,
+      "node": 19,
+      "period": 4,
+      "section": "CSE-C"
+    },
+    {
+      "courseId": 109,
+      "day": "MON",
+      "faculty": "Dr. Hemant Singh Pokhariya",
+      "facultyId": 1,
+      "node": 20,
+      "period": 7,
+      "section": "CSE-C"
+    },
+    {
+      "courseId": 101,
+      "day": "MON",
+      "faculty": "Mr. Upendra Aswal",
+      "facultyId": 6,
+      "node": 21,
+      "period": 4,
+      "section": "CSE-D"
+    },
+    {
+      "courseId": 102,
+      "day": "MON",
+      "faculty": "Dr. Amit Kumar",
+      "facultyId": 3,
+      "node": 22,
+      "period": 3,
+      "section": "CSE-D"
+    },
+    {
+      "courseId": 103,
+      "day": "MON",
+      "faculty": "Dr. Abhay Sharma",
+      "facultyId": 11,
+      "node": 23,
+      "period": 5,
+      "section": "CSE-D"
+    },
+    {
+      "courseId": 104,
+      "day": "MON",
+      "faculty": "Dr. Neeraj Dhiman",
+      "facultyId": 8,
+      "node": 24,
+      "period": 6,
+      "section": "CSE-D"
+    },
+    {
+      "courseId": 107,
+      "day": "MON",
+      "faculty": "Mr. Pareshwar Prasad Barmola",
+      "facultyId": 9,
+      "node": 25,
+      "period": 2,
+      "section": "CSE-D"
+    },
+    {
+      "courseId": 108,
+      "day": "MON",
+      "faculty": "Dr. Vidit Kumar",
+      "facultyId": 10,
+      "node": 26,
+      "period": 1,
+      "section": "CSE-D"
+    },
+    {
+      "courseId": 109,
+      "day": "MON",
+      "faculty": "Dr. B. P. Mishra",
+      "facultyId": 12,
+      "node": 27,
+      "period": 7,
+      "section": "CSE-D"
+    },
+    {
+      "courseId": 101,
+      "day": "MON",
+      "faculty": "Mr. Upendra Aswal",
+      "facultyId": 6,
+      "node": 28,
+      "period": 5,
+      "section": "CSE-E"
+    },
+    {
+      "courseId": 102,
+      "day": "MON",
+      "faculty": "Dr. Jyoti Agarwal",
+      "facultyId": 14,
+      "node": 29,
+      "period": 1,
+      "section": "CSE-E"
+    },
+    {
+      "courseId": 103,
+      "day": "MON",
+      "faculty": "Dr. Pradeep Juneja",
+      "facultyId": 13,
+      "node": 30,
+      "period": 4,
+      "section": "CSE-E"
+    },
+    {
+      "courseId": 104,
+      "day": "MON",
+      "faculty": "Dr. Neeraj Dhiman",
+      "facultyId": 8,
+      "node": 31,
+      "period": 2,
+      "section": "CSE-E"
+    },
+    {
+      "courseId": 107,
+      "day": "MON",
+      "faculty": "Mr. Pareshwar Prasad Barmola",
+      "facultyId": 9,
+      "node": 32,
+      "period": 3,
+      "section": "CSE-E"
+    },
+    {
+      "courseId": 108,
+      "day": "MON",
+      "faculty": "Mr. Kuldeep Nautiyal",
+      "facultyId": 7,
+      "node": 33,
+      "period": 6,
+      "section": "CSE-E"
+    },
+    {
+      "courseId": 109,
+      "day": "MON",
+      "faculty": "Dr. Pradeep Juneja",
+      "facultyId": 13,
+      "node": 34,
+      "period": 7,
+      "section": "CSE-E"
+    },
+    {
+      "courseId": 101,
+      "day": "MON",
+      "faculty": "Mr. Upendra Aswal",
+      "facultyId": 6,
+      "node": 35,
+      "period": 6,
+      "section": "CSE-F"
+    },
+    {
+      "courseId": 102,
+      "day": "MON",
+      "faculty": "Dr. Jyoti Agarwal",
+      "facultyId": 14,
+      "node": 36,
+      "period": 2,
+      "section": "CSE-F"
+    },
+    {
+      "courseId": 103,
+      "day": "MON",
+      "faculty": "Dr. Vikas Rathi",
+      "facultyId": 15,
+      "node": 37,
+      "period": 7,
+      "section": "CSE-F"
+    },
+    {
+      "courseId": 104,
+      "day": "MON",
+      "faculty": "Dr. Seema Saini",
+      "facultyId": 16,
+      "node": 38,
+      "period": 3,
+      "section": "CSE-F"
+    },
+    {
+      "courseId": 107,
+      "day": "MON",
+      "faculty": "Mr. Pareshwar Prasad Barmola",
+      "facultyId": 9,
+      "node": 39,
+      "period": 4,
+      "section": "CSE-F"
+    },
+    {
+      "courseId": 108,
+      "day": "MON",
+      "faculty": "Mr. Sanjeev Kukreti",
+      "facultyId": 18,
+      "node": 40,
+      "period": 1,
+      "section": "CSE-F"
+    },
+    {
+      "courseId": 109,
+      "day": "MON",
+      "faculty": "Dr. Vinay Kumar",
+      "facultyId": 17,
+      "node": 41,
+      "period": 5,
+      "section": "CSE-F"
+    },
+    {
+      "courseId": 101,
+      "day": "MON",
+      "faculty": "Mr. Upendra Aswal",
+      "facultyId": 6,
+      "node": 42,
+      "period": 7,
+      "section": "CSE-G"
+    },
+    {
+      "courseId": 102,
+      "day": "MON",
+      "faculty": "Dr. Jyoti Agarwal",
+      "facultyId": 14,
+      "node": 43,
+      "period": 4,
+      "section": "CSE-G"
+    },
+    {
+      "courseId": 103,
+      "day": "MON",
+      "faculty": "Dr. Pradeep Juneja",
+      "facultyId": 13,
+      "node": 44,
+      "period": 1,
+      "section": "CSE-G"
+    },
+    {
+      "courseId": 104,
+      "day": "MON",
+      "faculty": "Dr. Seema Saini",
+      "facultyId": 16,
+      "node": 45,
+      "period": 2,
+      "section": "CSE-G"
+    },
+    {
+      "courseId": 107,
+      "day": "MON",
+      "faculty": "Dr. Siddhant Thapliyal",
+      "facultyId": 20,
+      "node": 46,
+      "period": 6,
+      "section": "CSE-G"
+    },
+    {
+      "courseId": 108,
+      "day": "MON",
+      "faculty": "Dr. Jyoti Agarwal",
+      "facultyId": 14,
+      "node": 47,
+      "period": 5,
+      "section": "CSE-G"
+    },
+    {
+      "courseId": 109,
+      "day": "MON",
+      "faculty": "Ms. Alankrita Joshi",
+      "facultyId": 19,
+      "node": 48,
+      "period": 3,
+      "section": "CSE-G"
+    },
+    {
+      "courseId": 101,
+      "day": "MON",
+      "faculty": "Mr. Upendra Aswal",
+      "facultyId": 6,
+      "node": 49,
+      "period": 8,
+      "section": "CSE-H"
+    },
+    {
+      "courseId": 102,
+      "day": "MON",
+      "faculty": "Dr. Jyoti Agarwal",
+      "facultyId": 14,
+      "node": 50,
+      "period": 3,
+      "section": "CSE-H"
+    },
+    {
+      "courseId": 103,
+      "day": "MON",
+      "faculty": "Dr. Mridul Gupta",
+      "facultyId": 21,
+      "node": 51,
+      "period": 2,
+      "section": "CSE-H"
+    },
+    {
+      "courseId": 104,
+      "day": "MON",
+      "faculty": "Dr. Neeraj Dhiman",
+      "facultyId": 8,
+      "node": 52,
+      "period": 1,
+      "section": "CSE-H"
+    },
+    {
+      "courseId": 107,
+      "day": "MON",
+      "faculty": "Mr. Pareshwar Prasad Barmola",
+      "facultyId": 9,
+      "node": 53,
+      "period": 5,
+      "section": "CSE-H"
+    },
+    {
+      "courseId": 108,
+      "day": "MON",
+      "faculty": "Mr. Piyush Agarwal",
+      "facultyId": 22,
+      "node": 54,
+      "period": 4,
+      "section": "CSE-H"
+    },
+    {
+      "courseId": 109,
+      "day": "MON",
+      "faculty": "Dr. Mridul Gupta",
+      "facultyId": 21,
+      "node": 55,
+      "period": 6,
+      "section": "CSE-H"
+    },
+    {
+      "courseId": 101,
+      "day": "MON",
+      "faculty": "Dr. Hriday Kumar Gupta",
+      "facultyId": 23,
+      "node": 56,
+      "period": 2,
+      "section": "CSE-I"
+    },
+    {
+      "courseId": 102,
+      "day": "MON",
+      "faculty": "Dr. Pawan Kumar Mishra",
+      "facultyId": 24,
+      "node": 57,
+      "period": 1,
+      "section": "CSE-I"
+    },
+    {
+      "courseId": 103,
+      "day": "MON",
+      "faculty": "Dr. Pradeep Juneja",
+      "facultyId": 13,
+      "node": 58,
+      "period": 3,
+      "section": "CSE-I"
+    },
+    {
+      "courseId": 104,
+      "day": "MON",
+      "faculty": "Dr. Anand Chauhan",
+      "facultyId": 4,
+      "node": 59,
+      "period": 5,
+      "section": "CSE-I"
+    },
+    {
+      "courseId": 107,
+      "day": "MON",
+      "faculty": "Mr. Pareshwar Prasad Barmola",
+      "facultyId": 9,
+      "node": 60,
+      "period": 6,
+      "section": "CSE-I"
+    },
+    {
+      "courseId": 108,
+      "day": "MON",
+      "faculty": "Mr. Kuldeep Nautiyal",
+      "facultyId": 7,
+      "node": 61,
+      "period": 4,
+      "section": "CSE-I"
+    },
+    {
+      "courseId": 109,
+      "day": "MON",
+      "faculty": "Dr. B. P. Mishra",
+      "facultyId": 12,
+      "node": 62,
+      "period": 8,
+      "section": "CSE-I"
+    },
+    {
+      "courseId": 101,
+      "day": "MON",
+      "faculty": "Dr. Hriday Kumar Gupta",
+      "facultyId": 23,
+      "node": 63,
+      "period": 3,
+      "section": "CSE-J"
+    },
+    {
+      "courseId": 102,
+      "day": "MON",
+      "faculty": "Dr. Deepak Asrani",
+      "facultyId": 25,
+      "node": 64,
+      "period": 5,
+      "section": "CSE-J"
+    },
+    {
+      "courseId": 103,
+      "day": "MON",
+      "faculty": "Dr. Mridul Gupta",
+      "facultyId": 21,
+      "node": 65,
+      "period": 1,
+      "section": "CSE-J"
+    },
+    {
+      "courseId": 104,
+      "day": "MON",
+      "faculty": "Dr. Seema Saini",
+      "facultyId": 16,
+      "node": 66,
+      "period": 4,
+      "section": "CSE-J"
+    },
+    {
+      "courseId": 107,
+      "day": "MON",
+      "faculty": "Ms. Meenakshi Maindola",
+      "facultyId": 26,
+      "node": 67,
+      "period": 6,
+      "section": "CSE-J"
+    },
+    {
+      "courseId": 108,
+      "day": "MON",
+      "faculty": "Dr. Vidit Kumar",
+      "facultyId": 10,
+      "node": 68,
+      "period": 2,
+      "section": "CSE-J"
+    },
+    {
+      "courseId": 109,
+      "day": "MON",
+      "faculty": "Dr. Vinay Kumar",
+      "facultyId": 17,
+      "node": 69,
+      "period": 7,
+      "section": "CSE-J"
+    },
+    {
+      "courseId": 101,
+      "day": "MON",
+      "faculty": "Dr. Hriday Kumar Gupta",
+      "facultyId": 23,
+      "node": 70,
+      "period": 4,
+      "section": "CSE-K"
+    },
+    {
+      "courseId": 102,
+      "day": "MON",
+      "faculty": "Mr. Kamal Kumar Gola",
+      "facultyId": 27,
+      "node": 71,
+      "period": 5,
+      "section": "CSE-K"
+    },
+    {
+      "courseId": 103,
+      "day": "MON",
+      "faculty": "Ms. Alankrita Joshi",
+      "facultyId": 19,
+      "node": 72,
+      "period": 6,
+      "section": "CSE-K"
+    },
+    {
+      "courseId": 104,
+      "day": "MON",
+      "faculty": "Dr. Seema Saini",
+      "facultyId": 16,
+      "node": 73,
+      "period": 1,
+      "section": "CSE-K"
+    },
+    {
+      "courseId": 107,
+      "day": "MON",
+      "faculty": "Ms. Meenakshi Maindola",
+      "facultyId": 26,
+      "node": 74,
+      "period": 2,
+      "section": "CSE-K"
+    },
+    {
+      "courseId": 108,
+      "day": "MON",
+      "faculty": "Dr. Vidit Kumar",
+      "facultyId": 10,
+      "node": 75,
+      "period": 3,
+      "section": "CSE-K"
+    },
+    {
+      "courseId": 109,
+      "day": "MON",
+      "faculty": "Ms. Alankrita Joshi",
+      "facultyId": 19,
+      "node": 76,
+      "period": 7,
+      "section": "CSE-K"
+    },
+    {
+      "courseId": 101,
+      "day": "MON",
+      "faculty": "Mr. Upendra Aswal",
+      "facultyId": 6,
+      "node": 77,
+      "period": 9,
+      "section": "AI-DS1"
+    },
+    {
+      "courseId": 102,
+      "day": "MON",
+      "faculty": "Dr. Pawan Kumar Mishra",
+      "facultyId": 24,
+      "node": 78,
+      "period": 2,
+      "section": "AI-DS1"
+    },
+    {
+      "courseId": 103,
+      "day": "MON",
+      "faculty": "Dr. Sribidhya Mohanty",
+      "facultyId": 28,
+      "node": 79,
+      "period": 3,
+      "section": "AI-DS1"
+    },
+    {
+      "courseId": 105,
+      "day": "MON",
+      "faculty": "Dr. Teekam Singh",
+      "facultyId": 29,
+      "node": 80,
+      "period": 1,
+      "section": "AI-DS1"
+    },
+    {
+      "courseId": 107,
+      "day": "MON",
+      "faculty": "Dr. Siddhant Thapliyal",
+      "facultyId": 20,
+      "node": 81,
+      "period": 5,
+      "section": "AI-DS1"
+    },
+    {
+      "courseId": 108,
+      "day": "MON",
+      "faculty": "Dr. Pawan Kumar Mishra",
+      "facultyId": 24,
+      "node": 82,
+      "period": 4,
+      "section": "AI-DS1"
+    },
+    {
+      "courseId": 109,
+      "day": "MON",
+      "faculty": "Dr. Sribidhya Mohanty",
+      "facultyId": 28,
+      "node": 83,
+      "period": 6,
+      "section": "AI-DS1"
+    },
+    {
+      "courseId": 101,
+      "day": "TUE",
+      "faculty": "Mr. Upendra Aswal",
+      "facultyId": 6,
+      "node": 84,
+      "period": 1,
+      "section": "AI-DS2"
+    },
+    {
+      "courseId": 102,
+      "day": "MON",
+      "faculty": "Dr. Pawan Kumar Mishra",
+      "facultyId": 24,
+      "node": 85,
+      "period": 3,
+      "section": "AI-DS2"
+    },
+    {
+      "courseId": 103,
+      "day": "MON",
+      "faculty": "Dr. Sribidhya Mohanty",
+      "facultyId": 28,
+      "node": 86,
+      "period": 1,
+      "section": "AI-DS2"
+    },
+    {
+      "courseId": 105,
+      "day": "MON",
+      "faculty": "Dr. Teekam Singh",
+      "facultyId": 29,
+      "node": 87,
+      "period": 2,
+      "section": "AI-DS2"
+    },
+    {
+      "courseId": 107,
+      "day": "MON",
+      "faculty": "Dr. Ravi",
+      "facultyId": 31,
+      "node": 88,
+      "period": 4,
+      "section": "AI-DS2"
+    },
+    {
+      "courseId": 108,
+      "day": "MON",
+      "faculty": "Dr. Vidit Kumar",
+      "facultyId": 10,
+      "node": 89,
+      "period": 5,
+      "section": "AI-DS2"
+    },
+    {
+      "courseId": 109,
+      "day": "MON",
+      "faculty": "Ms. Poonam Raturi",
+      "facultyId": 30,
+      "node": 90,
+      "period": 6,
+      "section": "AI-DS2"
+    },
+    {
+      "courseId": 101,
+      "day": "MON",
+      "faculty": "Dr. Hriday Kumar Gupta",
+      "facultyId": 23,
+      "node": 91,
+      "period": 7,
+      "section": "AI-ML1"
+    },
+    {
+      "courseId": 102,
+      "day": "MON",
+      "faculty": "Mr. Kamal Kumar Gola",
+      "facultyId": 27,
+      "node": 92,
+      "period": 2,
+      "section": "AI-ML1"
+    },
+    {
+      "courseId": 103,
+      "day": "MON",
+      "faculty": "Ms. Neha Belwal",
+      "facultyId": 32,
+      "node": 93,
+      "period": 4,
+      "section": "AI-ML1"
+    },
+    {
+      "courseId": 105,
+      "day": "MON",
+      "faculty": "Dr. Teekam Singh",
+      "facultyId": 29,
+      "node": 94,
+      "period": 3,
+      "section": "AI-ML1"
+    },
+    {
+      "courseId": 107,
+      "day": "MON",
+      "faculty": "Dr. Hriday Kumar Gupta",
+      "facultyId": 23,
+      "node": 95,
+      "period": 8,
+      "section": "AI-ML1"
+    },
+    {
+      "courseId": 108,
+      "day": "MON",
+      "faculty": "Mr. Kireet Joshi",
+      "facultyId": 33,
+      "node": 96,
+      "period": 1,
+      "section": "AI-ML1"
+    },
+    {
+      "courseId": 109,
+      "day": "MON",
+      "faculty": "Ms. Neha Belwal",
+      "facultyId": 32,
+      "node": 97,
+      "period": 5,
+      "section": "AI-ML1"
+    },
+    {
+      "courseId": 101,
+      "day": "MON",
+      "faculty": "Dr. Hriday Kumar Gupta",
+      "facultyId": 23,
+      "node": 98,
+      "period": 9,
+      "section": "AI-ML2"
+    },
+    {
+      "courseId": 102,
+      "day": "MON",
+      "faculty": "Mr. Sanjeev Kukreti",
+      "facultyId": 18,
+      "node": 99,
+      "period": 2,
+      "section": "AI-ML2"
+    },
+    {
+      "courseId": 103,
+      "day": "MON",
+      "faculty": "Dr. Vinay Kumar",
+      "facultyId": 17,
+      "node": 100,
+      "period": 1,
+      "section": "AI-ML2"
+    },
+    {
+      "courseId": 105,
+      "day": "MON",
+      "faculty": "Dr. Teekam Singh",
+      "facultyId": 29,
+      "node": 101,
+      "period": 4,
+      "section": "AI-ML2"
+    },
+    {
+      "courseId": 107,
+      "day": "TUE",
+      "faculty": "Dr. Hriday Kumar Gupta",
+      "facultyId": 23,
+      "node": 102,
+      "period": 1,
+      "section": "AI-ML2"
+    },
+    {
+      "courseId": 108,
+      "day": "MON",
+      "faculty": "Mr. Sanjeev Kukreti",
+      "facultyId": 18,
+      "node": 103,
+      "period": 3,
+      "section": "AI-ML2"
+    },
+    {
+      "courseId": 109,
+      "day": "MON",
+      "faculty": "Dr. Vinay Kumar",
+      "facultyId": 17,
+      "node": 104,
+      "period": 6,
+      "section": "AI-ML2"
+    },
+    {
+      "courseId": 101,
+      "day": "MON",
+      "faculty": "Dr. Hriday Kumar Gupta",
+      "facultyId": 23,
+      "node": 105,
+      "period": 5,
+      "section": "AI-ML3"
+    },
+    {
+      "courseId": 102,
+      "day": "MON",
+      "faculty": "Mr. Sanjeev Kukreti",
+      "facultyId": 18,
+      "node": 106,
+      "period": 4,
+      "section": "AI-ML3"
+    },
+    {
+      "courseId": 103,
+      "day": "MON",
+      "faculty": "Ms. Neha Belwal",
+      "facultyId": 32,
+      "node": 107,
+      "period": 3,
+      "section": "AI-ML3"
+    },
+    {
+      "courseId": 105,
+      "day": "MON",
+      "faculty": "Dr. Teekam Singh",
+      "facultyId": 29,
+      "node": 108,
+      "period": 6,
+      "section": "AI-ML3"
+    },
+    {
+      "courseId": 107,
+      "day": "MON",
+      "faculty": "Ms. Meenakshi Maindola",
+      "facultyId": 26,
+      "node": 109,
+      "period": 1,
+      "section": "AI-ML3"
+    },
+    {
+      "courseId": 108,
+      "day": "MON",
+      "faculty": "Mr. Sanjeev Kukreti",
+      "facultyId": 18,
+      "node": 110,
+      "period": 8,
+      "section": "AI-ML3"
+    },
+    {
+      "courseId": 109,
+      "day": "MON",
+      "faculty": "Ms. Neha Belwal",
+      "facultyId": 32,
+      "node": 111,
+      "period": 7,
+      "section": "AI-ML3"
+    },
+    {
+      "courseId": 101,
+      "day": "MON",
+      "faculty": "Dr. Hriday Kumar Gupta",
+      "facultyId": 23,
+      "node": 112,
+      "period": 6,
+      "section": "AI-ML4"
+    },
+    {
+      "courseId": 102,
+      "day": "MON",
+      "faculty": "Mr. Kireet Joshi",
+      "facultyId": 33,
+      "node": 113,
+      "period": 2,
+      "section": "AI-ML4"
+    },
+    {
+      "courseId": 103,
+      "day": "MON",
+      "faculty": "Dr. Abhay Sharma",
+      "facultyId": 11,
+      "node": 114,
+      "period": 3,
+      "section": "AI-ML4"
+    },
+    {
+      "courseId": 105,
+      "day": "MON",
+      "faculty": "Dr. Teekam Singh",
+      "facultyId": 29,
+      "node": 115,
+      "period": 5,
+      "section": "AI-ML4"
+    },
+    {
+      "courseId": 107,
+      "day": "MON",
+      "faculty": "Dr. Ravi",
+      "facultyId": 31,
+      "node": 116,
+      "period": 7,
+      "section": "AI-ML4"
+    },
+    {
+      "courseId": 108,
+      "day": "MON",
+      "faculty": "Mr. Kireet Joshi",
+      "facultyId": 33,
+      "node": 117,
+      "period": 4,
+      "section": "AI-ML4"
+    },
+    {
+      "courseId": 109,
+      "day": "MON",
+      "faculty": "Ms. Neha Belwal",
+      "facultyId": 32,
+      "node": 118,
+      "period": 1,
+      "section": "AI-ML4"
+    },
+    {
+      "courseId": 101,
+      "day": "MON",
+      "faculty": "Dr. Hriday Kumar Gupta",
+      "facultyId": 23,
+      "node": 119,
+      "period": 1,
+      "section": "Cyber"
+    },
+    {
+      "courseId": 102,
+      "day": "MON",
+      "faculty": "Mr. Kireet Joshi",
+      "facultyId": 33,
+      "node": 120,
+      "period": 3,
+      "section": "Cyber"
+    },
+    {
+      "courseId": 103,
+      "day": "MON",
+      "faculty": "Dr. Mridul Gupta",
+      "facultyId": 21,
+      "node": 121,
+      "period": 4,
+      "section": "Cyber"
+    },
+    {
+      "courseId": 106,
+      "day": "MON",
+      "faculty": "Dr. Mohammad Wazid",
+      "facultyId": 34,
+      "node": 122,
+      "period": 7,
+      "section": "Cyber"
+    },
+    {
+      "courseId": 107,
+      "day": "MON",
+      "faculty": "Ms. Meenakshi Maindola",
+      "facultyId": 26,
+      "node": 123,
+      "period": 5,
+      "section": "Cyber"
+    },
+    {
+      "courseId": 108,
+      "day": "MON",
+      "faculty": "Mr. Kireet Joshi",
+      "facultyId": 33,
+      "node": 124,
+      "period": 6,
+      "section": "Cyber"
+    },
+    {
+      "courseId": 109,
+      "day": "MON",
+      "faculty": "Ms. Neha Belwal",
+      "facultyId": 32,
+      "node": 125,
+      "period": 2,
+      "section": "Cyber"
+    },
+    {
+      "courseId": 110,
+      "day": "MON",
+      "faculty": "Mr. Mukesh Singh",
+      "facultyId": 35,
+      "node": 126,
+      "period": 8,
+      "section": "Cyber"
+    }
+  ],
+  "runtimeMs": 0.1304,
+  "slotsUsed": 10,
+  "success": true,
+  "total": 127,
+  "unassigned": []
+}
