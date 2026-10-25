@@ -2,7 +2,8 @@
 
 #include "Scheduler.hpp"
 #include "graph/Graph.hpp"
-#include "models/timeslotpool.hpp"
+#include "models/TimeSlotPool.hpp"
+#include "SlotChoice.hpp"
 
 #include <chrono>
 #include <string>
@@ -51,21 +52,16 @@ public:
                 break;
             }
 
-            bool assigned = false;
-
-            // Assign the first slot satisfying all current constraints.
-            for (int slotIndex = 0; slotIndex < pool.size(); ++slotIndex) {
-                if (canUseSlot(*selectedNode, slotIndex, timetable, pool)) {
-                    timetable.assign(selectedNode->getId(), slotIndex);
-                    assigned = true;
-                    break;
-                }
-            }
+            // Assign the least crowded slot satisfying all current constraints.
+            const int slotIndex = pickSlot(*selectedNode, timetable, pool, [&](int slot) {
+                return canUseSlot(*selectedNode, slot, timetable, pool);
+            });
 
             // DSATUR has no backtracking: stop if this node cannot be colored.
-            if (!assigned) {
+            if (slotIndex < 0) {
                 break;
             }
+            timetable.assign(selectedNode->getId(), slotIndex);
         }
 
         const auto end = std::chrono::steady_clock::now();

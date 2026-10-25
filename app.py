@@ -14,6 +14,7 @@ DAYS = ["MON", "TUE", "WED", "THU", "FRI", "SAT"]
 TIMES = ["8:00-8:55", "9:00-9:55", "9:55-10:50", "11:10-12:05", "12:05-1:00",
          "1:55-2:50", "3:10-4:05", "4:05-5:00", "5:00-5:55"]
 LUNCH_AFTER = 5
+ALGORITHMS = ["Greedy", "DSATUR"]
 
 FILES = {
     "faculty.csv": (True, ["id", "name", "maxLoad"]),
@@ -90,11 +91,11 @@ def find_executable():
     return next((c for c in candidates if c.is_file()), None)
 
 
-def run_cpp(exe, data):
+def run_cpp(exe, data, algorithm):
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         (tmp / "data.json").write_text(json.dumps(data), encoding="utf-8")
-        proc = subprocess.run([str(exe), "data.json"], cwd=tmp, capture_output=True, text=True, timeout=60)
+        proc = subprocess.run([str(exe), "data.json", algorithm.lower()], cwd=tmp, capture_output=True, text=True, timeout=60)
         edges_file, report_file = tmp / "edges.txt", tmp / "timetable.json"
         edges = len(edges_file.read_text().splitlines()) if edges_file.exists() else 0
         schedule = json.loads(report_file.read_text()) if report_file.exists() else None
@@ -208,7 +209,12 @@ def show_files(raw):
     return frames, not missing
 
 
-def load(frames):
+def pick_algorithm():
+    with st.sidebar:
+        return st.selectbox("Algorithm", ALGORITHMS)
+
+
+def load(frames, algorithm):
     st.session_state.pop("loaded", None)
     try:
         data = build_json(frames)
@@ -221,7 +227,11 @@ def load(frames):
                    "g++ -std=c++17 -I. main.cpp -o clashfree")
     else:
         try:
-            result = run_cpp(exe, data)
+            result = run_cpp(exe, data, algorithm)
+            schedule = result["schedule"]
+            if schedule and schedule["algorithm"].lower() != algorithm.lower():
+                result["messages"].append(f"The program ran {schedule['algorithm']}, not {algorithm}. "
+                                          "Recompile it from the latest main.cpp.")
         except (OSError, subprocess.SubprocessError) as e:
             st.error(f"Could not run the C++ program: {e}")
             return False
@@ -281,9 +291,11 @@ def timetable_step():
             with st.expander(f"{len(schedule['unassigned'])} sessions could not be placed"):
                 st.dataframe(pd.DataFrame([{"section": u["section"],
                                             "course": course_label.get(u["courseId"], u["courseId"]),
+                                            "session": f"{u.get('session', 1)}/{u.get('sessions', 1)}",
                                             "faculty": u["faculty"]} for u in schedule["unassigned"]]),
                              hide_index=True)
-        st.caption(f"{schedule['algorithm']}: one slot per course. Weekly hours and rooms are not scheduled yet.")
+        st.caption(f"{schedule['algorithm']}: every weekly hour of a course is its own one-hour session. "
+                   "Rooms are not scheduled yet.")
 
         file_stem = re.sub(r"[^\w.-]+", "_", chosen).strip("_")
         left, right = st.columns(2)
@@ -326,7 +338,8 @@ def main():
     st.markdown(CSS + HERO, unsafe_allow_html=True)
 
     raw = read_inputs()
-    signature = tuple(sorted((k, len(v)) for k, v in raw.items()))
+    algorithm = pick_algorithm()
+    signature = (tuple(sorted((k, len(v)) for k, v in raw.items())), algorithm)
     if st.session_state.get("signature") != signature:
         st.session_state.clear()
         st.session_state["signature"] = signature
@@ -340,7 +353,7 @@ def main():
 
     if check or submit:
         with st.spinner("Running the scheduler..."):
-            ok = load(frames)
+            ok = load(frames, algorithm)
         st.session_state["generated"] = bool(submit and ok)
 
     summary_step()

@@ -2,6 +2,7 @@
 
 #include "Scheduler.hpp"
 #include "graph/Graph.hpp"
+#include "SlotChoice.hpp"
 #include "models/TimeSlotPool.hpp"
 
 #include <algorithm>
@@ -34,13 +35,13 @@ public:
                       return left->getId() < right->getId();
                   });
 
-        // Give each node the first legal time slot.
+        // Give each node the least crowded legal time slot.
         for (const Node* node : orderedNodes) {
-            for (int slotIndex = 0; slotIndex < pool.size(); ++slotIndex) {
-                if (canUseSlot(*node, slotIndex, timetable, pool)) {
-                    timetable.assign(node->getId(), slotIndex);
-                    break; // Move to the next node after the first legal slot.
-                }
+            const int slotIndex = pickSlot(*node, timetable, pool, [&](int slot) {
+                return canUseSlot(*node, slot, timetable, pool);
+            });
+            if (slotIndex >= 0) {
+                timetable.assign(node->getId(), slotIndex);
             }
             // If no slot is legal, this node stays unassigned and success is false.
         }

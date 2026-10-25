@@ -16,14 +16,17 @@ public:
     const Section* section;     
     const Faculty* faculty;     
 
-    std::set<Node*> neighbors;  
+    int sessionIndex;           // which weekly session of the course this is (0-based)
+
+    std::set<Node*> neighbors;
 
     TimeSlot* assignedSlot;     // timeslot it got (color)
 
 public:
-    Node(int id, const Course* course, const Section* section, const Faculty* faculty)
+    Node(int id, const Course* course, const Section* section, const Faculty* faculty,
+         int sessionIndex = 0)
         : id(id), course(course), section(section), faculty(faculty),
-          assignedSlot(nullptr) {}
+          sessionIndex(sessionIndex), assignedSlot(nullptr) {}
 
 
     int getId() const { return id; }
@@ -34,6 +37,10 @@ public:
 
     bool needsLab() const { return course->isLab(); }
     int getLoadHours() const { return course->getLoadHours(); }
+
+    // A node is ONE weekly session (one hour). A course with loadHours = 4 gives 4 nodes.
+    int getSessionIndex() const { return sessionIndex; }
+    int getSessionCount() const { return course->getLoadHours(); }
 
 
     void addNeighbor(Node* n) { neighbors.insert(n); }

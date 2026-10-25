@@ -17,16 +17,22 @@ private:
     int nextId = 0;
 
 public:
-    Node* addNode(const Course* course, const Section* section, const Faculty* faculty) {
-        auto node = std::make_unique<Node>(nextId++, course, section, faculty);
+    Node* addNode(const Course* course, const Section* section, const Faculty* faculty,
+                  int sessionIndex = 0) {
+        auto node = std::make_unique<Node>(nextId++, course, section, faculty, sessionIndex);
         Node* ptr = node.get();
         nodes.push_back(std::move(node));
         return ptr;
     }
 
+    // One node per weekly session: a (section, course, faculty) link with loadHours = 4
+    // becomes 4 nodes. Sessions of one link share a section and a faculty, so buildEdges()
+    // already makes them neighbors and no two of them can get the same slot.
     void buildFromDataset(const Dataset& dataset) {
         for (const auto& [sec, course, fac] : dataset.getNodeSpecs()) {
-            addNode(course, sec, fac);
+            for (int session = 0; session < course->getLoadHours(); ++session) {
+                addNode(course, sec, fac, session);
+            }
         }
         buildEdges();
     }
