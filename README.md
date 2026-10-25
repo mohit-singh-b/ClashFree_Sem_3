@@ -27,7 +27,8 @@ Class Faculty
 Graph : 
 
 class Node 
-    stores a combination of course , section , faculty and a seperate timeslot
+    stores ONE weekly session ( one hour ) of a course , section , faculty combination and a seperate timeslot
+    sessionIndex says which session it is , getSessionCount() gives how many the course has
     stores set of all neighbour node* 
 
     addNeibour() to add a node into the set 
@@ -63,7 +64,7 @@ Class Dataset
     addCourse() , addFaculty() , addSection() , addRoom() to add data ( duplicate ids are rejected ) 
     addSectionCourse() to link a course and its faculty to a section 
     getCourse() , getFaculty() , getSection() , getRoom() to look up by id 
-    validate() returns a list of problems found in the loaded data 
+    validate() returns a list of problems found in the loaded data ( also checks hours : faculty hours vs maxLoad and available slots , section hours vs slots in the week , loadHours below 1 ) 
 
 
 Loader : 
@@ -76,7 +77,9 @@ class DataLoader
 
 Graph ( added ) : 
 
-    buildFromDataset() in graph creates one node for every (section , course , faculty) link and then builds the edges 
+    buildFromDataset() in graph creates loadHours nodes for every (section , course , faculty) link ( one per weekly session , labs are also one hour each for now ) and then builds the edges 
+    sessions of the same link are neighbours already ( same section ) , so they always get different slots 
+    sem3 has 127 links = 425 nodes 
 
 
 Scheduler : 

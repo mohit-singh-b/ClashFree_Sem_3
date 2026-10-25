@@ -1,14 +1,29 @@
+#include <fstream>
 #include <iostream>
+#include <memory>
+#include "json.hpp"
 #include "loader/DataLoader.hpp"
 #include "models/Dataset.hpp"
 #include "graph/Graph.hpp"
 #include "models/TimeSlotPool.hpp"
+#include "scheduler/GreedyScheduler.hpp"
 #include "scheduler/DSATURScheduler.hpp"
+
+std::unique_ptr<Scheduler> makeScheduler(const std::string& name) {
+    if (name == "greedy") return std::make_unique<GreedyScheduler>();
+    if (name == "dsatur") return std::make_unique<DSATURScheduler>();
+    throw std::runtime_error("Unknown algorithm '" + name + "' (use greedy or dsatur)");
+}
 
 int main(int argc, char* argv[]) {
     std::string filepath = "data.json";
     if (argc > 1) {
         filepath = argv[1];
+    }
+
+    std::string algorithm = "greedy";
+    if (argc > 2) {
+        algorithm = argv[2];
     }
 
     std::cout << "Loading dataset from: " << filepath << "\n";
@@ -33,10 +48,10 @@ int main(int argc, char* argv[]) {
             return 1;
         }
 
-        DSATURScheduler scheduler;
-        const ScheduleResult result = scheduler.schedule(graph, pool);
+        std::unique_ptr<Scheduler> scheduler = makeScheduler(algorithm);
+        const ScheduleResult result = scheduler->schedule(graph, pool);
 
-        std::cout << "\nAlgorithm: " << scheduler.name() << "\n"
+        std::cout << "\nAlgorithm: " << scheduler->name() << "\n"
                   << "Scheduling " << (result.success ? "succeeded" : "could not place every session") << ".\n"
                   << "Sessions assigned: " << result.timetable.assignedCount()
                   << " / " << graph.size() << "\n"
@@ -44,22 +59,47 @@ int main(int argc, char* argv[]) {
                   << "Runtime: " << result.runtimeMs << " ms\n\n";
 
         const char* dayNames[] = {"MON", "TUE", "WED", "THU", "FRI", "SAT"};
+        nlohmann::json assignments = nlohmann::json::array();
+        nlohmann::json unassigned = nlohmann::json::array();
         for (const auto& nodePtr : graph.getNodes()) {
             const Node& node = *nodePtr;
+            nlohmann::json entry = {{"node", node.getId()},
+                                    {"section", node.getSection()->getName()},
+                                    {"courseId", node.getCourse()->getId()},
+                                    {"facultyId", node.getFaculty()->getId()},
+                                    {"faculty", node.getFaculty()->getName()},
+                                    {"session", node.getSessionIndex() + 1},
+                                    {"sessions", node.getSessionCount()}};
+            const std::string sessionLabel = "  (" + std::to_string(node.getSessionIndex() + 1) +
+                                             "/" + std::to_string(node.getSessionCount()) + ")";
             if (!result.timetable.isAssigned(node.getId())) {
+                unassigned.push_back(entry);
                 std::cout << "UNASSIGNED  " << node.getSection()->getName()
-                          << "  course " << node.getCourse()->getId()
+                          << "  course " << node.getCourse()->getId() << sessionLabel
                           << "  faculty " << node.getFaculty()->getName() << "\n";
                 continue;
             }
 
             const TimeSlot& slot = result.timetable.slotAt(node.getId());
             const int dayIndex = static_cast<int>(slot.getDay());
+            entry["day"] = dayNames[dayIndex];
+            entry["period"] = slot.getPeriod();
+            assignments.push_back(entry);
             std::cout << dayNames[dayIndex] << " period " << slot.getPeriod()
                       << "  " << node.getSection()->getName()
-                      << "  course " << node.getCourse()->getId()
+                      << "  course " << node.getCourse()->getId() << sessionLabel
                       << "  faculty " << node.getFaculty()->getName() << "\n";
         }
+
+        nlohmann::json report = {{"algorithm", scheduler->name()},
+                                 {"success", result.success},
+                                 {"assigned", result.timetable.assignedCount()},
+                                 {"total", graph.size()},
+                                 {"slotsUsed", result.slotsUsed},
+                                 {"runtimeMs", result.runtimeMs},
+                                 {"assignments", assignments},
+                                 {"unassigned", unassigned}};
+        std::ofstream("timetable.json") << report.dump(2);
 
         graph.exportEdgeList("edges.txt");
 

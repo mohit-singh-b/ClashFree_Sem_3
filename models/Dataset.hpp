@@ -163,6 +163,30 @@ public:
                                    std::to_string(it->second) + " hours, above maxLoad " +
                                    std::to_string(f.getMaxLoad()));
             }
+            // Each hour is one session needing its own slot, so a faculty member cannot
+            // teach more hours than the slots they are available in.
+            if (it != hoursByFaculty.end() &&
+                it->second > static_cast<int>(f.getAvailableSlots().size())) {
+                problems.push_back("Faculty " + f.getName() + " is assigned " +
+                                   std::to_string(it->second) + " hours but is available in only " +
+                                   std::to_string(f.getAvailableSlots().size()) + " slots");
+            }
+        }
+
+        // Each hour of a course is one session, so a course with no hours schedules nothing,
+        // and a section cannot have more hours than there are slots in the week.
+        for (const auto& c : courses) {
+            if (c.getLoadHours() < 1) {
+                problems.push_back("Course " + c.getName() + " has loadHours below 1, "
+                                   "so it creates no sessions");
+            }
+        }
+        for (const auto& sec : sections) {
+            if (sec.totalWeeklyHours() > days * periodsPerDay) {
+                problems.push_back("Section " + sec.getName() + " needs " +
+                                   std::to_string(sec.totalWeeklyHours()) + " hours but the week has only " +
+                                   std::to_string(days * periodsPerDay) + " slots");
+            }
         }
 
         return problems;

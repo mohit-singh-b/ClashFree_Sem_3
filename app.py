@@ -3,7 +3,7 @@ import json
 import re
 import subprocess
 import tempfile
-import time
+import zipfile
 from pathlib import Path
 
 import pandas as pd
@@ -14,6 +14,7 @@ DAYS = ["MON", "TUE", "WED", "THU", "FRI", "SAT"]
 TIMES = ["8:00-8:55", "9:00-9:55", "9:55-10:50", "11:10-12:05", "12:05-1:00",
          "1:55-2:50", "3:10-4:05", "4:05-5:00", "5:00-5:55"]
 LUNCH_AFTER = 5
+ALGORITHMS = ["Greedy", "DSATUR"]
 
 FILES = {
     "faculty.csv": (True, ["id", "name", "maxLoad"]),
@@ -90,38 +91,72 @@ def find_executable():
     return next((c for c in candidates if c.is_file()), None)
 
 
-def run_cpp(exe, data):
+def run_cpp(exe, data, algorithm):
     with tempfile.TemporaryDirectory() as tmp:
-        (Path(tmp) / "data.json").write_text(json.dumps(data), encoding="utf-8")
-        proc = subprocess.run([str(exe), "data.json"], cwd=tmp, capture_output=True, text=True, timeout=60)
-        edges_file = Path(tmp) / "edges.txt"
+        tmp = Path(tmp)
+        (tmp / "data.json").write_text(json.dumps(data), encoding="utf-8")
+        proc = subprocess.run([str(exe), "data.json", algorithm.lower()], cwd=tmp, capture_output=True, text=True, timeout=60)
+        edges_file, report_file = tmp / "edges.txt", tmp / "timetable.json"
         edges = len(edges_file.read_text().splitlines()) if edges_file.exists() else 0
+        schedule = json.loads(report_file.read_text()) if report_file.exists() else None
     slots = re.search(r"Time slots available:\s*(\d+)", proc.stdout)
+    messages = [l.strip() for l in proc.stderr.splitlines() if l.strip()]
+    if proc.returncode == 0 and schedule is None:
+        messages.append("This clashfree build did not write timetable.json. Recompile it from the latest main.cpp.")
     return {
-        "ok": proc.returncode == 0,
-        "nodes": sum(":  [" in line for line in proc.stdout.splitlines()),
+        "ok": proc.returncode == 0 and schedule is not None,
         "edges": edges,
         "slots": int(slots.group(1)) if slots else None,
-        "messages": [l.strip() for l in proc.stderr.splitlines() if l.strip()],
+        "schedule": schedule,
+        "messages": messages,
     }
 
 
-def skeleton(days, periods):
+def grid(days, periods, cells):
     index, rows = [], []
     for p in range(1, periods + 1):
         index.append(f"P{p}  {TIMES[p - 1]}" if p <= len(TIMES) else f"P{p}")
-        rows.append([""] * days)
+        rows.append([cells.get((d, p), "") for d in range(days)])
         if periods == len(TIMES) and p == LUNCH_AFTER:
             index.append("")
             rows.append(["LUNCH"] * days)
     return pd.DataFrame(rows, index=index, columns=DAYS[:days])
 
 
-def skeleton_csv(names, days, periods):
-    rows = [(s, DAYS[d], p, TIMES[p - 1] if p <= len(TIMES) else "", "", "", "")
-            for s in names for d in range(days) for p in range(1, periods + 1)]
-    columns = ["section", "day", "period", "time", "course", "faculty", "room"]
+def session_rows(schedule, course_label):
+    rows = [{"section": a["section"], "day": a["day"], "period": a["period"],
+             "time": TIMES[a["period"] - 1] if a["period"] <= len(TIMES) else "",
+             "course": course_label.get(a["courseId"], a["courseId"]), "faculty": a["faculty"]}
+            for a in schedule["assignments"]]
+    return sorted(rows, key=lambda r: (r["section"], DAYS.index(r["day"]), r["period"]))
+
+
+def timetable_csv(rows):
+    columns = ["section", "day", "period", "time", "course", "faculty"]
     return pd.DataFrame(rows, columns=columns).to_csv(index=False).encode("utf-8")
+
+
+def grid_for(rows, view, who, days, periods):
+    key, other = ("section", "faculty") if view == "Section" else ("faculty", "section")
+    cells = {}
+    for r in rows:
+        if r[key] == who:
+            slot, text = (DAYS.index(r["day"]), r["period"]), f"{r['course']} · {r[other]}"
+            cells[slot] = f"{cells[slot]} / {text}" if slot in cells else text
+    return grid(days, periods, cells)
+
+
+def grid_csv(df):
+    return df.to_csv(index_label="period").encode("utf-8")
+
+
+def zip_grids(rows, view, names, days, periods):
+    buffer = io.BytesIO()
+    with zipfile.ZipFile(buffer, "w", zipfile.ZIP_DEFLATED) as archive:
+        for name in names:
+            filename = re.sub(r"[^\w.-]+", "_", name).strip("_") + ".csv"
+            archive.writestr(filename, grid_csv(grid_for(rows, view, name, days, periods)))
+    return buffer.getvalue()
 
 
 def read_inputs():
@@ -174,7 +209,12 @@ def show_files(raw):
     return frames, not missing
 
 
-def load(frames):
+def pick_algorithm():
+    with st.sidebar:
+        return st.selectbox("Algorithm", ALGORITHMS)
+
+
+def load(frames, algorithm):
     st.session_state.pop("loaded", None)
     try:
         data = build_json(frames)
@@ -187,21 +227,16 @@ def load(frames):
                    "g++ -std=c++17 -I. main.cpp -o clashfree")
     else:
         try:
-            result = run_cpp(exe, data)
+            result = run_cpp(exe, data, algorithm)
+            schedule = result["schedule"]
+            if schedule and schedule["algorithm"].lower() != algorithm.lower():
+                result["messages"].append(f"The program ran {schedule['algorithm']}, not {algorithm}. "
+                                          "Recompile it from the latest main.cpp.")
         except (OSError, subprocess.SubprocessError) as e:
             st.error(f"Could not run the C++ program: {e}")
             return False
     st.session_state["loaded"] = {"data": data, "result": result}
     return result is None or result["ok"]
-
-
-def fake_progress():
-    bar = st.progress(0.0)
-    steps = ["Building conflict graph", "Assigning time slots", "Checking constraints", "Finishing"]
-    for i, step in enumerate(steps, start=1):
-        bar.progress(i / len(steps), text=step)
-        time.sleep(0.4)
-    bar.empty()
 
 
 def summary_step():
@@ -218,8 +253,12 @@ def summary_step():
             col.metric(label, value)
         if result:
             if result["ok"]:
-                st.success(f"C++ loaded it: {result['nodes']} sessions, {result['edges']} conflict edges, "
+                sch = result["schedule"]
+                st.success(f"C++ loaded it: {sch['total']} sessions, {result['edges']} conflict edges, "
                            f"{result['slots']} time slots.")
+                message = (f"{sch['algorithm']} placed {sch['assigned']} of {sch['total']} sessions "
+                           f"using {sch['slotsUsed']} slots in {sch['runtimeMs']:.2f} ms.")
+                (st.success if sch["success"] else st.warning)(message)
             else:
                 st.error("The C++ loader rejected the data:")
             for m in result["messages"]:
@@ -230,28 +269,46 @@ def timetable_step():
     loaded = st.session_state.get("loaded")
     if not (st.session_state.get("generated") and loaded):
         return
-    data = loaded["data"]
-    days, periods = data["config"]["days"], data["config"]["periodsPerDay"]
-    names = [s["name"] for s in data["sections"]]
+    data, result = loaded["data"], loaded["result"]
+    schedule = result["schedule"] if result else None
     with st.container(border=True):
         st.subheader("Timetable")
-        st.info("Placeholder: the scheduling algorithms are not implemented yet, so the timetable is empty.")
-        chosen = st.selectbox("Section", names)
-        st.dataframe(skeleton(days, periods))
+        if not schedule:
+            st.warning("No timetable: the C++ program did not run.")
+            return
+        days, periods = data["config"]["days"], data["config"]["periodsPerDay"]
+        names = [s["name"] for s in data["sections"]]
+        course_label = {c["id"]: c.get("code", c["name"]) for c in data["courses"]}
+        rows = session_rows(schedule, course_label)
 
-        course = {c["id"]: c.get("code", c["name"]) for c in data["courses"]}
-        faculty = {f["id"]: f["name"] for f in data["faculty"]}
-        section = next(s for s in data["sections"] if s["name"] == chosen)
-        with st.expander(f"Sessions waiting to be placed for {chosen}"):
-            st.dataframe(pd.DataFrame([{"course": course.get(e["courseId"]), "faculty": faculty.get(e["facultyId"])}
-                                       for e in section["courses"]]), hide_index=True)
+        view = st.radio("View by", ["Section", "Faculty"], horizontal=True)
+        options = names if view == "Section" else sorted({r["faculty"] for r in rows})
+        chosen = st.selectbox(view, options)
+        table_view = grid_for(rows, view, chosen, days, periods)
+        st.dataframe(table_view)
 
+        if schedule["unassigned"]:
+            with st.expander(f"{len(schedule['unassigned'])} sessions could not be placed"):
+                st.dataframe(pd.DataFrame([{"section": u["section"],
+                                            "course": course_label.get(u["courseId"], u["courseId"]),
+                                            "session": f"{u.get('session', 1)}/{u.get('sessions', 1)}",
+                                            "faculty": u["faculty"]} for u in schedule["unassigned"]]),
+                             hide_index=True)
+        st.caption(f"{schedule['algorithm']}: every weekly hour of a course is its own one-hour session. "
+                   "Rooms are not scheduled yet.")
+
+        file_stem = re.sub(r"[^\w.-]+", "_", chosen).strip("_")
         left, right = st.columns(2)
-        left.download_button("Download empty timetable (CSV)", skeleton_csv(names, days, periods),
-                             file_name="timetable_empty.csv", mime="text/csv")
-        right.download_button("Download loaded data (JSON)", json.dumps(data, indent=2),
-                              file_name="data_loaded.json", mime="application/json")
-
+        left.download_button(f"Download {chosen} (CSV)", grid_csv(table_view),
+                             file_name=f"{file_stem}.csv", mime="text/csv")
+        right.download_button(f"Download every {view.lower()} (ZIP)",
+                              zip_grids(rows, view, options, days, periods),
+                              file_name=f"timetables_by_{view.lower()}.zip", mime="application/zip")
+        left, right = st.columns(2)
+        left.download_button("Download all sessions (CSV)", timetable_csv(rows),
+                             file_name="timetable.csv", mime="text/csv")
+        right.download_button("Download result (JSON)", json.dumps(schedule, indent=2),
+                              file_name="timetable.json", mime="application/json")
 
 CSS = """
 <style>
@@ -281,7 +338,8 @@ def main():
     st.markdown(CSS + HERO, unsafe_allow_html=True)
 
     raw = read_inputs()
-    signature = tuple(sorted((k, len(v)) for k, v in raw.items()))
+    algorithm = pick_algorithm()
+    signature = (tuple(sorted((k, len(v)) for k, v in raw.items())), algorithm)
     if st.session_state.get("signature") != signature:
         st.session_state.clear()
         st.session_state["signature"] = signature
@@ -294,11 +352,9 @@ def main():
         submit = submit_col.button("Submit", type="primary", disabled=not can_load)
 
     if check or submit:
-        st.session_state["generated"] = False
-        ok = load(frames)
-        if submit and ok:
-            fake_progress()
-            st.session_state["generated"] = True
+        with st.spinner("Running the scheduler..."):
+            ok = load(frames, algorithm)
+        st.session_state["generated"] = bool(submit and ok)
 
     summary_step()
     timetable_step()
