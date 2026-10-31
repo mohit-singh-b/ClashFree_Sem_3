@@ -127,7 +127,10 @@ app.py
 How to run : 
 
     g++ -std=c++17 -I. main.cpp -o clashfree 
-    ./clashfree sem3.json 
+    ./clashfree sem3.json
+
+    # Choose an algorithm: greedy (default), dsatur, or backtracking
+    ./clashfree sem3.json backtracking
 
     writes edges.txt , the edge list of the conflict graph 
 

@@ -1,5 +1,5 @@
 {
-  "algorithm": "DSATUR",
+  "algorithm": "Backtracking",
   "assigned": 425,
   "assignments": [
     {
@@ -9,6 +9,8 @@
       "facultyId": 2,
       "node": 0,
       "period": 6,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "CSE-A",
       "session": 1,
       "sessions": 4
@@ -20,6 +22,8 @@
       "facultyId": 2,
       "node": 1,
       "period": 7,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "CSE-A",
       "session": 2,
       "sessions": 4
@@ -31,6 +35,8 @@
       "facultyId": 2,
       "node": 2,
       "period": 8,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-A",
       "session": 3,
       "sessions": 4
@@ -42,6 +48,8 @@
       "facultyId": 2,
       "node": 3,
       "period": 7,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-A",
       "session": 4,
       "sessions": 4
@@ -53,6 +61,8 @@
       "facultyId": 3,
       "node": 4,
       "period": 4,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-A",
       "session": 1,
       "sessions": 4
@@ -64,6 +74,8 @@
       "facultyId": 3,
       "node": 5,
       "period": 1,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-A",
       "session": 2,
       "sessions": 4
@@ -75,6 +87,8 @@
       "facultyId": 3,
       "node": 6,
       "period": 4,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-A",
       "session": 3,
       "sessions": 4
@@ -86,6 +100,8 @@
       "facultyId": 3,
       "node": 7,
       "period": 5,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-A",
       "session": 4,
       "sessions": 4
@@ -97,6 +113,8 @@
       "facultyId": 1,
       "node": 8,
       "period": 3,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-A",
       "session": 1,
       "sessions": 4
@@ -108,6 +126,8 @@
       "facultyId": 1,
       "node": 9,
       "period": 1,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-A",
       "session": 2,
       "sessions": 4
@@ -119,6 +139,8 @@
       "facultyId": 1,
       "node": 10,
       "period": 6,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-A",
       "session": 3,
       "sessions": 4
@@ -130,6 +152,8 @@
       "facultyId": 1,
       "node": 11,
       "period": 7,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-A",
       "session": 4,
       "sessions": 4
@@ -141,6 +165,8 @@
       "facultyId": 4,
       "node": 12,
       "period": 5,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "CSE-A",
       "session": 1,
       "sessions": 3
@@ -152,6 +178,8 @@
       "facultyId": 4,
       "node": 13,
       "period": 5,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-A",
       "session": 2,
       "sessions": 3
@@ -163,6 +191,8 @@
       "facultyId": 4,
       "node": 14,
       "period": 3,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-A",
       "session": 3,
       "sessions": 3
@@ -174,6 +204,8 @@
       "facultyId": 6,
       "node": 15,
       "period": 4,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-A",
       "session": 1,
       "sessions": 4
@@ -185,6 +217,8 @@
       "facultyId": 6,
       "node": 16,
       "period": 3,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-A",
       "session": 2,
       "sessions": 4
@@ -196,6 +230,8 @@
       "facultyId": 6,
       "node": 17,
       "period": 9,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-A",
       "session": 3,
       "sessions": 4
@@ -207,6 +243,8 @@
       "facultyId": 6,
       "node": 18,
       "period": 4,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-A",
       "session": 4,
       "sessions": 4
@@ -218,6 +256,8 @@
       "facultyId": 3,
       "node": 19,
       "period": 5,
+      "room": "New Lab-2",
+      "roomId": 22,
       "section": "CSE-A",
       "session": 1,
       "sessions": 2
@@ -229,6 +269,8 @@
       "facultyId": 3,
       "node": 20,
       "period": 6,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "CSE-A",
       "session": 2,
       "sessions": 2
@@ -240,6 +282,8 @@
       "facultyId": 5,
       "node": 21,
       "period": 8,
+      "room": "New Lab-2",
+      "roomId": 22,
       "section": "CSE-A",
       "session": 1,
       "sessions": 2
@@ -251,6 +295,8 @@
       "facultyId": 5,
       "node": 22,
       "period": 8,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-A",
       "session": 2,
       "sessions": 2
@@ -262,6 +308,8 @@
       "facultyId": 2,
       "node": 23,
       "period": 4,
+      "room": "CR-12",
+      "roomId": 14,
       "section": "CSE-B",
       "session": 1,
       "sessions": 4
@@ -273,6 +321,8 @@
       "facultyId": 2,
       "node": 24,
       "period": 7,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-B",
       "session": 2,
       "sessions": 4
@@ -284,6 +334,8 @@
       "facultyId": 2,
       "node": 25,
       "period": 9,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "CSE-B",
       "session": 3,
       "sessions": 4
@@ -295,6 +347,8 @@
       "facultyId": 2,
       "node": 26,
       "period": 7,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "CSE-B",
       "session": 4,
       "sessions": 4
@@ -306,6 +360,8 @@
       "facultyId": 3,
       "node": 27,
       "period": 3,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-B",
       "session": 1,
       "sessions": 4
@@ -317,6 +373,8 @@
       "facultyId": 3,
       "node": 28,
       "period": 9,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-B",
       "session": 2,
       "sessions": 4
@@ -328,6 +386,8 @@
       "facultyId": 3,
       "node": 29,
       "period": 5,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-B",
       "session": 3,
       "sessions": 4
@@ -339,6 +399,8 @@
       "facultyId": 3,
       "node": 30,
       "period": 2,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-B",
       "session": 4,
       "sessions": 4
@@ -350,6 +412,8 @@
       "facultyId": 1,
       "node": 31,
       "period": 3,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-B",
       "session": 1,
       "sessions": 4
@@ -361,6 +425,8 @@
       "facultyId": 1,
       "node": 32,
       "period": 4,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-B",
       "session": 2,
       "sessions": 4
@@ -372,6 +438,8 @@
       "facultyId": 1,
       "node": 33,
       "period": 4,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-B",
       "session": 3,
       "sessions": 4
@@ -383,6 +451,8 @@
       "facultyId": 1,
       "node": 34,
       "period": 2,
+      "room": "CR-7",
+      "roomId": 12,
       "section": "CSE-B",
       "session": 4,
       "sessions": 4
@@ -394,6 +464,8 @@
       "facultyId": 4,
       "node": 35,
       "period": 8,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-B",
       "session": 1,
       "sessions": 3
@@ -405,6 +477,8 @@
       "facultyId": 4,
       "node": 36,
       "period": 9,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-B",
       "session": 2,
       "sessions": 3
@@ -416,6 +490,8 @@
       "facultyId": 4,
       "node": 37,
       "period": 4,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-B",
       "session": 3,
       "sessions": 3
@@ -427,6 +503,8 @@
       "facultyId": 6,
       "node": 38,
       "period": 4,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-B",
       "session": 1,
       "sessions": 4
@@ -438,6 +516,8 @@
       "facultyId": 6,
       "node": 39,
       "period": 5,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-B",
       "session": 2,
       "sessions": 4
@@ -449,6 +529,8 @@
       "facultyId": 6,
       "node": 40,
       "period": 4,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-B",
       "session": 3,
       "sessions": 4
@@ -460,6 +542,8 @@
       "facultyId": 6,
       "node": 41,
       "period": 1,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-B",
       "session": 4,
       "sessions": 4
@@ -471,6 +555,8 @@
       "facultyId": 7,
       "node": 42,
       "period": 6,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-B",
       "session": 1,
       "sessions": 2
@@ -482,6 +568,8 @@
       "facultyId": 7,
       "node": 43,
       "period": 6,
+      "room": "New Lab-2",
+      "roomId": 22,
       "section": "CSE-B",
       "session": 2,
       "sessions": 2
@@ -493,6 +581,8 @@
       "facultyId": 5,
       "node": 44,
       "period": 8,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-B",
       "session": 1,
       "sessions": 2
@@ -504,6 +594,8 @@
       "facultyId": 5,
       "node": 45,
       "period": 5,
+      "room": "Lab-1",
+      "roomId": 23,
       "section": "CSE-B",
       "session": 2,
       "sessions": 2
@@ -515,6 +607,8 @@
       "facultyId": 6,
       "node": 46,
       "period": 5,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-C",
       "session": 1,
       "sessions": 4
@@ -526,6 +620,8 @@
       "facultyId": 6,
       "node": 47,
       "period": 5,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-C",
       "session": 2,
       "sessions": 4
@@ -537,6 +633,8 @@
       "facultyId": 6,
       "node": 48,
       "period": 6,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-C",
       "session": 3,
       "sessions": 4
@@ -548,6 +646,8 @@
       "facultyId": 6,
       "node": 49,
       "period": 5,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-C",
       "session": 4,
       "sessions": 4
@@ -559,6 +659,8 @@
       "facultyId": 3,
       "node": 50,
       "period": 1,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-C",
       "session": 1,
       "sessions": 4
@@ -570,6 +672,8 @@
       "facultyId": 3,
       "node": 51,
       "period": 1,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-C",
       "session": 2,
       "sessions": 4
@@ -581,6 +685,8 @@
       "facultyId": 3,
       "node": 52,
       "period": 9,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-C",
       "session": 3,
       "sessions": 4
@@ -592,6 +698,8 @@
       "facultyId": 3,
       "node": 53,
       "period": 7,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-C",
       "session": 4,
       "sessions": 4
@@ -603,6 +711,8 @@
       "facultyId": 1,
       "node": 54,
       "period": 2,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-C",
       "session": 1,
       "sessions": 4
@@ -614,6 +724,8 @@
       "facultyId": 1,
       "node": 55,
       "period": 8,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "CSE-C",
       "session": 2,
       "sessions": 4
@@ -625,6 +737,8 @@
       "facultyId": 1,
       "node": 56,
       "period": 3,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-C",
       "session": 3,
       "sessions": 4
@@ -636,6 +750,8 @@
       "facultyId": 1,
       "node": 57,
       "period": 3,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-C",
       "session": 4,
       "sessions": 4
@@ -647,6 +763,8 @@
       "facultyId": 8,
       "node": 58,
       "period": 8,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-C",
       "session": 1,
       "sessions": 3
@@ -658,6 +776,8 @@
       "facultyId": 8,
       "node": 59,
       "period": 7,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-C",
       "session": 2,
       "sessions": 3
@@ -669,6 +789,8 @@
       "facultyId": 8,
       "node": 60,
       "period": 5,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-C",
       "session": 3,
       "sessions": 3
@@ -680,6 +802,8 @@
       "facultyId": 9,
       "node": 61,
       "period": 1,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-C",
       "session": 1,
       "sessions": 4
@@ -691,6 +815,8 @@
       "facultyId": 9,
       "node": 62,
       "period": 9,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-C",
       "session": 2,
       "sessions": 4
@@ -702,6 +828,8 @@
       "facultyId": 9,
       "node": 63,
       "period": 4,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-C",
       "session": 3,
       "sessions": 4
@@ -713,6 +841,8 @@
       "facultyId": 9,
       "node": 64,
       "period": 2,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-C",
       "session": 4,
       "sessions": 4
@@ -724,6 +854,8 @@
       "facultyId": 10,
       "node": 65,
       "period": 3,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-C",
       "session": 1,
       "sessions": 2
@@ -735,6 +867,8 @@
       "facultyId": 10,
       "node": 66,
       "period": 9,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-C",
       "session": 2,
       "sessions": 2
@@ -746,6 +880,8 @@
       "facultyId": 1,
       "node": 67,
       "period": 2,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-C",
       "session": 1,
       "sessions": 2
@@ -757,6 +893,8 @@
       "facultyId": 1,
       "node": 68,
       "period": 2,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-C",
       "session": 2,
       "sessions": 2
@@ -768,6 +906,8 @@
       "facultyId": 6,
       "node": 69,
       "period": 2,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-D",
       "session": 1,
       "sessions": 4
@@ -779,6 +919,8 @@
       "facultyId": 6,
       "node": 70,
       "period": 1,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-D",
       "session": 2,
       "sessions": 4
@@ -790,6 +932,8 @@
       "facultyId": 6,
       "node": 71,
       "period": 6,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-D",
       "session": 3,
       "sessions": 4
@@ -801,6 +945,8 @@
       "facultyId": 6,
       "node": 72,
       "period": 6,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-D",
       "session": 4,
       "sessions": 4
@@ -812,6 +958,8 @@
       "facultyId": 3,
       "node": 73,
       "period": 8,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-D",
       "session": 1,
       "sessions": 4
@@ -823,6 +971,8 @@
       "facultyId": 3,
       "node": 74,
       "period": 6,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-D",
       "session": 2,
       "sessions": 4
@@ -834,6 +984,8 @@
       "facultyId": 3,
       "node": 75,
       "period": 1,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-D",
       "session": 3,
       "sessions": 4
@@ -845,6 +997,8 @@
       "facultyId": 3,
       "node": 76,
       "period": 2,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-D",
       "session": 4,
       "sessions": 4
@@ -856,6 +1010,8 @@
       "facultyId": 11,
       "node": 77,
       "period": 7,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "CSE-D",
       "session": 1,
       "sessions": 4
@@ -867,6 +1023,8 @@
       "facultyId": 11,
       "node": 78,
       "period": 5,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-D",
       "session": 2,
       "sessions": 4
@@ -878,6 +1036,8 @@
       "facultyId": 11,
       "node": 79,
       "period": 9,
+      "room": "CR-7",
+      "roomId": 12,
       "section": "CSE-D",
       "session": 3,
       "sessions": 4
@@ -889,6 +1049,8 @@
       "facultyId": 11,
       "node": 80,
       "period": 9,
+      "room": "CR-8",
+      "roomId": 13,
       "section": "CSE-D",
       "session": 4,
       "sessions": 4
@@ -900,6 +1062,8 @@
       "facultyId": 8,
       "node": 81,
       "period": 8,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-D",
       "session": 1,
       "sessions": 3
@@ -911,6 +1075,8 @@
       "facultyId": 8,
       "node": 82,
       "period": 4,
+      "room": "CR-7",
+      "roomId": 12,
       "section": "CSE-D",
       "session": 2,
       "sessions": 3
@@ -922,6 +1088,8 @@
       "facultyId": 8,
       "node": 83,
       "period": 8,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-D",
       "session": 3,
       "sessions": 3
@@ -933,6 +1101,8 @@
       "facultyId": 9,
       "node": 84,
       "period": 2,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-D",
       "session": 1,
       "sessions": 4
@@ -944,6 +1114,8 @@
       "facultyId": 9,
       "node": 85,
       "period": 3,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-D",
       "session": 2,
       "sessions": 4
@@ -955,6 +1127,8 @@
       "facultyId": 9,
       "node": 86,
       "period": 4,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-D",
       "session": 3,
       "sessions": 4
@@ -966,6 +1140,8 @@
       "facultyId": 9,
       "node": 87,
       "period": 5,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-D",
       "session": 4,
       "sessions": 4
@@ -977,6 +1153,8 @@
       "facultyId": 10,
       "node": 88,
       "period": 6,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-D",
       "session": 1,
       "sessions": 2
@@ -988,6 +1166,8 @@
       "facultyId": 10,
       "node": 89,
       "period": 7,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-D",
       "session": 2,
       "sessions": 2
@@ -999,6 +1179,8 @@
       "facultyId": 12,
       "node": 90,
       "period": 1,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-D",
       "session": 1,
       "sessions": 2
@@ -1010,6 +1192,8 @@
       "facultyId": 12,
       "node": 91,
       "period": 9,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-D",
       "session": 2,
       "sessions": 2
@@ -1021,6 +1205,8 @@
       "facultyId": 6,
       "node": 92,
       "period": 7,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-E",
       "session": 1,
       "sessions": 4
@@ -1032,6 +1218,8 @@
       "facultyId": 6,
       "node": 93,
       "period": 6,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-E",
       "session": 2,
       "sessions": 4
@@ -1043,6 +1231,8 @@
       "facultyId": 6,
       "node": 94,
       "period": 3,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-E",
       "session": 3,
       "sessions": 4
@@ -1054,6 +1244,8 @@
       "facultyId": 6,
       "node": 95,
       "period": 2,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-E",
       "session": 4,
       "sessions": 4
@@ -1065,6 +1257,8 @@
       "facultyId": 14,
       "node": 96,
       "period": 9,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-E",
       "session": 1,
       "sessions": 4
@@ -1076,6 +1270,8 @@
       "facultyId": 14,
       "node": 97,
       "period": 7,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-E",
       "session": 2,
       "sessions": 4
@@ -1087,6 +1283,8 @@
       "facultyId": 14,
       "node": 98,
       "period": 9,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-E",
       "session": 3,
       "sessions": 4
@@ -1098,6 +1296,8 @@
       "facultyId": 14,
       "node": 99,
       "period": 8,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-E",
       "session": 4,
       "sessions": 4
@@ -1109,6 +1309,8 @@
       "facultyId": 13,
       "node": 100,
       "period": 3,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "CSE-E",
       "session": 1,
       "sessions": 4
@@ -1120,6 +1322,8 @@
       "facultyId": 13,
       "node": 101,
       "period": 4,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-E",
       "session": 2,
       "sessions": 4
@@ -1131,6 +1335,8 @@
       "facultyId": 13,
       "node": 102,
       "period": 8,
+      "room": "CR-7",
+      "roomId": 12,
       "section": "CSE-E",
       "session": 3,
       "sessions": 4
@@ -1142,6 +1348,8 @@
       "facultyId": 13,
       "node": 103,
       "period": 8,
+      "room": "CR-7",
+      "roomId": 12,
       "section": "CSE-E",
       "session": 4,
       "sessions": 4
@@ -1153,6 +1361,8 @@
       "facultyId": 8,
       "node": 104,
       "period": 4,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-E",
       "session": 1,
       "sessions": 3
@@ -1164,6 +1374,8 @@
       "facultyId": 8,
       "node": 105,
       "period": 2,
+      "room": "CR-7",
+      "roomId": 12,
       "section": "CSE-E",
       "session": 2,
       "sessions": 3
@@ -1175,6 +1387,8 @@
       "facultyId": 8,
       "node": 106,
       "period": 1,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "CSE-E",
       "session": 3,
       "sessions": 3
@@ -1186,6 +1400,8 @@
       "facultyId": 9,
       "node": 107,
       "period": 4,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-E",
       "session": 1,
       "sessions": 4
@@ -1197,6 +1413,8 @@
       "facultyId": 9,
       "node": 108,
       "period": 2,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-E",
       "session": 2,
       "sessions": 4
@@ -1208,6 +1426,8 @@
       "facultyId": 9,
       "node": 109,
       "period": 3,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-E",
       "session": 3,
       "sessions": 4
@@ -1219,6 +1439,8 @@
       "facultyId": 9,
       "node": 110,
       "period": 2,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-E",
       "session": 4,
       "sessions": 4
@@ -1230,6 +1452,8 @@
       "facultyId": 7,
       "node": 111,
       "period": 5,
+      "room": "New Lab-2",
+      "roomId": 22,
       "section": "CSE-E",
       "session": 1,
       "sessions": 2
@@ -1241,6 +1465,8 @@
       "facultyId": 7,
       "node": 112,
       "period": 6,
+      "room": "Lab-1",
+      "roomId": 23,
       "section": "CSE-E",
       "session": 2,
       "sessions": 2
@@ -1252,6 +1478,8 @@
       "facultyId": 13,
       "node": 113,
       "period": 3,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "CSE-E",
       "session": 1,
       "sessions": 2
@@ -1263,6 +1491,8 @@
       "facultyId": 13,
       "node": 114,
       "period": 3,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-E",
       "session": 2,
       "sessions": 2
@@ -1274,6 +1504,8 @@
       "facultyId": 6,
       "node": 115,
       "period": 1,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-F",
       "session": 1,
       "sessions": 4
@@ -1285,6 +1517,8 @@
       "facultyId": 6,
       "node": 116,
       "period": 8,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-F",
       "session": 2,
       "sessions": 4
@@ -1296,6 +1530,8 @@
       "facultyId": 6,
       "node": 117,
       "period": 7,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-F",
       "session": 3,
       "sessions": 4
@@ -1307,6 +1543,8 @@
       "facultyId": 6,
       "node": 118,
       "period": 2,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-F",
       "session": 4,
       "sessions": 4
@@ -1318,6 +1556,8 @@
       "facultyId": 14,
       "node": 119,
       "period": 4,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-F",
       "session": 1,
       "sessions": 4
@@ -1329,6 +1569,8 @@
       "facultyId": 14,
       "node": 120,
       "period": 3,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-F",
       "session": 2,
       "sessions": 4
@@ -1340,6 +1582,8 @@
       "facultyId": 14,
       "node": 121,
       "period": 1,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-F",
       "session": 3,
       "sessions": 4
@@ -1351,6 +1595,8 @@
       "facultyId": 14,
       "node": 122,
       "period": 9,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-F",
       "session": 4,
       "sessions": 4
@@ -1362,6 +1608,8 @@
       "facultyId": 15,
       "node": 123,
       "period": 4,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-F",
       "session": 1,
       "sessions": 4
@@ -1373,6 +1621,8 @@
       "facultyId": 15,
       "node": 124,
       "period": 5,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "CSE-F",
       "session": 2,
       "sessions": 4
@@ -1384,6 +1634,8 @@
       "facultyId": 15,
       "node": 125,
       "period": 6,
+      "room": "CR-8",
+      "roomId": 13,
       "section": "CSE-F",
       "session": 3,
       "sessions": 4
@@ -1395,6 +1647,8 @@
       "facultyId": 15,
       "node": 126,
       "period": 5,
+      "room": "CR-7",
+      "roomId": 12,
       "section": "CSE-F",
       "session": 4,
       "sessions": 4
@@ -1406,6 +1660,8 @@
       "facultyId": 16,
       "node": 127,
       "period": 3,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-F",
       "session": 1,
       "sessions": 3
@@ -1417,6 +1673,8 @@
       "facultyId": 16,
       "node": 128,
       "period": 2,
+      "room": "CR-8",
+      "roomId": 13,
       "section": "CSE-F",
       "session": 2,
       "sessions": 3
@@ -1428,6 +1686,8 @@
       "facultyId": 16,
       "node": 129,
       "period": 7,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-F",
       "session": 3,
       "sessions": 3
@@ -1439,6 +1699,8 @@
       "facultyId": 9,
       "node": 130,
       "period": 3,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-F",
       "session": 1,
       "sessions": 4
@@ -1450,6 +1712,8 @@
       "facultyId": 9,
       "node": 131,
       "period": 8,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-F",
       "session": 2,
       "sessions": 4
@@ -1461,6 +1725,8 @@
       "facultyId": 9,
       "node": 132,
       "period": 3,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-F",
       "session": 3,
       "sessions": 4
@@ -1472,6 +1738,8 @@
       "facultyId": 9,
       "node": 133,
       "period": 5,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-F",
       "session": 4,
       "sessions": 4
@@ -1483,6 +1751,8 @@
       "facultyId": 18,
       "node": 134,
       "period": 8,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-F",
       "session": 1,
       "sessions": 2
@@ -1494,6 +1764,8 @@
       "facultyId": 18,
       "node": 135,
       "period": 8,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-F",
       "session": 2,
       "sessions": 2
@@ -1505,6 +1777,8 @@
       "facultyId": 17,
       "node": 136,
       "period": 4,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-F",
       "session": 1,
       "sessions": 2
@@ -1516,6 +1790,8 @@
       "facultyId": 17,
       "node": 137,
       "period": 4,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "CSE-F",
       "session": 2,
       "sessions": 2
@@ -1527,6 +1803,8 @@
       "facultyId": 6,
       "node": 138,
       "period": 2,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-G",
       "session": 1,
       "sessions": 4
@@ -1538,6 +1816,8 @@
       "facultyId": 6,
       "node": 139,
       "period": 2,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-G",
       "session": 2,
       "sessions": 4
@@ -1549,6 +1829,8 @@
       "facultyId": 6,
       "node": 140,
       "period": 3,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-G",
       "session": 3,
       "sessions": 4
@@ -1560,6 +1842,8 @@
       "facultyId": 6,
       "node": 141,
       "period": 2,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-G",
       "session": 4,
       "sessions": 4
@@ -1571,6 +1855,8 @@
       "facultyId": 14,
       "node": 142,
       "period": 7,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-G",
       "session": 1,
       "sessions": 4
@@ -1582,6 +1868,8 @@
       "facultyId": 14,
       "node": 143,
       "period": 5,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-G",
       "session": 2,
       "sessions": 4
@@ -1593,6 +1881,8 @@
       "facultyId": 14,
       "node": 144,
       "period": 4,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-G",
       "session": 3,
       "sessions": 4
@@ -1604,6 +1894,8 @@
       "facultyId": 14,
       "node": 145,
       "period": 8,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-G",
       "session": 4,
       "sessions": 4
@@ -1615,6 +1907,8 @@
       "facultyId": 13,
       "node": 146,
       "period": 9,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-G",
       "session": 1,
       "sessions": 4
@@ -1626,6 +1920,8 @@
       "facultyId": 13,
       "node": 147,
       "period": 6,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-G",
       "session": 2,
       "sessions": 4
@@ -1637,6 +1933,8 @@
       "facultyId": 13,
       "node": 148,
       "period": 5,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-G",
       "session": 3,
       "sessions": 4
@@ -1648,6 +1946,8 @@
       "facultyId": 13,
       "node": 149,
       "period": 1,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-G",
       "session": 4,
       "sessions": 4
@@ -1659,6 +1959,8 @@
       "facultyId": 16,
       "node": 150,
       "period": 6,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-G",
       "session": 1,
       "sessions": 3
@@ -1670,6 +1972,8 @@
       "facultyId": 16,
       "node": 151,
       "period": 4,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "CSE-G",
       "session": 2,
       "sessions": 3
@@ -1681,6 +1985,8 @@
       "facultyId": 16,
       "node": 152,
       "period": 3,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-G",
       "session": 3,
       "sessions": 3
@@ -1692,6 +1998,8 @@
       "facultyId": 20,
       "node": 153,
       "period": 9,
+      "room": "New Lab-2",
+      "roomId": 22,
       "section": "CSE-G",
       "session": 1,
       "sessions": 4
@@ -1703,6 +2011,8 @@
       "facultyId": 20,
       "node": 154,
       "period": 7,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "CSE-G",
       "session": 2,
       "sessions": 4
@@ -1714,6 +2024,8 @@
       "facultyId": 20,
       "node": 155,
       "period": 6,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-G",
       "session": 3,
       "sessions": 4
@@ -1725,6 +2037,8 @@
       "facultyId": 20,
       "node": 156,
       "period": 1,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-G",
       "session": 4,
       "sessions": 4
@@ -1736,6 +2050,8 @@
       "facultyId": 14,
       "node": 157,
       "period": 8,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-G",
       "session": 1,
       "sessions": 2
@@ -1747,6 +2063,8 @@
       "facultyId": 14,
       "node": 158,
       "period": 7,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-G",
       "session": 2,
       "sessions": 2
@@ -1758,6 +2076,8 @@
       "facultyId": 19,
       "node": 159,
       "period": 6,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "CSE-G",
       "session": 1,
       "sessions": 2
@@ -1769,6 +2089,8 @@
       "facultyId": 19,
       "node": 160,
       "period": 6,
+      "room": "New Lab-2",
+      "roomId": 22,
       "section": "CSE-G",
       "session": 2,
       "sessions": 2
@@ -1780,6 +2102,8 @@
       "facultyId": 6,
       "node": 161,
       "period": 7,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-H",
       "session": 1,
       "sessions": 4
@@ -1791,6 +2115,8 @@
       "facultyId": 6,
       "node": 162,
       "period": 7,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-H",
       "session": 2,
       "sessions": 4
@@ -1802,6 +2128,8 @@
       "facultyId": 6,
       "node": 163,
       "period": 8,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-H",
       "session": 3,
       "sessions": 4
@@ -1813,6 +2141,8 @@
       "facultyId": 6,
       "node": 164,
       "period": 7,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-H",
       "session": 4,
       "sessions": 4
@@ -1824,6 +2154,8 @@
       "facultyId": 14,
       "node": 165,
       "period": 4,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-H",
       "session": 1,
       "sessions": 4
@@ -1835,6 +2167,8 @@
       "facultyId": 14,
       "node": 166,
       "period": 6,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-H",
       "session": 2,
       "sessions": 4
@@ -1846,6 +2180,8 @@
       "facultyId": 14,
       "node": 167,
       "period": 2,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-H",
       "session": 3,
       "sessions": 4
@@ -1857,6 +2193,8 @@
       "facultyId": 14,
       "node": 168,
       "period": 2,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-H",
       "session": 4,
       "sessions": 4
@@ -1868,6 +2206,8 @@
       "facultyId": 21,
       "node": 169,
       "period": 9,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-H",
       "session": 1,
       "sessions": 4
@@ -1879,6 +2219,8 @@
       "facultyId": 21,
       "node": 170,
       "period": 7,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-H",
       "session": 2,
       "sessions": 4
@@ -1890,6 +2232,8 @@
       "facultyId": 21,
       "node": 171,
       "period": 2,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "CSE-H",
       "session": 3,
       "sessions": 4
@@ -1901,6 +2245,8 @@
       "facultyId": 21,
       "node": 172,
       "period": 2,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "CSE-H",
       "session": 4,
       "sessions": 4
@@ -1912,6 +2258,8 @@
       "facultyId": 8,
       "node": 173,
       "period": 6,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "CSE-H",
       "session": 1,
       "sessions": 3
@@ -1923,6 +2271,8 @@
       "facultyId": 8,
       "node": 174,
       "period": 8,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-H",
       "session": 2,
       "sessions": 3
@@ -1934,6 +2284,8 @@
       "facultyId": 8,
       "node": 175,
       "period": 7,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-H",
       "session": 3,
       "sessions": 3
@@ -1945,6 +2297,8 @@
       "facultyId": 9,
       "node": 176,
       "period": 8,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-H",
       "session": 1,
       "sessions": 4
@@ -1956,6 +2310,8 @@
       "facultyId": 9,
       "node": 177,
       "period": 1,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-H",
       "session": 2,
       "sessions": 4
@@ -1967,6 +2323,8 @@
       "facultyId": 9,
       "node": 178,
       "period": 4,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-H",
       "session": 3,
       "sessions": 4
@@ -1978,6 +2336,8 @@
       "facultyId": 9,
       "node": 179,
       "period": 5,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-H",
       "session": 4,
       "sessions": 4
@@ -1989,6 +2349,8 @@
       "facultyId": 22,
       "node": 180,
       "period": 6,
+      "room": "New Lab-2",
+      "roomId": 22,
       "section": "CSE-H",
       "session": 1,
       "sessions": 2
@@ -2000,6 +2362,8 @@
       "facultyId": 22,
       "node": 181,
       "period": 3,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "CSE-H",
       "session": 2,
       "sessions": 2
@@ -2011,6 +2375,8 @@
       "facultyId": 21,
       "node": 182,
       "period": 1,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-H",
       "session": 1,
       "sessions": 2
@@ -2022,6 +2388,8 @@
       "facultyId": 21,
       "node": 183,
       "period": 1,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-H",
       "session": 2,
       "sessions": 2
@@ -2033,6 +2401,8 @@
       "facultyId": 23,
       "node": 184,
       "period": 3,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-I",
       "session": 1,
       "sessions": 4
@@ -2044,6 +2414,8 @@
       "facultyId": 23,
       "node": 185,
       "period": 3,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-I",
       "session": 2,
       "sessions": 4
@@ -2055,6 +2427,8 @@
       "facultyId": 23,
       "node": 186,
       "period": 3,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-I",
       "session": 3,
       "sessions": 4
@@ -2066,6 +2440,8 @@
       "facultyId": 23,
       "node": 187,
       "period": 3,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-I",
       "session": 4,
       "sessions": 4
@@ -2077,6 +2453,8 @@
       "facultyId": 24,
       "node": 188,
       "period": 7,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-I",
       "session": 1,
       "sessions": 4
@@ -2088,6 +2466,8 @@
       "facultyId": 24,
       "node": 189,
       "period": 6,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-I",
       "session": 2,
       "sessions": 4
@@ -2099,6 +2479,8 @@
       "facultyId": 24,
       "node": 190,
       "period": 1,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-I",
       "session": 3,
       "sessions": 4
@@ -2110,6 +2492,8 @@
       "facultyId": 24,
       "node": 191,
       "period": 1,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-I",
       "session": 4,
       "sessions": 4
@@ -2121,6 +2505,8 @@
       "facultyId": 13,
       "node": 192,
       "period": 6,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-I",
       "session": 1,
       "sessions": 4
@@ -2132,6 +2518,8 @@
       "facultyId": 13,
       "node": 193,
       "period": 5,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-I",
       "session": 2,
       "sessions": 4
@@ -2143,6 +2531,8 @@
       "facultyId": 13,
       "node": 194,
       "period": 7,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-I",
       "session": 3,
       "sessions": 4
@@ -2154,6 +2544,8 @@
       "facultyId": 13,
       "node": 195,
       "period": 5,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-I",
       "session": 4,
       "sessions": 4
@@ -2165,6 +2557,8 @@
       "facultyId": 4,
       "node": 196,
       "period": 7,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-I",
       "session": 1,
       "sessions": 3
@@ -2176,6 +2570,8 @@
       "facultyId": 4,
       "node": 197,
       "period": 8,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-I",
       "session": 2,
       "sessions": 3
@@ -2187,6 +2583,8 @@
       "facultyId": 4,
       "node": 198,
       "period": 6,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-I",
       "session": 3,
       "sessions": 3
@@ -2198,6 +2596,8 @@
       "facultyId": 9,
       "node": 199,
       "period": 1,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-I",
       "session": 1,
       "sessions": 4
@@ -2209,6 +2609,8 @@
       "facultyId": 9,
       "node": 200,
       "period": 1,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-I",
       "session": 2,
       "sessions": 4
@@ -2220,6 +2622,8 @@
       "facultyId": 9,
       "node": 201,
       "period": 9,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-I",
       "session": 3,
       "sessions": 4
@@ -2231,6 +2635,8 @@
       "facultyId": 9,
       "node": 202,
       "period": 7,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-I",
       "session": 4,
       "sessions": 4
@@ -2242,6 +2648,8 @@
       "facultyId": 7,
       "node": 203,
       "period": 3,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-I",
       "session": 1,
       "sessions": 2
@@ -2253,6 +2661,8 @@
       "facultyId": 7,
       "node": 204,
       "period": 2,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-I",
       "session": 2,
       "sessions": 2
@@ -2264,6 +2674,8 @@
       "facultyId": 12,
       "node": 205,
       "period": 6,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "CSE-I",
       "session": 1,
       "sessions": 2
@@ -2275,6 +2687,8 @@
       "facultyId": 12,
       "node": 206,
       "period": 4,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-I",
       "session": 2,
       "sessions": 2
@@ -2286,6 +2700,8 @@
       "facultyId": 23,
       "node": 207,
       "period": 3,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-J",
       "session": 1,
       "sessions": 4
@@ -2297,6 +2713,8 @@
       "facultyId": 23,
       "node": 208,
       "period": 3,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-J",
       "session": 2,
       "sessions": 4
@@ -2308,6 +2726,8 @@
       "facultyId": 23,
       "node": 209,
       "period": 4,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-J",
       "session": 3,
       "sessions": 4
@@ -2319,6 +2739,8 @@
       "facultyId": 23,
       "node": 210,
       "period": 4,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-J",
       "session": 4,
       "sessions": 4
@@ -2330,6 +2752,8 @@
       "facultyId": 25,
       "node": 211,
       "period": 9,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-J",
       "session": 1,
       "sessions": 4
@@ -2341,6 +2765,8 @@
       "facultyId": 25,
       "node": 212,
       "period": 2,
+      "room": "CR-7",
+      "roomId": 12,
       "section": "CSE-J",
       "session": 2,
       "sessions": 4
@@ -2352,6 +2778,8 @@
       "facultyId": 25,
       "node": 213,
       "period": 2,
+      "room": "CR-7",
+      "roomId": 12,
       "section": "CSE-J",
       "session": 3,
       "sessions": 4
@@ -2363,6 +2791,8 @@
       "facultyId": 25,
       "node": 214,
       "period": 2,
+      "room": "CR-8",
+      "roomId": 13,
       "section": "CSE-J",
       "session": 4,
       "sessions": 4
@@ -2374,6 +2804,8 @@
       "facultyId": 21,
       "node": 215,
       "period": 9,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-J",
       "session": 1,
       "sessions": 4
@@ -2385,6 +2817,8 @@
       "facultyId": 21,
       "node": 216,
       "period": 9,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-J",
       "session": 2,
       "sessions": 4
@@ -2396,6 +2830,8 @@
       "facultyId": 21,
       "node": 217,
       "period": 8,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-J",
       "session": 3,
       "sessions": 4
@@ -2407,6 +2843,8 @@
       "facultyId": 21,
       "node": 218,
       "period": 8,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-J",
       "session": 4,
       "sessions": 4
@@ -2418,6 +2856,8 @@
       "facultyId": 16,
       "node": 219,
       "period": 1,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "CSE-J",
       "session": 1,
       "sessions": 3
@@ -2429,6 +2869,8 @@
       "facultyId": 16,
       "node": 220,
       "period": 1,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "CSE-J",
       "session": 2,
       "sessions": 3
@@ -2440,6 +2882,8 @@
       "facultyId": 16,
       "node": 221,
       "period": 1,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-J",
       "session": 3,
       "sessions": 3
@@ -2451,6 +2895,8 @@
       "facultyId": 26,
       "node": 222,
       "period": 8,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-J",
       "session": 1,
       "sessions": 4
@@ -2462,6 +2908,8 @@
       "facultyId": 26,
       "node": 223,
       "period": 8,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-J",
       "session": 2,
       "sessions": 4
@@ -2473,6 +2921,8 @@
       "facultyId": 26,
       "node": 224,
       "period": 8,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-J",
       "session": 3,
       "sessions": 4
@@ -2484,6 +2934,8 @@
       "facultyId": 26,
       "node": 225,
       "period": 8,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-J",
       "session": 4,
       "sessions": 4
@@ -2495,6 +2947,8 @@
       "facultyId": 10,
       "node": 226,
       "period": 1,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "CSE-J",
       "session": 1,
       "sessions": 2
@@ -2506,6 +2960,8 @@
       "facultyId": 10,
       "node": 227,
       "period": 9,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "CSE-J",
       "session": 2,
       "sessions": 2
@@ -2517,6 +2973,8 @@
       "facultyId": 17,
       "node": 228,
       "period": 7,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-J",
       "session": 1,
       "sessions": 2
@@ -2528,6 +2986,8 @@
       "facultyId": 17,
       "node": 229,
       "period": 7,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "CSE-J",
       "session": 2,
       "sessions": 2
@@ -2539,6 +2999,8 @@
       "facultyId": 23,
       "node": 230,
       "period": 4,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-K",
       "session": 1,
       "sessions": 4
@@ -2550,6 +3012,8 @@
       "facultyId": 23,
       "node": 231,
       "period": 4,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-K",
       "session": 2,
       "sessions": 4
@@ -2561,6 +3025,8 @@
       "facultyId": 23,
       "node": 232,
       "period": 4,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "CSE-K",
       "session": 3,
       "sessions": 4
@@ -2572,6 +3038,8 @@
       "facultyId": 23,
       "node": 233,
       "period": 4,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "CSE-K",
       "session": 4,
       "sessions": 4
@@ -2583,6 +3051,8 @@
       "facultyId": 27,
       "node": 234,
       "period": 4,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-K",
       "session": 1,
       "sessions": 4
@@ -2594,6 +3064,8 @@
       "facultyId": 27,
       "node": 235,
       "period": 5,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-K",
       "session": 2,
       "sessions": 4
@@ -2605,6 +3077,8 @@
       "facultyId": 27,
       "node": 236,
       "period": 3,
+      "room": "CR-7",
+      "roomId": 12,
       "section": "CSE-K",
       "session": 3,
       "sessions": 4
@@ -2616,6 +3090,8 @@
       "facultyId": 27,
       "node": 237,
       "period": 1,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "CSE-K",
       "session": 4,
       "sessions": 4
@@ -2627,6 +3103,8 @@
       "facultyId": 19,
       "node": 238,
       "period": 1,
+      "room": "CR-7",
+      "roomId": 12,
       "section": "CSE-K",
       "session": 1,
       "sessions": 4
@@ -2638,6 +3116,8 @@
       "facultyId": 19,
       "node": 239,
       "period": 5,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-K",
       "session": 2,
       "sessions": 4
@@ -2649,6 +3129,8 @@
       "facultyId": 19,
       "node": 240,
       "period": 5,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-K",
       "session": 3,
       "sessions": 4
@@ -2660,6 +3142,8 @@
       "facultyId": 19,
       "node": 241,
       "period": 6,
+      "room": "CR-7",
+      "roomId": 12,
       "section": "CSE-K",
       "session": 4,
       "sessions": 4
@@ -2671,6 +3155,8 @@
       "facultyId": 16,
       "node": 242,
       "period": 2,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "CSE-K",
       "session": 1,
       "sessions": 3
@@ -2682,6 +3168,8 @@
       "facultyId": 16,
       "node": 243,
       "period": 3,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "CSE-K",
       "session": 2,
       "sessions": 3
@@ -2693,6 +3181,8 @@
       "facultyId": 16,
       "node": 244,
       "period": 3,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "CSE-K",
       "session": 3,
       "sessions": 3
@@ -2704,6 +3194,8 @@
       "facultyId": 26,
       "node": 245,
       "period": 9,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-K",
       "session": 1,
       "sessions": 4
@@ -2715,6 +3207,8 @@
       "facultyId": 26,
       "node": 246,
       "period": 9,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "CSE-K",
       "session": 2,
       "sessions": 4
@@ -2726,6 +3220,8 @@
       "facultyId": 26,
       "node": 247,
       "period": 5,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "CSE-K",
       "session": 3,
       "sessions": 4
@@ -2737,6 +3233,8 @@
       "facultyId": 26,
       "node": 248,
       "period": 5,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "CSE-K",
       "session": 4,
       "sessions": 4
@@ -2748,6 +3246,8 @@
       "facultyId": 10,
       "node": 249,
       "period": 3,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-K",
       "session": 1,
       "sessions": 2
@@ -2759,6 +3259,8 @@
       "facultyId": 10,
       "node": 250,
       "period": 4,
+      "room": "Lab-1",
+      "roomId": 23,
       "section": "CSE-K",
       "session": 2,
       "sessions": 2
@@ -2770,6 +3272,8 @@
       "facultyId": 19,
       "node": 251,
       "period": 5,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-K",
       "session": 1,
       "sessions": 2
@@ -2781,6 +3285,8 @@
       "facultyId": 19,
       "node": 252,
       "period": 2,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "CSE-K",
       "session": 2,
       "sessions": 2
@@ -2792,6 +3298,8 @@
       "facultyId": 6,
       "node": 253,
       "period": 9,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-DS1",
       "session": 1,
       "sessions": 4
@@ -2803,6 +3311,8 @@
       "facultyId": 6,
       "node": 254,
       "period": 8,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-DS1",
       "session": 2,
       "sessions": 4
@@ -2814,6 +3324,8 @@
       "facultyId": 6,
       "node": 255,
       "period": 3,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-DS1",
       "session": 3,
       "sessions": 4
@@ -2825,6 +3337,8 @@
       "facultyId": 6,
       "node": 256,
       "period": 3,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-DS1",
       "session": 4,
       "sessions": 4
@@ -2836,6 +3350,8 @@
       "facultyId": 24,
       "node": 257,
       "period": 9,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "AI-DS1",
       "session": 1,
       "sessions": 4
@@ -2847,6 +3363,8 @@
       "facultyId": 24,
       "node": 258,
       "period": 4,
+      "room": "CR-7",
+      "roomId": 12,
       "section": "AI-DS1",
       "session": 2,
       "sessions": 4
@@ -2858,6 +3376,8 @@
       "facultyId": 24,
       "node": 259,
       "period": 3,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "AI-DS1",
       "session": 3,
       "sessions": 4
@@ -2869,6 +3389,8 @@
       "facultyId": 24,
       "node": 260,
       "period": 2,
+      "room": "CR-7",
+      "roomId": 12,
       "section": "AI-DS1",
       "session": 4,
       "sessions": 4
@@ -2880,6 +3402,8 @@
       "facultyId": 28,
       "node": 261,
       "period": 9,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "AI-DS1",
       "session": 1,
       "sessions": 4
@@ -2891,6 +3415,8 @@
       "facultyId": 28,
       "node": 262,
       "period": 8,
+      "room": "CR-7",
+      "roomId": 12,
       "section": "AI-DS1",
       "session": 2,
       "sessions": 4
@@ -2902,6 +3428,8 @@
       "facultyId": 28,
       "node": 263,
       "period": 5,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "AI-DS1",
       "session": 3,
       "sessions": 4
@@ -2913,6 +3441,8 @@
       "facultyId": 28,
       "node": 264,
       "period": 4,
+      "room": "CR-8",
+      "roomId": 13,
       "section": "AI-DS1",
       "session": 4,
       "sessions": 4
@@ -2924,6 +3454,8 @@
       "facultyId": 29,
       "node": 265,
       "period": 1,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "AI-DS1",
       "session": 1,
       "sessions": 4
@@ -2935,6 +3467,8 @@
       "facultyId": 29,
       "node": 266,
       "period": 1,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "AI-DS1",
       "session": 2,
       "sessions": 4
@@ -2946,6 +3480,8 @@
       "facultyId": 29,
       "node": 267,
       "period": 2,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "AI-DS1",
       "session": 3,
       "sessions": 4
@@ -2957,6 +3493,8 @@
       "facultyId": 29,
       "node": 268,
       "period": 2,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "AI-DS1",
       "session": 4,
       "sessions": 4
@@ -2968,6 +3506,8 @@
       "facultyId": 20,
       "node": 269,
       "period": 6,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "AI-DS1",
       "session": 1,
       "sessions": 4
@@ -2979,6 +3519,8 @@
       "facultyId": 20,
       "node": 270,
       "period": 5,
+      "room": "New Lab-2",
+      "roomId": 22,
       "section": "AI-DS1",
       "session": 2,
       "sessions": 4
@@ -2990,6 +3532,8 @@
       "facultyId": 20,
       "node": 271,
       "period": 3,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "AI-DS1",
       "session": 3,
       "sessions": 4
@@ -3001,6 +3545,8 @@
       "facultyId": 20,
       "node": 272,
       "period": 2,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "AI-DS1",
       "session": 4,
       "sessions": 4
@@ -3012,6 +3558,8 @@
       "facultyId": 24,
       "node": 273,
       "period": 8,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "AI-DS1",
       "session": 1,
       "sessions": 2
@@ -3023,6 +3571,8 @@
       "facultyId": 24,
       "node": 274,
       "period": 8,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "AI-DS1",
       "session": 2,
       "sessions": 2
@@ -3034,6 +3584,8 @@
       "facultyId": 28,
       "node": 275,
       "period": 9,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "AI-DS1",
       "session": 1,
       "sessions": 2
@@ -3045,6 +3597,8 @@
       "facultyId": 28,
       "node": 276,
       "period": 9,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "AI-DS1",
       "session": 2,
       "sessions": 2
@@ -3056,6 +3610,8 @@
       "facultyId": 6,
       "node": 277,
       "period": 5,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-DS2",
       "session": 1,
       "sessions": 4
@@ -3067,6 +3623,8 @@
       "facultyId": 6,
       "node": 278,
       "period": 4,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-DS2",
       "session": 2,
       "sessions": 4
@@ -3078,6 +3636,8 @@
       "facultyId": 6,
       "node": 279,
       "period": 9,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-DS2",
       "session": 3,
       "sessions": 4
@@ -3089,6 +3649,8 @@
       "facultyId": 6,
       "node": 280,
       "period": 9,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-DS2",
       "session": 4,
       "sessions": 4
@@ -3100,6 +3662,8 @@
       "facultyId": 24,
       "node": 281,
       "period": 9,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "AI-DS2",
       "session": 1,
       "sessions": 4
@@ -3111,6 +3675,8 @@
       "facultyId": 24,
       "node": 282,
       "period": 8,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "AI-DS2",
       "session": 2,
       "sessions": 4
@@ -3122,6 +3688,8 @@
       "facultyId": 24,
       "node": 283,
       "period": 6,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "AI-DS2",
       "session": 3,
       "sessions": 4
@@ -3133,6 +3701,8 @@
       "facultyId": 24,
       "node": 284,
       "period": 5,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-DS2",
       "session": 4,
       "sessions": 4
@@ -3144,6 +3714,8 @@
       "facultyId": 28,
       "node": 285,
       "period": 9,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "AI-DS2",
       "session": 1,
       "sessions": 4
@@ -3155,6 +3727,8 @@
       "facultyId": 28,
       "node": 286,
       "period": 7,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "AI-DS2",
       "session": 2,
       "sessions": 4
@@ -3166,6 +3740,8 @@
       "facultyId": 28,
       "node": 287,
       "period": 6,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "AI-DS2",
       "session": 3,
       "sessions": 4
@@ -3177,6 +3753,8 @@
       "facultyId": 28,
       "node": 288,
       "period": 1,
+      "room": "CR-7",
+      "roomId": 12,
       "section": "AI-DS2",
       "session": 4,
       "sessions": 4
@@ -3188,6 +3766,8 @@
       "facultyId": 29,
       "node": 289,
       "period": 2,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "AI-DS2",
       "session": 1,
       "sessions": 4
@@ -3199,6 +3779,8 @@
       "facultyId": 29,
       "node": 290,
       "period": 2,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "AI-DS2",
       "session": 2,
       "sessions": 4
@@ -3210,6 +3792,8 @@
       "facultyId": 29,
       "node": 291,
       "period": 1,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "AI-DS2",
       "session": 3,
       "sessions": 4
@@ -3221,6 +3805,8 @@
       "facultyId": 29,
       "node": 292,
       "period": 1,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "AI-DS2",
       "session": 4,
       "sessions": 4
@@ -3232,6 +3818,8 @@
       "facultyId": 31,
       "node": 293,
       "period": 8,
+      "room": "New Lab-2",
+      "roomId": 22,
       "section": "AI-DS2",
       "session": 1,
       "sessions": 4
@@ -3243,6 +3831,8 @@
       "facultyId": 31,
       "node": 294,
       "period": 8,
+      "room": "New Lab-2",
+      "roomId": 22,
       "section": "AI-DS2",
       "session": 2,
       "sessions": 4
@@ -3254,6 +3844,8 @@
       "facultyId": 31,
       "node": 295,
       "period": 8,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "AI-DS2",
       "session": 3,
       "sessions": 4
@@ -3265,6 +3857,8 @@
       "facultyId": 31,
       "node": 296,
       "period": 7,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "AI-DS2",
       "session": 4,
       "sessions": 4
@@ -3276,6 +3870,8 @@
       "facultyId": 10,
       "node": 297,
       "period": 7,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "AI-DS2",
       "session": 1,
       "sessions": 2
@@ -3287,6 +3883,8 @@
       "facultyId": 10,
       "node": 298,
       "period": 7,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "AI-DS2",
       "session": 2,
       "sessions": 2
@@ -3298,6 +3896,8 @@
       "facultyId": 30,
       "node": 299,
       "period": 1,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "AI-DS2",
       "session": 1,
       "sessions": 2
@@ -3309,6 +3909,8 @@
       "facultyId": 30,
       "node": 300,
       "period": 1,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "AI-DS2",
       "session": 2,
       "sessions": 2
@@ -3320,6 +3922,8 @@
       "facultyId": 23,
       "node": 301,
       "period": 5,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "AI-ML1",
       "session": 1,
       "sessions": 4
@@ -3331,6 +3935,8 @@
       "facultyId": 23,
       "node": 302,
       "period": 5,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "AI-ML1",
       "session": 2,
       "sessions": 4
@@ -3342,6 +3948,8 @@
       "facultyId": 23,
       "node": 303,
       "period": 5,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-ML1",
       "session": 3,
       "sessions": 4
@@ -3353,6 +3961,8 @@
       "facultyId": 23,
       "node": 304,
       "period": 5,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "AI-ML1",
       "session": 4,
       "sessions": 4
@@ -3364,6 +3974,8 @@
       "facultyId": 27,
       "node": 305,
       "period": 4,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "AI-ML1",
       "session": 1,
       "sessions": 4
@@ -3375,6 +3987,8 @@
       "facultyId": 27,
       "node": 306,
       "period": 4,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "AI-ML1",
       "session": 2,
       "sessions": 4
@@ -3386,6 +4000,8 @@
       "facultyId": 27,
       "node": 307,
       "period": 3,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "AI-ML1",
       "session": 3,
       "sessions": 4
@@ -3397,6 +4013,8 @@
       "facultyId": 27,
       "node": 308,
       "period": 3,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "AI-ML1",
       "session": 4,
       "sessions": 4
@@ -3408,6 +4026,8 @@
       "facultyId": 32,
       "node": 309,
       "period": 3,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "AI-ML1",
       "session": 1,
       "sessions": 4
@@ -3419,6 +4039,8 @@
       "facultyId": 32,
       "node": 310,
       "period": 3,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "AI-ML1",
       "session": 2,
       "sessions": 4
@@ -3430,6 +4052,8 @@
       "facultyId": 32,
       "node": 311,
       "period": 2,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "AI-ML1",
       "session": 3,
       "sessions": 4
@@ -3441,6 +4065,8 @@
       "facultyId": 32,
       "node": 312,
       "period": 2,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "AI-ML1",
       "session": 4,
       "sessions": 4
@@ -3452,6 +4078,8 @@
       "facultyId": 29,
       "node": 313,
       "period": 8,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "AI-ML1",
       "session": 1,
       "sessions": 4
@@ -3463,6 +4091,8 @@
       "facultyId": 29,
       "node": 314,
       "period": 8,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-ML1",
       "session": 2,
       "sessions": 4
@@ -3474,6 +4104,8 @@
       "facultyId": 29,
       "node": 315,
       "period": 7,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-ML1",
       "session": 3,
       "sessions": 4
@@ -3485,6 +4117,8 @@
       "facultyId": 29,
       "node": 316,
       "period": 7,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "AI-ML1",
       "session": 4,
       "sessions": 4
@@ -3496,6 +4130,8 @@
       "facultyId": 23,
       "node": 317,
       "period": 5,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "AI-ML1",
       "session": 1,
       "sessions": 4
@@ -3507,6 +4143,8 @@
       "facultyId": 23,
       "node": 318,
       "period": 5,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "AI-ML1",
       "session": 2,
       "sessions": 4
@@ -3518,6 +4156,8 @@
       "facultyId": 23,
       "node": 319,
       "period": 6,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "AI-ML1",
       "session": 3,
       "sessions": 4
@@ -3529,6 +4169,8 @@
       "facultyId": 23,
       "node": 320,
       "period": 6,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "AI-ML1",
       "session": 4,
       "sessions": 4
@@ -3540,6 +4182,8 @@
       "facultyId": 33,
       "node": 321,
       "period": 3,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "AI-ML1",
       "session": 1,
       "sessions": 2
@@ -3551,6 +4195,8 @@
       "facultyId": 33,
       "node": 322,
       "period": 3,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "AI-ML1",
       "session": 2,
       "sessions": 2
@@ -3562,6 +4208,8 @@
       "facultyId": 32,
       "node": 323,
       "period": 4,
+      "room": "New Lab-2",
+      "roomId": 22,
       "section": "AI-ML1",
       "session": 1,
       "sessions": 2
@@ -3573,6 +4221,8 @@
       "facultyId": 32,
       "node": 324,
       "period": 4,
+      "room": "New Lab-2",
+      "roomId": 22,
       "section": "AI-ML1",
       "session": 2,
       "sessions": 2
@@ -3584,6 +4234,8 @@
       "facultyId": 23,
       "node": 325,
       "period": 6,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "AI-ML2",
       "session": 1,
       "sessions": 4
@@ -3595,6 +4247,8 @@
       "facultyId": 23,
       "node": 326,
       "period": 6,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "AI-ML2",
       "session": 2,
       "sessions": 4
@@ -3606,6 +4260,8 @@
       "facultyId": 23,
       "node": 327,
       "period": 6,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-ML2",
       "session": 3,
       "sessions": 4
@@ -3617,6 +4273,8 @@
       "facultyId": 23,
       "node": 328,
       "period": 6,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-ML2",
       "session": 4,
       "sessions": 4
@@ -3628,6 +4286,8 @@
       "facultyId": 18,
       "node": 329,
       "period": 9,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "AI-ML2",
       "session": 1,
       "sessions": 4
@@ -3639,6 +4299,8 @@
       "facultyId": 18,
       "node": 330,
       "period": 9,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "AI-ML2",
       "session": 2,
       "sessions": 4
@@ -3650,6 +4312,8 @@
       "facultyId": 18,
       "node": 331,
       "period": 8,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "AI-ML2",
       "session": 3,
       "sessions": 4
@@ -3661,6 +4325,8 @@
       "facultyId": 18,
       "node": 332,
       "period": 8,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "AI-ML2",
       "session": 4,
       "sessions": 4
@@ -3672,6 +4338,8 @@
       "facultyId": 17,
       "node": 333,
       "period": 9,
+      "room": "CR-7",
+      "roomId": 12,
       "section": "AI-ML2",
       "session": 1,
       "sessions": 4
@@ -3683,6 +4351,8 @@
       "facultyId": 17,
       "node": 334,
       "period": 9,
+      "room": "CR-7",
+      "roomId": 12,
       "section": "AI-ML2",
       "session": 2,
       "sessions": 4
@@ -3694,6 +4364,8 @@
       "facultyId": 17,
       "node": 335,
       "period": 1,
+      "room": "CR-8",
+      "roomId": 13,
       "section": "AI-ML2",
       "session": 3,
       "sessions": 4
@@ -3705,6 +4377,8 @@
       "facultyId": 17,
       "node": 336,
       "period": 1,
+      "room": "CR-7",
+      "roomId": 12,
       "section": "AI-ML2",
       "session": 4,
       "sessions": 4
@@ -3716,6 +4390,8 @@
       "facultyId": 29,
       "node": 337,
       "period": 8,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-ML2",
       "session": 1,
       "sessions": 4
@@ -3727,6 +4403,8 @@
       "facultyId": 29,
       "node": 338,
       "period": 8,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-ML2",
       "session": 2,
       "sessions": 4
@@ -3738,6 +4416,8 @@
       "facultyId": 29,
       "node": 339,
       "period": 8,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "AI-ML2",
       "session": 3,
       "sessions": 4
@@ -3749,6 +4429,8 @@
       "facultyId": 29,
       "node": 340,
       "period": 8,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "AI-ML2",
       "session": 4,
       "sessions": 4
@@ -3760,6 +4442,8 @@
       "facultyId": 23,
       "node": 341,
       "period": 7,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "AI-ML2",
       "session": 1,
       "sessions": 4
@@ -3771,6 +4455,8 @@
       "facultyId": 23,
       "node": 342,
       "period": 7,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "AI-ML2",
       "session": 2,
       "sessions": 4
@@ -3782,6 +4468,8 @@
       "facultyId": 23,
       "node": 343,
       "period": 7,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "AI-ML2",
       "session": 3,
       "sessions": 4
@@ -3793,6 +4481,8 @@
       "facultyId": 23,
       "node": 344,
       "period": 7,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "AI-ML2",
       "session": 4,
       "sessions": 4
@@ -3804,6 +4494,8 @@
       "facultyId": 18,
       "node": 345,
       "period": 9,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "AI-ML2",
       "session": 1,
       "sessions": 2
@@ -3815,6 +4507,8 @@
       "facultyId": 18,
       "node": 346,
       "period": 9,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "AI-ML2",
       "session": 2,
       "sessions": 2
@@ -3826,6 +4520,8 @@
       "facultyId": 17,
       "node": 347,
       "period": 1,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "AI-ML2",
       "session": 1,
       "sessions": 2
@@ -3837,6 +4533,8 @@
       "facultyId": 17,
       "node": 348,
       "period": 1,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "AI-ML2",
       "session": 2,
       "sessions": 2
@@ -3848,6 +4546,8 @@
       "facultyId": 23,
       "node": 349,
       "period": 1,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-ML3",
       "session": 1,
       "sessions": 4
@@ -3859,6 +4559,8 @@
       "facultyId": 23,
       "node": 350,
       "period": 1,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-ML3",
       "session": 2,
       "sessions": 4
@@ -3870,6 +4572,8 @@
       "facultyId": 23,
       "node": 351,
       "period": 2,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-ML3",
       "session": 3,
       "sessions": 4
@@ -3881,6 +4585,8 @@
       "facultyId": 23,
       "node": 352,
       "period": 2,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-ML3",
       "session": 4,
       "sessions": 4
@@ -3892,6 +4598,8 @@
       "facultyId": 18,
       "node": 353,
       "period": 7,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "AI-ML3",
       "session": 1,
       "sessions": 4
@@ -3903,6 +4611,8 @@
       "facultyId": 18,
       "node": 354,
       "period": 7,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "AI-ML3",
       "session": 2,
       "sessions": 4
@@ -3914,6 +4624,8 @@
       "facultyId": 18,
       "node": 355,
       "period": 7,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "AI-ML3",
       "session": 3,
       "sessions": 4
@@ -3925,6 +4637,8 @@
       "facultyId": 18,
       "node": 356,
       "period": 7,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "AI-ML3",
       "session": 4,
       "sessions": 4
@@ -3936,6 +4650,8 @@
       "facultyId": 32,
       "node": 357,
       "period": 5,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "AI-ML3",
       "session": 1,
       "sessions": 4
@@ -3947,6 +4663,8 @@
       "facultyId": 32,
       "node": 358,
       "period": 5,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "AI-ML3",
       "session": 2,
       "sessions": 4
@@ -3958,6 +4676,8 @@
       "facultyId": 32,
       "node": 359,
       "period": 4,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "AI-ML3",
       "session": 3,
       "sessions": 4
@@ -3969,6 +4689,8 @@
       "facultyId": 32,
       "node": 360,
       "period": 4,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "AI-ML3",
       "session": 4,
       "sessions": 4
@@ -3980,6 +4702,8 @@
       "facultyId": 29,
       "node": 361,
       "period": 9,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-ML3",
       "session": 1,
       "sessions": 4
@@ -3991,6 +4715,8 @@
       "facultyId": 29,
       "node": 362,
       "period": 9,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-ML3",
       "session": 2,
       "sessions": 4
@@ -4002,6 +4728,8 @@
       "facultyId": 29,
       "node": 363,
       "period": 9,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "AI-ML3",
       "session": 3,
       "sessions": 4
@@ -4013,6 +4741,8 @@
       "facultyId": 29,
       "node": 364,
       "period": 9,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "AI-ML3",
       "session": 4,
       "sessions": 4
@@ -4024,6 +4754,8 @@
       "facultyId": 26,
       "node": 365,
       "period": 6,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "AI-ML3",
       "session": 1,
       "sessions": 4
@@ -4035,6 +4767,8 @@
       "facultyId": 26,
       "node": 366,
       "period": 6,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "AI-ML3",
       "session": 2,
       "sessions": 4
@@ -4046,6 +4780,8 @@
       "facultyId": 26,
       "node": 367,
       "period": 6,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "AI-ML3",
       "session": 3,
       "sessions": 4
@@ -4057,6 +4793,8 @@
       "facultyId": 26,
       "node": 368,
       "period": 6,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "AI-ML3",
       "session": 4,
       "sessions": 4
@@ -4068,6 +4806,8 @@
       "facultyId": 18,
       "node": 369,
       "period": 7,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "AI-ML3",
       "session": 1,
       "sessions": 2
@@ -4079,6 +4819,8 @@
       "facultyId": 18,
       "node": 370,
       "period": 7,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "AI-ML3",
       "session": 2,
       "sessions": 2
@@ -4090,6 +4832,8 @@
       "facultyId": 32,
       "node": 371,
       "period": 5,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "AI-ML3",
       "session": 1,
       "sessions": 2
@@ -4101,6 +4845,8 @@
       "facultyId": 32,
       "node": 372,
       "period": 5,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "AI-ML3",
       "session": 2,
       "sessions": 2
@@ -4112,6 +4858,8 @@
       "facultyId": 23,
       "node": 373,
       "period": 2,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-ML4",
       "session": 1,
       "sessions": 4
@@ -4123,6 +4871,8 @@
       "facultyId": 23,
       "node": 374,
       "period": 2,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-ML4",
       "session": 2,
       "sessions": 4
@@ -4134,6 +4884,8 @@
       "facultyId": 23,
       "node": 375,
       "period": 2,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-ML4",
       "session": 3,
       "sessions": 4
@@ -4145,6 +4897,8 @@
       "facultyId": 23,
       "node": 376,
       "period": 2,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-ML4",
       "session": 4,
       "sessions": 4
@@ -4156,6 +4910,8 @@
       "facultyId": 33,
       "node": 377,
       "period": 1,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "AI-ML4",
       "session": 1,
       "sessions": 4
@@ -4167,6 +4923,8 @@
       "facultyId": 33,
       "node": 378,
       "period": 1,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "AI-ML4",
       "session": 2,
       "sessions": 4
@@ -4178,6 +4936,8 @@
       "facultyId": 33,
       "node": 379,
       "period": 8,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "AI-ML4",
       "session": 3,
       "sessions": 4
@@ -4189,6 +4949,8 @@
       "facultyId": 33,
       "node": 380,
       "period": 8,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "AI-ML4",
       "session": 4,
       "sessions": 4
@@ -4200,6 +4962,8 @@
       "facultyId": 11,
       "node": 381,
       "period": 3,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "AI-ML4",
       "session": 1,
       "sessions": 4
@@ -4211,6 +4975,8 @@
       "facultyId": 11,
       "node": 382,
       "period": 3,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "AI-ML4",
       "session": 2,
       "sessions": 4
@@ -4222,6 +4988,8 @@
       "facultyId": 11,
       "node": 383,
       "period": 3,
+      "room": "CR-7",
+      "roomId": 12,
       "section": "AI-ML4",
       "session": 3,
       "sessions": 4
@@ -4233,6 +5001,8 @@
       "facultyId": 11,
       "node": 384,
       "period": 3,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "AI-ML4",
       "session": 4,
       "sessions": 4
@@ -4244,6 +5014,8 @@
       "facultyId": 29,
       "node": 385,
       "period": 1,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "AI-ML4",
       "session": 1,
       "sessions": 4
@@ -4255,6 +5027,8 @@
       "facultyId": 29,
       "node": 386,
       "period": 1,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "AI-ML4",
       "session": 2,
       "sessions": 4
@@ -4266,6 +5040,8 @@
       "facultyId": 29,
       "node": 387,
       "period": 9,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "AI-ML4",
       "session": 3,
       "sessions": 4
@@ -4277,6 +5053,8 @@
       "facultyId": 29,
       "node": 388,
       "period": 9,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "AI-ML4",
       "session": 4,
       "sessions": 4
@@ -4288,6 +5066,8 @@
       "facultyId": 31,
       "node": 389,
       "period": 4,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "AI-ML4",
       "session": 1,
       "sessions": 4
@@ -4299,6 +5079,8 @@
       "facultyId": 31,
       "node": 390,
       "period": 4,
+      "room": "New Lab-2",
+      "roomId": 22,
       "section": "AI-ML4",
       "session": 2,
       "sessions": 4
@@ -4310,6 +5092,8 @@
       "facultyId": 31,
       "node": 391,
       "period": 3,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "AI-ML4",
       "session": 3,
       "sessions": 4
@@ -4321,6 +5105,8 @@
       "facultyId": 31,
       "node": 392,
       "period": 3,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "AI-ML4",
       "session": 4,
       "sessions": 4
@@ -4332,6 +5118,8 @@
       "facultyId": 33,
       "node": 393,
       "period": 2,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "AI-ML4",
       "session": 1,
       "sessions": 2
@@ -4343,6 +5131,8 @@
       "facultyId": 33,
       "node": 394,
       "period": 2,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "AI-ML4",
       "session": 2,
       "sessions": 2
@@ -4354,6 +5144,8 @@
       "facultyId": 32,
       "node": 395,
       "period": 6,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "AI-ML4",
       "session": 1,
       "sessions": 2
@@ -4365,6 +5157,8 @@
       "facultyId": 32,
       "node": 396,
       "period": 6,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "AI-ML4",
       "session": 2,
       "sessions": 2
@@ -4376,6 +5170,8 @@
       "facultyId": 23,
       "node": 397,
       "period": 1,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "Cyber",
       "session": 1,
       "sessions": 4
@@ -4387,6 +5183,8 @@
       "facultyId": 23,
       "node": 398,
       "period": 1,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "Cyber",
       "session": 2,
       "sessions": 4
@@ -4398,6 +5196,8 @@
       "facultyId": 23,
       "node": 399,
       "period": 1,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "Cyber",
       "session": 3,
       "sessions": 4
@@ -4409,6 +5209,8 @@
       "facultyId": 23,
       "node": 400,
       "period": 1,
+      "room": "CR-2",
+      "roomId": 7,
       "section": "Cyber",
       "session": 4,
       "sessions": 4
@@ -4420,6 +5222,8 @@
       "facultyId": 33,
       "node": 401,
       "period": 2,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "Cyber",
       "session": 1,
       "sessions": 4
@@ -4431,6 +5235,8 @@
       "facultyId": 33,
       "node": 402,
       "period": 2,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "Cyber",
       "session": 2,
       "sessions": 4
@@ -4442,6 +5248,8 @@
       "facultyId": 33,
       "node": 403,
       "period": 2,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "Cyber",
       "session": 3,
       "sessions": 4
@@ -4453,6 +5261,8 @@
       "facultyId": 33,
       "node": 404,
       "period": 2,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "Cyber",
       "session": 4,
       "sessions": 4
@@ -4464,6 +5274,8 @@
       "facultyId": 21,
       "node": 405,
       "period": 4,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "Cyber",
       "session": 1,
       "sessions": 4
@@ -4475,6 +5287,8 @@
       "facultyId": 21,
       "node": 406,
       "period": 4,
+      "room": "CR-4",
+      "roomId": 9,
       "section": "Cyber",
       "session": 2,
       "sessions": 4
@@ -4486,6 +5300,8 @@
       "facultyId": 21,
       "node": 407,
       "period": 6,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "Cyber",
       "session": 3,
       "sessions": 4
@@ -4497,6 +5313,8 @@
       "facultyId": 21,
       "node": 408,
       "period": 6,
+      "room": "CR-3",
+      "roomId": 8,
       "section": "Cyber",
       "session": 4,
       "sessions": 4
@@ -4508,6 +5326,8 @@
       "facultyId": 34,
       "node": 409,
       "period": 6,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "Cyber",
       "session": 1,
       "sessions": 4
@@ -4519,6 +5339,8 @@
       "facultyId": 34,
       "node": 410,
       "period": 6,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "Cyber",
       "session": 2,
       "sessions": 4
@@ -4530,6 +5352,8 @@
       "facultyId": 34,
       "node": 411,
       "period": 6,
+      "room": "CR-5",
+      "roomId": 10,
       "section": "Cyber",
       "session": 3,
       "sessions": 4
@@ -4541,6 +5365,8 @@
       "facultyId": 34,
       "node": 412,
       "period": 6,
+      "room": "CR-6",
+      "roomId": 11,
       "section": "Cyber",
       "session": 4,
       "sessions": 4
@@ -4552,6 +5378,8 @@
       "facultyId": 26,
       "node": 413,
       "period": 5,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "Cyber",
       "session": 1,
       "sessions": 4
@@ -4563,6 +5391,8 @@
       "facultyId": 26,
       "node": 414,
       "period": 5,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "Cyber",
       "session": 2,
       "sessions": 4
@@ -4574,6 +5404,8 @@
       "facultyId": 26,
       "node": 415,
       "period": 5,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "Cyber",
       "session": 3,
       "sessions": 4
@@ -4585,6 +5417,8 @@
       "facultyId": 26,
       "node": 416,
       "period": 5,
+      "room": "Digital Lab-1",
+      "roomId": 19,
       "section": "Cyber",
       "session": 4,
       "sessions": 4
@@ -4596,6 +5430,8 @@
       "facultyId": 33,
       "node": 417,
       "period": 4,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "Cyber",
       "session": 1,
       "sessions": 2
@@ -4607,6 +5443,8 @@
       "facultyId": 33,
       "node": 418,
       "period": 4,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "Cyber",
       "session": 2,
       "sessions": 2
@@ -4618,6 +5456,8 @@
       "facultyId": 32,
       "node": 419,
       "period": 5,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "Cyber",
       "session": 1,
       "sessions": 2
@@ -4629,6 +5469,8 @@
       "facultyId": 32,
       "node": 420,
       "period": 5,
+      "room": "Digital Lab-2",
+      "roomId": 20,
       "section": "Cyber",
       "session": 2,
       "sessions": 2
@@ -4640,6 +5482,8 @@
       "facultyId": 35,
       "node": 421,
       "period": 7,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "Cyber",
       "session": 1,
       "sessions": 4
@@ -4651,6 +5495,8 @@
       "facultyId": 35,
       "node": 422,
       "period": 7,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "Cyber",
       "session": 2,
       "sessions": 4
@@ -4662,6 +5508,8 @@
       "facultyId": 35,
       "node": 423,
       "period": 7,
+      "room": "New Lab-1",
+      "roomId": 21,
       "section": "Cyber",
       "session": 3,
       "sessions": 4
@@ -4673,12 +5521,20 @@
       "facultyId": 35,
       "node": 424,
       "period": 7,
+      "room": "New Lab-2",
+      "roomId": 22,
       "section": "Cyber",
       "session": 4,
       "sessions": 4
     }
   ],
-  "runtimeMs": 100.4717,
+  "roomAllocation": {
+    "assigned": 425,
+    "success": true,
+    "total": 425
+  },
+  "runtimeMs": 870.4846,
+  "scheduleSuccess": true,
   "slotsUsed": 54,
   "success": true,
   "total": 425,

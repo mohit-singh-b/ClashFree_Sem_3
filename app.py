@@ -14,7 +14,7 @@ DAYS = ["MON", "TUE", "WED", "THU", "FRI", "SAT"]
 TIMES = ["8:00-8:55", "9:00-9:55", "9:55-10:50", "11:10-12:05", "12:05-1:00",
          "1:55-2:50", "3:10-4:05", "4:05-5:00", "5:00-5:55"]
 LUNCH_AFTER = 5
-ALGORITHMS = ["Greedy", "DSATUR"]
+ALGORITHMS = ["Greedy", "DSATUR", "Backtracking"]
 
 FILES = {
     "faculty.csv": (True, ["id", "name", "maxLoad"]),
