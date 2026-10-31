@@ -8,12 +8,14 @@
 #include "models/TimeSlotPool.hpp"
 #include "scheduler/GreedyScheduler.hpp"
 #include "scheduler/DSATURScheduler.hpp"
+#include "scheduler/BacktrackingScheduler.hpp"
 #include "scheduler/RoomAllocator.hpp"
 
 std::unique_ptr<Scheduler> makeScheduler(const std::string& name) {
     if (name == "greedy") return std::make_unique<GreedyScheduler>();
     if (name == "dsatur") return std::make_unique<DSATURScheduler>();
-    throw std::runtime_error("Unknown algorithm '" + name + "' (use greedy or dsatur)");
+    if (name == "backtracking") return std::make_unique<BacktrackingScheduler>();
+    throw std::runtime_error("Unknown algorithm '" + name + "' (use greedy, dsatur, or backtracking)");
 }
 
 int main(int argc, char* argv[]) {
