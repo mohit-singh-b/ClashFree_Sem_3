@@ -126,13 +126,14 @@ def grid(days, periods, cells):
 def session_rows(schedule, course_label):
     rows = [{"section": a["section"], "day": a["day"], "period": a["period"],
              "time": TIMES[a["period"] - 1] if a["period"] <= len(TIMES) else "",
-             "course": course_label.get(a["courseId"], a["courseId"]), "faculty": a["faculty"]}
+             "course": course_label.get(a["courseId"], a["courseId"]), "faculty": a["faculty"],
+             "room": a.get("room") or ""}
             for a in schedule["assignments"]]
     return sorted(rows, key=lambda r: (r["section"], DAYS.index(r["day"]), r["period"]))
 
 
 def timetable_csv(rows):
-    columns = ["section", "day", "period", "time", "course", "faculty"]
+    columns = ["section", "day", "period", "time", "course", "faculty", "room"]
     return pd.DataFrame(rows, columns=columns).to_csv(index=False).encode("utf-8")
 
 
@@ -142,6 +143,8 @@ def grid_for(rows, view, who, days, periods):
     for r in rows:
         if r[key] == who:
             slot, text = (DAYS.index(r["day"]), r["period"]), f"{r['course']} · {r[other]}"
+            if r.get("room"):
+                text = f"{r['room']} · {text}"   # room first, then subject
             cells[slot] = f"{cells[slot]} / {text}" if slot in cells else text
     return grid(days, periods, cells)
 
@@ -232,6 +235,10 @@ def load(frames, algorithm):
             if schedule and schedule["algorithm"].lower() != algorithm.lower():
                 result["messages"].append(f"The program ran {schedule['algorithm']}, not {algorithm}. "
                                           "Recompile it from the latest main.cpp.")
+            if schedule and data.get("rooms") and "roomAllocation" not in schedule:
+                result["messages"].append("Rooms were given but this clashfree build does not assign them, "
+                                          "so no rooms are shown. Recompile it from the latest main.cpp: "
+                                          "g++ -std=c++17 -I. main.cpp -o clashfree")
         except (OSError, subprocess.SubprocessError) as e:
             st.error(f"Could not run the C++ program: {e}")
             return False
@@ -258,6 +265,9 @@ def summary_step():
                            f"{result['slots']} time slots.")
                 message = (f"{sch['algorithm']} placed {sch['assigned']} of {sch['total']} sessions "
                            f"using {sch['slotsUsed']} slots in {sch['runtimeMs']:.2f} ms.")
+                rooms = sch.get("roomAllocation")
+                if rooms:
+                    message += f" Rooms: {rooms['assigned']} of {rooms['total']} sessions got a room."
                 (st.success if sch["success"] else st.warning)(message)
             else:
                 st.error("The C++ loader rejected the data:")
@@ -294,8 +304,15 @@ def timetable_step():
                                             "session": f"{u.get('session', 1)}/{u.get('sessions', 1)}",
                                             "faculty": u["faculty"]} for u in schedule["unassigned"]]),
                              hide_index=True)
+        no_room = [r for r in rows if not r["room"]]
+        if "roomAllocation" in schedule and no_room:
+            with st.expander(f"{len(no_room)} placed sessions have no room"):
+                st.dataframe(pd.DataFrame(no_room)[["section", "day", "period", "course", "faculty"]],
+                             hide_index=True)
+        room_note = ("Each cell shows room · course · teacher/section."
+                     if "roomAllocation" in schedule else "No rooms in the data, so none were assigned.")
         st.caption(f"{schedule['algorithm']}: every weekly hour of a course is its own one-hour session. "
-                   "Rooms are not scheduled yet.")
+                   + room_note)
 
         file_stem = re.sub(r"[^\w.-]+", "_", chosen).strip("_")
         left, right = st.columns(2)
