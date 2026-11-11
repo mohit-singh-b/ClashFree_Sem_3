@@ -4,6 +4,7 @@ import re
 import subprocess
 import tempfile
 import zipfile
+from collections import Counter, defaultdict
 from pathlib import Path
 
 import pandas as pd
@@ -214,7 +215,7 @@ def show_files(raw):
 
 def pick_algorithm():
     with st.sidebar:
-        return st.selectbox("Algorithm", ALGORITHMS)
+        return st.selectbox("Algorithm", ALGORITHMS + ["All"])
 
 
 def load(frames, algorithm):
@@ -224,33 +225,38 @@ def load(frames, algorithm):
     except ValueError as e:
         st.error(f"Could not read the data: {e}")
         return False
-    exe, result = find_executable(), None
+    names = ALGORITHMS if algorithm == "All" else [algorithm]
+    exe, results = find_executable(), {}
     if exe is None:
         st.warning("The C++ program was not found. Compile it first: "
                    "g++ -std=c++17 -I. main.cpp -o clashfree")
     else:
-        try:
-            result = run_cpp(exe, data, algorithm)
-            schedule = result["schedule"]
-            if schedule and schedule["algorithm"].lower() != algorithm.lower():
-                result["messages"].append(f"The program ran {schedule['algorithm']}, not {algorithm}. "
-                                          "Recompile it from the latest main.cpp.")
-            if schedule and data.get("rooms") and "roomAllocation" not in schedule:
-                result["messages"].append("Rooms were given but this clashfree build does not assign them, "
-                                          "so no rooms are shown. Recompile it from the latest main.cpp: "
-                                          "g++ -std=c++17 -I. main.cpp -o clashfree")
-        except (OSError, subprocess.SubprocessError) as e:
-            st.error(f"Could not run the C++ program: {e}")
-            return False
-    st.session_state["loaded"] = {"data": data, "result": result}
-    return result is None or result["ok"]
+        for name in names:
+            try:
+                result = run_cpp(exe, data, name)
+                schedule = result["schedule"]
+                if schedule and schedule["algorithm"].lower() != name.lower():
+                    result["messages"].append(f"The program ran {schedule['algorithm']}, not {name}. "
+                                              "Recompile it from the latest main.cpp.")
+                if schedule and data.get("rooms") and "roomAllocation" not in schedule:
+                    result["messages"].append("Rooms were given but this clashfree build does not assign them, "
+                                              "so no rooms are shown. Recompile it from the latest main.cpp: "
+                                              "g++ -std=c++17 -I. main.cpp -o clashfree")
+                results[name] = result
+            except (OSError, subprocess.SubprocessError) as e:
+                st.error(f"Could not run the C++ program: {e}")
+                return False
+    # "result" is the first one run; with "All" the timetable section lets you pick another.
+    st.session_state["loaded"] = {"data": data, "result": next(iter(results.values()), None),
+                                  "results": results}
+    return all(r["ok"] for r in results.values())
 
 
 def summary_step():
     loaded = st.session_state.get("loaded")
     if not loaded:
         return
-    data, result = loaded["data"], loaded["result"]
+    data, results = loaded["data"], loaded.get("results", {})
     with st.container(border=True):
         st.subheader("Summary")
         stats = [("Sections", len(data["sections"])), ("Faculty", len(data["faculty"])),
@@ -258,11 +264,14 @@ def summary_step():
                  ("Slots / week", data["config"]["days"] * data["config"]["periodsPerDay"])]
         for col, (label, value) in zip(st.columns(len(stats)), stats):
             col.metric(label, value)
-        if result:
+        loaded_line_shown = False
+        for name, result in results.items():
             if result["ok"]:
                 sch = result["schedule"]
-                st.success(f"C++ loaded it: {sch['total']} sessions, {result['edges']} conflict edges, "
-                           f"{result['slots']} time slots.")
+                if not loaded_line_shown:
+                    st.success(f"C++ loaded it: {sch['total']} sessions, {result['edges']} conflict edges, "
+                               f"{result['slots']} time slots.")
+                    loaded_line_shown = True
                 message = (f"{sch['algorithm']} placed {sch['assigned']} of {sch['total']} sessions "
                            f"using {sch['slotsUsed']} slots in {sch['runtimeMs']:.2f} ms.")
                 rooms = sch.get("roomAllocation")
@@ -270,7 +279,8 @@ def summary_step():
                     message += f" Rooms: {rooms['assigned']} of {rooms['total']} sessions got a room."
                 (st.success if sch["success"] else st.warning)(message)
             else:
-                st.error("The C++ loader rejected the data:")
+                st.error(f"{name}: the C++ loader rejected the data:" if len(results) > 1
+                         else "The C++ loader rejected the data:")
             for m in result["messages"]:
                 st.write("- " + m)
 
@@ -279,10 +289,13 @@ def timetable_step():
     loaded = st.session_state.get("loaded")
     if not (st.session_state.get("generated") and loaded):
         return
-    data, result = loaded["data"], loaded["result"]
-    schedule = result["schedule"] if result else None
+    data, results = loaded["data"], loaded.get("results", {})
     with st.container(border=True):
         st.subheader("Timetable")
+        if len(results) > 1:
+            st.selectbox("Show timetable from", list(results), key="shown")
+        result = results.get(st.session_state.get("shown")) or loaded["result"]
+        schedule = result["schedule"] if result else None
         if not schedule:
             st.warning("No timetable: the C++ program did not run.")
             return
@@ -326,6 +339,102 @@ def timetable_step():
                              file_name="timetable.csv", mime="text/csv")
         right.download_button("Download result (JSON)", json.dumps(schedule, indent=2),
                               file_name="timetable.json", mime="application/json")
+
+
+def performance_stats(schedule, data):
+    """Plain numbers for the algorithm that ran, recomputed from the placed sessions."""
+    rows = schedule["assignments"]
+    free = {(f["id"], s["day"], s["period"]) for f in data["faculty"] for s in f["availableSlots"]}
+    capacity = {r["id"]: r["capacity"] for r in data.get("rooms", [])}
+    students = {s["name"]: s["studentCount"] for s in data["sections"]}
+
+    in_slot = defaultdict(list)
+    for a in rows:
+        in_slot[(a["day"], a["period"])].append(a)
+    violations = 0
+    for items in in_slot.values():          # same section, teacher or room twice in one slot
+        for key in ("section", "facultyId", "roomId"):
+            ids = [i[key] for i in items if i.get(key) is not None]
+            violations += len(ids) - len(set(ids))
+    violations += sum(1 for a in rows if (a["facultyId"], a["day"], a["period"]) not in free)
+
+    section_periods = defaultdict(set)
+    for a in rows:
+        section_periods[(a["section"], a["day"])].add(a["period"])
+    gaps = sum(max(p) - min(p) + 1 - len(p) for p in section_periods.values())
+    same_course = sum(n - 1 for n in Counter((a["section"], a["courseId"], a["day"]) for a in rows).values())
+    busiest_section = max(Counter((a["section"], a["day"]) for a in rows).values(), default=0)
+    busiest_teacher = max(Counter((a["facultyId"], a["day"]) for a in rows).values(), default=0)
+
+    roomed = [a for a in rows if a.get("roomId") is not None]
+    return {
+        "violations": violations, "gaps": gaps, "same_course": same_course,
+        "busiest_section": busiest_section, "busiest_teacher": busiest_teacher,
+        "has_rooms": "roomAllocation" in schedule, "roomed": len(roomed),
+        "empty_seats": (sum(capacity[a["roomId"]] - students[a["section"]] for a in roomed) / len(roomed)
+                        if roomed else None),
+    }
+
+
+def performance_table(results, data):
+    rows, problems = [], []
+    for name, result in results.items():
+        sch = result["schedule"]
+        s = performance_stats(sch, data)
+        if s["violations"]:
+            problems.append(sch["algorithm"])
+        rows.append({"Algorithm": sch["algorithm"], "Time (ms)": round(sch["runtimeMs"], 1),
+                     "Placed": f"{sch['assigned']} / {sch['total']}",
+                     "Clash check": "Passed" if s["violations"] == 0 else f"{s['violations']} problems",
+                     "Idle gaps": s["gaps"], "Same course twice a day": s["same_course"],
+                     "Busiest day (section / teacher)": f"{s['busiest_section']} / {s['busiest_teacher']}",
+                     "Rooms assigned": f"{s['roomed']} / {sch['assigned']}" if s["has_rooms"] else "-"})
+    with st.container(border=True):
+        st.subheader("Performance")
+        st.dataframe(pd.DataFrame(rows), hide_index=True)
+        if problems:
+            st.error("A clash or a session outside a teacher's availability was found for: " + ", ".join(problems))
+        st.caption("Time covers the scheduling algorithm only, not loading data or assigning rooms. Idle gaps and "
+                   "same course twice a day: lower is better. Every number except time is recomputed from the "
+                   "result itself.")
+
+
+def performance_step():
+    loaded = st.session_state.get("loaded")
+    if not (st.session_state.get("generated") and loaded):
+        return
+    results = {name: r for name, r in loaded.get("results", {}).items() if r["schedule"]}
+    if not results:
+        return
+    if len(results) > 1:                      # "All": one compact row per algorithm
+        performance_table(results, loaded["data"])
+        return
+    schedule = next(iter(results.values()))["schedule"]
+    stats = performance_stats(schedule, loaded["data"])
+    with st.container(border=True):
+        st.subheader("Performance")
+        top = st.columns(4)
+        top[0].metric("Algorithm", schedule["algorithm"])
+        top[1].metric("Scheduling time", f"{schedule['runtimeMs']:.1f} ms",
+                      help="Time the algorithm took to place the sessions. Loading the data and assigning rooms are not included.")
+        top[2].metric("Sessions placed", f"{schedule['assigned']} / {schedule['total']}")
+        top[3].metric("Clash check", "Passed" if stats["violations"] == 0 else f"{stats['violations']} problems",
+                      help="Recomputed from the result: no section, teacher or room twice in one slot, and no session outside a teacher's available slots.")
+        bottom = st.columns(4)
+        bottom[0].metric("Idle gaps", stats["gaps"],
+                         help="Empty periods between a section's first and last class of a day, added up. Lower is better.")
+        bottom[1].metric("Same course twice a day", stats["same_course"],
+                         help="Extra sessions of one course on the same day for a section. Lower is better.")
+        bottom[2].metric("Busiest day (section / teacher)", f"{stats['busiest_section']} / {stats['busiest_teacher']}",
+                         help="The most sessions one section, and one teacher, has in a single day.")
+        bottom[3].metric("Rooms assigned",
+                         f"{stats['roomed']} / {schedule['assigned']}" if stats["has_rooms"] else "-",
+                         help="Placed sessions that were given a room.")
+        if stats["violations"]:
+            st.error("The result contains a clash or a session outside a teacher's availability.")
+        if stats["empty_seats"] is not None:
+            st.caption(f"On average {stats['empty_seats']:.0f} seats are empty in each room used.")
+
 
 CSS = """
 <style>
@@ -375,6 +484,7 @@ def main():
 
     summary_step()
     timetable_step()
+    performance_step()
 
 
 if __name__ == "__main__":
