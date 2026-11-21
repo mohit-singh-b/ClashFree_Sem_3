@@ -1,0 +1,11 @@
+id,code,name,loadHours,type
+101,TCS-302,Data Structures with C,4,THEORY
+102,TCS-307,Object Oriented Programming with C++,4,THEORY
+103,TCS-308,Logic Design and Computer Organization,4,THEORY
+104,TMA-316,Discrete Structures and Combinatorics,3,THEORY
+105,TCS-368,Advance Probability for AI,4,THEORY
+106,TCS-324,Information Security Foundations,4,THEORY
+107,PCS-302,Data Structures Lab,4,LAB
+108,PCS-307,OOPS with C++ Lab,2,LAB
+109,PCS-308,Logic Design and Computer Organization Lab,2,LAB
+110,PCS-324,Information Security Foundations Lab,4,LAB
