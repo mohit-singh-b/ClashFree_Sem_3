@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ClashFree – timetable generator</title>
+  <!-- Archivo: one typeface, normal width for the interface, condensed for the timetable -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <!-- PyScript: runs our Python (main.py) inside the browser -->
+  <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+  <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+  <!-- The C++ scheduler compiled to WebAssembly (made by build_wasm.ps1) -->
+  <script src="clashfree.js"></script>
+</head>
+<body>
+  <!-- Campus photo: scrolls with the page until its bottom edge is reached, then stays put -->
+  <div class="backdrop" aria-hidden="true"></div>
+  <header class="topbar">
+    <h1>ClashFree</h1>
+    <p>Clash-free class timetables, generated in your browser</p>
+  </header>
+
+  <div class="app">
+    <!-- Left: controls and results -->
+    <aside class="sidebar">
+      <section class="block">
+        <h2>Data</h2>
+        <div class="choice">
+          <label><input type="radio" name="source" id="source-sample" checked> Sample data <small>B.Tech CSE, semester 3</small></label>
+          <label><input type="radio" name="source" id="source-upload"> My CSV files</label>
+        </div>
+        <div id="upload-box" hidden>
+          <input type="file" id="upload" accept=".csv" multiple>
+          <div id="file-status"></div>
+          <details>
+            <summary>Which files and columns are needed</summary>
+            <div id="columns-help"></div>
+          </details>
+        </div>
+      </section>
+
+      <section class="block">
+        <button id="run" class="primary" disabled>Generate timetable</button>
+        <p id="output" class="status" role="status">Starting Python in the browser…</p>
+        <p id="slow-hint" class="slow-hint">Still loading? The first visit downloads Python for the browser
+          (about 10 MB), so an internet connection is needed. The page must also be opened through the local
+          server (<code>python serve.py</code>, then http://localhost:8000), not by double-clicking index.html.</p>
+        <div id="summary"></div>
+      </section>
+
+      <section class="block" id="result-block" hidden>
+        <h2>Best of three algorithms</h2>
+        <div id="compare"></div>
+      </section>
+
+    </aside>
+
+    <!-- Right: the timetable -->
+    <main class="main">
+      <div id="empty" class="empty">
+        <h2>No timetable yet</h2>
+        <p>Choose the data on the left and select <b>Generate timetable</b>. All three algorithms run and the best result appears here.</p>
+      </div>
+
+      <section id="notice" class="notice" role="alert" hidden></section>
+
+      <section id="timetable" hidden>
+        <div class="tt-head">
+          <div>
+            <h2 id="tt-title">Timetable</h2>
+            <p id="tt-meta"></p>
+          </div>
+          <div class="tt-controls">
+            <label>View by
+              <select id="view">
+                <option value="section">Section</option>
+                <option value="faculty">Faculty</option>
+                <option value="room">Room</option>
+              </select>
+            </label>
+            <label><span id="who-label">Section</span>
+              <select id="who"></select>
+            </label>
+          </div>
+        </div>
+        <div class="grid-wrap" id="grid"></div>
+        <div class="tt-foot">
+          <p class="legend"><span class="key theory"></span> Theory class <span class="key lab"></span> Lab session</p>
+          <div class="actions">
+            <button id="save-grid">Download this timetable</button>
+            <button id="save-all">Download all sessions</button>
+            <button id="save-json">Download result (JSON)</button>
+            <button id="print">Print</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="checks-panel" class="checks-panel" hidden>
+        <h2>Checks</h2>
+        <div id="checks"></div>
+        <div id="not-placed"></div>
+      </section>
+    </main>
+  </div>
+
+  <script type="py" src="main.py" config="pyscript.toml"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# Files PyScript copies into Python's (in-browser) file system before main.py runs.
+[files]
+"data_convert.py" = "data_convert.py"
+"timetable_view.py" = "timetable_view.py"
+"ranking.py" = "ranking.py"
+"checks.py" = "checks.py"
+"advice.py" = "advice.py"
+"data/faculty.csv" = "data/faculty.csv"
+"data/courses.csv" = "data/courses.csv"
+"data/sections.csv" = "data/sections.csv"
+"data/section_courses.csv" = "data/section_courses.csv"
+"data/rooms.csv" = "data/rooms.csv"
+"data/config.csv" = "data/config.csv"
+"data/unavailable.csv" = "data/unavailable.csv"

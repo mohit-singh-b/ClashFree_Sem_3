@@ -1,0 +1,209 @@
+/* ClashFree look: true black, two neutral greys, white text, royal blue for actions and the day header.
+   One typeface (Archivo): normal width for the interface, condensed inside the timetable.
+   Only layout and colours here - no logic. */
+:root {
+  color-scheme: dark;
+  --black: #000000;          /* page */
+  --surface: #161616;        /* sidebar, timetable frame */
+  --raised: #222222;         /* inputs, headers, class cards */
+  --line: #2e2e2e;           /* borders */
+  --text: #f5f5f5;
+  --muted: #9a9a9a;
+  --blue: #4169e1;           /* royal blue */
+  --blue-hover: #5479ea;
+  --fail: #e05252;           /* only when a check fails */
+  --glass: rgba(16, 16, 16, .75);   /* panels over the photo: 75% opaque */
+  --font: "Archivo", system-ui, "Segoe UI", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+/* Campus photo as the page background (on <html>, so nothing can cover it by accident).
+   It scrolls with the page and is stretched to cover the whole page height.
+   The interface panels sit on top at 75% opacity. */
+html { background: #000; }
+
+/* The photo keeps its proportions at the screen width (never stretched to the page length).
+   It scrolls with the page; once its bottom edge reaches the bottom of the window it stays put
+   (position: sticky) and the interface scrolls on over it. Scrolling back up reverses this. */
+:root { --photo-h: max(100vh, 89.5vw); }          /* photo is 1710 x 1530 px -> height = 0.895 x width */
+.backdrop { position: sticky; top: min(0px, calc(100vh - var(--photo-h))); z-index: -1;
+            height: var(--photo-h); margin-bottom: calc(-1 * var(--photo-h));
+            background: url("campus.webp") center top / cover no-repeat; }
+body { margin: 0; background: transparent; color: var(--text); }
+body { font-family: var(--font); font-size: 15px; line-height: 1.5; }
+h1, h2 { margin: 0; font-weight: 650; letter-spacing: -.01em; }
+p { margin: 0; }
+small, .note { color: var(--muted); }
+:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+
+/* Top bar */
+.topbar { display: flex; align-items: baseline; gap: 1rem; padding: 1rem 1.5rem;
+          border-bottom: 1px solid rgba(255,255,255,.12); background: rgba(0, 0, 0, .75); }
+.topbar h1 { font-size: 1.35rem; }
+.topbar p { color: var(--muted); }
+
+/* Two-column tool layout */
+.app { display: grid; grid-template-columns: 340px 1fr; min-height: calc(100vh - 58px); }
+.sidebar { background: var(--glass);
+           border-right: 1px solid rgba(255,255,255,.1); padding: .5rem 1.25rem 2rem; }
+.main { padding: 1.5rem; min-width: 0; }
+.block { padding: 1.1rem 0; border-bottom: 1px solid var(--line); }
+.block:last-child { border-bottom: none; }
+.block h2 { font-size: .95rem; margin-bottom: .6rem; }
+
+/* Controls */
+.choice { display: grid; gap: .4rem; }
+.choice label { display: flex; align-items: baseline; gap: .5rem; }
+input[type="radio"] { accent-color: var(--blue); }
+input[type="file"] { margin-top: .8rem; max-width: 100%; color: var(--muted); }
+select { font: inherit; background: var(--raised); color: var(--text); border: 1px solid var(--line);
+         border-radius: 6px; padding: .35rem .6rem; margin-left: .4rem; }
+button { font: inherit; border-radius: 6px; cursor: pointer; padding: .45rem .8rem;
+         background: transparent; color: var(--text); border: 1px solid var(--line); }
+button:hover { border-color: var(--muted); }
+button.primary { width: 100%; padding: .7rem; font-weight: 600; background: var(--blue);
+                 border-color: var(--blue); color: #fff; }
+button.primary:hover { background: var(--blue-hover); }
+button:disabled, button.primary:disabled { background: var(--raised); border-color: var(--line);
+                                           color: var(--muted); cursor: default; }
+.status { margin-top: .7rem; color: var(--muted); font-size: .9rem; }
+.status.problem { color: #ff8a8a; }
+/* Shown only if Python has not started after 20 seconds (main.py hides it as soon as it runs). */
+.slow-hint { margin-top: .6rem; font-size: .85rem; color: var(--muted); visibility: hidden;
+             animation: show-hint 0s 20s forwards; }
+@keyframes show-hint { to { visibility: visible; } }
+.grid-empty { padding: 2rem; color: var(--muted); }
+details { margin-top: .6rem; font-size: .9rem; }
+summary { cursor: pointer; color: var(--muted); }
+details ul { padding-left: 1.1rem; }
+code { background: var(--raised); padding: .05rem .3rem; border-radius: 4px; font-size: .85em; }
+
+/* Result figures */
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem 1rem; margin-top: 1rem; }
+.stats div { display: flex; flex-direction: column; }
+.stats dt { color: var(--muted); font-size: .8rem; }
+.stats dd { margin: 0; font-size: 1.15rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+.warn { margin-top: .6rem; color: var(--fail); font-size: .9rem; }
+
+/* Small tables in the sidebar */
+.files, .compare { width: 100%; border-collapse: collapse; font-size: .85rem; margin: .5rem 0;
+                   font-variant-numeric: tabular-nums; }
+.files th, .files td, .compare th, .compare td { padding: .35rem .4rem; text-align: left;
+                                                  border-bottom: 1px solid var(--line); }
+.files th, .compare th { color: var(--muted); font-weight: 500; }
+.compare td.num, .compare th.num { text-align: right; }
+.compare tr.best td { color: var(--text); font-weight: 600; }
+.compare tr.best td:first-child { box-shadow: inset 3px 0 0 var(--blue); }
+.compare tr:not(.best) td { color: var(--muted); }
+.reason { font-size: .9rem; margin-top: .4rem; }
+.order { font-size: .8rem; color: var(--muted); margin-top: .4rem; }
+.found { color: #5fd68a; font-weight: 600; }          /* green */
+.not-given { color: var(--muted); }
+.missing, .bad { color: var(--fail); font-weight: 600; }
+
+/* Checks */
+.checks { list-style: none; padding: 0; margin: .6rem 0 0; font-size: .9rem; }
+.checks li { display: flex; gap: .5rem; padding: .2rem 0; }
+.checks .mark { color: var(--blue); font-weight: 700; }
+.checks .bad .mark { color: var(--fail); }
+.checks ul { list-style: disc; margin: .2rem 0 .4rem 1.2rem; padding: 0; color: var(--muted); }
+.all-placed { margin-top: .6rem; font-size: .9rem; }
+
+/* Empty state */
+.empty { max-width: 34rem; margin: 22vh auto 0; text-align: center; color: #d8d8d8;
+         text-shadow: 0 1px 12px rgba(0,0,0,.8); }
+.empty h2 { color: #fff; font-size: 1.8rem; margin-bottom: .5rem; }
+
+/* Timetable */
+.tt-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 1rem;
+           flex-wrap: wrap; margin-bottom: 1rem; }
+#tt-title { font-size: 2rem; font-weight: 700; letter-spacing: -.02em; }
+#tt-meta { color: var(--muted); }
+.tt-controls label { margin-left: 1rem; color: var(--muted); }
+.grid-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px;
+             background: transparent; }
+#timetable { text-shadow: 0 1px 8px rgba(0,0,0,.6); }
+.grid { text-shadow: none; }
+
+.grid { width: 100%; min-width: 820px; border-collapse: collapse; table-layout: fixed;
+        font-stretch: 78%; font-variant-numeric: tabular-nums; }
+.grid th, .grid td { border-bottom: 1px solid var(--line); border-right: 1px solid var(--line);
+                     padding: .35rem; vertical-align: top; }
+.grid tr > :last-child { border-right: none; }
+.grid thead th { background: var(--blue); color: #fff; font-weight: 600; font-size: .95rem;
+                 text-align: left; padding: .55rem .6rem; position: sticky; top: 0; }
+.grid th.period { width: 6.2rem; text-align: left; font-weight: 600; background: transparent; }
+.grid th.period small { display: block; font-weight: 400; }
+.grid td:empty { background: transparent; }
+
+.session { background: var(--raised); border-radius: 6px; padding: .35rem .5rem; margin-bottom: .25rem;
+           border-left: 3px solid var(--blue); }
+.session.lab { background: transparent; border: 1px solid var(--blue); border-left-width: 3px; }
+.session .code { display: block; font-weight: 700; font-size: .95rem; }   /* colour comes from the course */
+.session .line { display: block; color: var(--muted); font-size: .8rem; line-height: 1.3;
+                 white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.session .line.room { color: #ffffff; font-weight: 700; }   /* venue: bold white */
+.grid td.clash { box-shadow: inset 0 0 0 2px var(--fail); }
+.grid tr.lunch td { text-align: center; color: var(--muted); font-size: .85rem; padding: .3rem;
+                    background: rgba(0, 0, 0, .55); }
+
+.tt-foot { display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+           flex-wrap: wrap; margin-top: 1rem; }
+.legend { color: var(--muted); font-size: .85rem; display: flex; align-items: center; gap: .4rem; }
+.key { display: inline-block; width: 14px; height: 14px; border-radius: 3px; margin-left: .6rem; }
+.key:first-child { margin-left: 0; }
+.key.theory { background: var(--raised); border-left: 3px solid var(--blue); }
+.key.lab { border: 1px solid var(--blue); border-left-width: 3px; }
+.actions { display: flex; gap: .5rem; flex-wrap: wrap; }
+
+/* Phones and narrow windows: stack the sidebar above the timetable */
+@media (max-width: 900px) {
+  .app { grid-template-columns: 1fr; }
+  .sidebar { border-right: none; border-bottom: 1px solid var(--line); }
+  .tt-controls label { margin-left: 0; margin-right: 1rem; }
+}
+
+/* Printing: only the timetable, black on white */
+@media print {
+  :root { color-scheme: light; }
+  html, body { background: #fff; color: #000; }
+  html { background: #fff; }
+  #timetable { background: #fff; border: none; padding: 0; }
+  #timetable { text-shadow: none; }
+  .backdrop, .topbar, .sidebar, .empty, .notice, .checks-panel, .tt-controls, .tt-foot .actions { display: none !important; }
+  .app { display: block; }
+  .main { padding: 0; }
+  #tt-meta, .legend { color: #333; }
+  .grid-wrap { border-color: #999; background: #fff; overflow: visible; }
+  .grid { min-width: 0; }
+  .grid th, .grid td { border-color: #999; }
+  .grid thead th, .grid th.period { background: #eee; color: #000; }
+  .grid tr.lunch td { background: #f5f5f5; color: #333; }
+  .session { background: #fff; border-left-color: #000; }
+  .session.lab { border-color: #000; }
+  .session .line, .session .line.room { color: #333; }
+  .session .code { color: #000 !important; }
+  .key.theory, .key.lab { border-color: #000; background: #fff; }
+}
+
+/* Notice about an incomplete timetable */
+.notice { background: var(--glass); border: 1px solid var(--line); border-left: 4px solid var(--fail);
+          border-radius: 12px; padding: 1.1rem 1.25rem; margin-bottom: 1rem; }
+.notice h2 { font-size: 1.15rem; margin-bottom: .35rem; color: var(--fail); }
+.notice p { color: #d6d6d6; }
+.notice h3 { font-size: .9rem; margin: .9rem 0 .2rem; color: var(--muted); font-weight: 600; }
+.notice ul { margin: 0; padding-left: 1.2rem; }
+.notice li { margin: .2rem 0; }
+
+/* Timetable area and empty state: one 75% panel each over the photo */
+#timetable, .empty, .checks-panel { background: var(--glass); border: 1px solid var(--line); border-radius: 12px; }
+.checks-panel { padding: 1.25rem; margin-top: 1rem; }
+.checks-panel h2 { font-size: 1.15rem; margin-bottom: .3rem; }
+.checks-panel .checks { columns: 2 22rem; column-gap: 2rem; }
+.checks-panel .checks li { break-inside: avoid; }
+.checks-panel .files { width: auto; min-width: 60%; }
+.placed-table th { color: var(--text); font-weight: 700; }      /* headings: white, bold */
+.placed-table td { color: var(--muted); }                       /* contents: grey */
+.placed-table td.course { font-weight: 700; }                   /* course code keeps its colour */
+#timetable { padding: 1.25rem; }
+.empty { padding: 2rem; }
