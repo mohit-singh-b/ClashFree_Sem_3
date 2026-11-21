@@ -125,9 +125,12 @@ int main(int argc, char* argv[]) {
             const TimeSlot& slot = result.timetable.slotAt(node.getId());
             const int dayIndex = static_cast<int>(slot.getDay());
             entry["day"] = dayNames[dayIndex];
-            entry["period"] = slot.getPeriod();
-            assignments.push_back(entry);
+            for (int k = 0; k < node.duration(); ++k) {   // one row per period the session covers
+                entry["period"] = slot.getPeriod() + k;
+                assignments.push_back(entry);
+            }
             std::cout << dayNames[dayIndex] << " period " << slot.getPeriod()
+                      << (node.duration() > 1 ? "-" + std::to_string(slot.getPeriod() + node.duration() - 1) : "")
                       << "  " << node.getSection()->getName()
                       << "  course " << node.getCourse()->getId() << sessionLabel
                       << "  faculty " << node.getFaculty()->getName();
