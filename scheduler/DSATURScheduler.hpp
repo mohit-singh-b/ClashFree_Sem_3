@@ -53,8 +53,9 @@ public:
             }
 
             // Assign the least crowded slot satisfying all current constraints.
+            const std::vector<bool> legal = legalStarts(*selectedNode, timetable, pool);
             const int slotIndex = pickSlot(*selectedNode, timetable, pool, [&](int slot) {
-                return canUseSlot(*selectedNode, slot, timetable, pool);
+                return legal[slot];
             });
 
             // DSATUR has no backtracking: stop if this node cannot be colored.
@@ -100,28 +101,5 @@ private:
         }
 
         return saturation;
-    }
-
-    static bool canUseSlot(
-        const Node& node,
-        int slotIndex,
-        const Timetable& timetable,
-        const TimeSlotPool& pool
-    ) {
-        const auto& slot = pool.at(slotIndex);
-
-        // Faculty must be available in this time slot.
-        if (!node.getFaculty()->isAvailable(slot)) {
-            return false;
-        }
-
-        // No already-assigned neighbor may use the same time slot.
-        for (const Node* neighbor : node.getNeighbors()) {
-            if (timetable.slotOf(neighbor->getId()) == slotIndex) {
-                return false;
-            }
-        }
-
-        return true;
     }
 };

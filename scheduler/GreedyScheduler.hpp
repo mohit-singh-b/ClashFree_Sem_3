@@ -37,8 +37,9 @@ public:
 
         // Give each node the least crowded legal time slot.
         for (const Node* node : orderedNodes) {
+            const std::vector<bool> legal = legalStarts(*node, timetable, pool);
             const int slotIndex = pickSlot(*node, timetable, pool, [&](int slot) {
-                return canUseSlot(*node, slot, timetable, pool);
+                return legal[slot];
             });
             if (slotIndex >= 0) {
                 timetable.assign(node->getId(), slotIndex);
@@ -61,27 +62,5 @@ public:
 
     std::string name() const override {
         return "Greedy";
-    }
-
-private:
-    static bool canUseSlot(const Node& node,
-                           int slotIndex,
-                           const Timetable& timetable,
-                           const TimeSlotPool& pool) {
-        const auto& slot = pool.at(slotIndex);
-
-        // Constraint 1: faculty must be available in this slot.
-        if (!node.getFaculty()->isAvailable(slot)) {
-            return false;
-        }
-
-        // Constraint 2: no already-assigned neighbor may use this slot.
-        for (const Node* neighbor : node.getNeighbors()) {
-            if (timetable.slotOf(neighbor->getId()) == slotIndex) {
-                return false;
-            }
-        }
-
-        return true;
     }
 };

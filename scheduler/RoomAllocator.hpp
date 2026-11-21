@@ -91,9 +91,15 @@ public:
             int minimumWaste = std::numeric_limits<int>::max();
 
             // Best-fit: choose the smallest free room that can hold the class.
+            // A multi-period session needs the room free for every period of its block.
+            const int length = node->duration();
             for (int roomIndex = 0; roomIndex < roomCount; ++roomIndex) {
-                if (occupied[static_cast<std::size_t>(slotIndex)]
-                            [static_cast<std::size_t>(roomIndex)]) {
+                bool busy = false;
+                for (int k = 0; k < length; ++k) {
+                    busy = busy || occupied[static_cast<std::size_t>(slotIndex + k)]
+                                           [static_cast<std::size_t>(roomIndex)];
+                }
+                if (busy) {
                     continue;
                 }
 
@@ -115,8 +121,10 @@ public:
             }
 
             result.roomIndexByNode[static_cast<std::size_t>(nodeId)] = bestRoomIndex;
-            occupied[static_cast<std::size_t>(slotIndex)]
-                    [static_cast<std::size_t>(bestRoomIndex)] = true;
+            for (int k = 0; k < length; ++k) {
+                occupied[static_cast<std::size_t>(slotIndex + k)]
+                        [static_cast<std::size_t>(bestRoomIndex)] = true;
+            }
             ++result.assignedCount;
         }
 

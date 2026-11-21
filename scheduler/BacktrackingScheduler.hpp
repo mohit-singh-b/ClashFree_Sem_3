@@ -4,6 +4,7 @@
 #include "graph/Graph.hpp"
 #include "graph/Node.hpp"
 #include "models/timeslotpool.hpp"
+#include "SlotChoice.hpp"
 
 #include <algorithm>
 #include <chrono>
@@ -101,20 +102,14 @@ private:
         const std::vector<bool>& facultyAvailability,
         const TimeSlotPool& pool
     ) {
-        std::vector<bool> blockedSlots(static_cast<std::size_t>(pool.size()), false);
-
-        // Mark slots already used by assigned neighbors as blocked.
-        for (const Node* neighbor : node.getNeighbors()) {
-            const int assignedSlot = timetable.slotOf(neighbor->getId());
-            if (assignedSlot >= 0 && assignedSlot < pool.size()) {
-                blockedSlots[static_cast<std::size_t>(assignedSlot)] = true;
-            }
-        }
+        // Same legality rule as the other algorithms, using the cached faculty availability.
+        const std::vector<bool> legal = legalStarts(node, timetable, pool, [&](int slot) {
+            return static_cast<bool>(facultyAvailability[static_cast<std::size_t>(slot)]);
+        });
 
         std::vector<int> legalSlots;
         for (int slot = 0; slot < pool.size(); ++slot) {
-            const std::size_t index = static_cast<std::size_t>(slot);
-            if (facultyAvailability[index] && !blockedSlots[index]) {
+            if (legal[static_cast<std::size_t>(slot)]) {
                 legalSlots.push_back(slot);
             }
         }
