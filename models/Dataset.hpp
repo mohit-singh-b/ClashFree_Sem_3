@@ -180,6 +180,11 @@ public:
                 problems.push_back("Course " + c.getName() + " has loadHours below 1, "
                                    "so it creates no sessions");
             }
+            if (c.getLoadHours() % c.getDuration() != 0) {
+                problems.push_back("Course " + c.getName() + " has loadHours " +
+                                   std::to_string(c.getLoadHours()) + ", which is not a multiple of its " +
+                                   std::to_string(c.getDuration()) + "-period session length");
+            }
         }
         for (const auto& sec : sections) {
             if (sec.totalWeeklyHours() > days * periodsPerDay) {

@@ -23,6 +23,9 @@ public:
     CourseType getType() const { return type; }
     bool isLab() const { return type == CourseType::LAB; }
 
+    // Consecutive periods one session takes: a lab session is a 2-period block.
+    int getDuration() const { return isLab() ? 2 : 1; }
+
     std::string toString() const { 
     return "id " + std::to_string(id) + ": " + name +
            ", hrs : " + std::to_string(load_hours) +
