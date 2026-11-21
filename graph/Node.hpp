@@ -38,9 +38,11 @@ public:
     bool needsLab() const { return course->isLab(); }
     int getLoadHours() const { return course->getLoadHours(); }
 
-    // A node is ONE weekly session (one hour). A course with loadHours = 4 gives 4 nodes.
+    // A node is ONE weekly session: 1 period for theory, a 2-period block for a lab.
+    // loadHours = 4 gives 4 theory nodes, or 2 lab nodes.
+    int duration() const { return course->getDuration(); }
     int getSessionIndex() const { return sessionIndex; }
-    int getSessionCount() const { return course->getLoadHours(); }
+    int getSessionCount() const { return course->getLoadHours() / duration(); }
 
 
     void addNeighbor(Node* n) { neighbors.insert(n); }

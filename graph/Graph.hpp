@@ -26,11 +26,12 @@ public:
     }
 
     // One node per weekly session: a (section, course, faculty) link with loadHours = 4
-    // becomes 4 nodes. Sessions of one link share a section and a faculty, so buildEdges()
-    // already makes them neighbors and no two of them can get the same slot.
+    // becomes 4 nodes (2 for a lab, whose sessions are 2 periods long). Sessions of one link
+    // share a section and a faculty, so buildEdges() already makes them neighbors and no two
+    // of them can overlap.
     void buildFromDataset(const Dataset& dataset) {
         for (const auto& [sec, course, fac] : dataset.getNodeSpecs()) {
-            for (int session = 0; session < course->getLoadHours(); ++session) {
+            for (int session = 0; session < course->getLoadHours() / course->getDuration(); ++session) {
                 addNode(course, sec, fac, session);
             }
         }

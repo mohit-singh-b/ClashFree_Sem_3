@@ -10,6 +10,7 @@
 #include "scheduler/DSATURScheduler.hpp"
 #include "scheduler/BacktrackingScheduler.hpp"
 #include "scheduler/RoomAllocator.hpp"
+#include "scheduler/AnnealingOptimizer.hpp"
 
 std::unique_ptr<Scheduler> makeScheduler(const std::string& name) {
     if (name == "greedy") return std::make_unique<GreedyScheduler>();
@@ -28,6 +29,7 @@ int main(int argc, char* argv[]) {
     if (argc > 2) {
         algorithm = argv[2];
     }
+    const bool optimize = argc > 3 && std::string(argv[3]) == "optimize";
 
     std::cout << "Loading dataset from: " << filepath << "\n";
 
@@ -52,7 +54,17 @@ int main(int argc, char* argv[]) {
         }
 
         std::unique_ptr<Scheduler> scheduler = makeScheduler(algorithm);
-        const ScheduleResult result = scheduler->schedule(graph, pool);
+        const ScheduleResult scheduled = scheduler->schedule(graph, pool);
+        ScheduleResult result = scheduled;
+        if (optimize) {
+            AnnealingOptimizer optimizer;
+            result.timetable = optimizer.optimize(graph, scheduled.timetable, pool);
+            result.slotsUsed = result.timetable.slotsUsed();
+            const SoftSettings weights;
+            std::cout << "Soft cost: " << optimizer.measure(graph, scheduled.timetable, pool).total(weights)
+                      << " -> " << optimizer.measure(graph, result.timetable, pool).total(weights)
+                      << " after annealing\n";
+        }
         const bool roomAllocationRequired = !dataset.getRooms().empty();
         RoomAssignmentResult roomResult;
         if (roomAllocationRequired) {
