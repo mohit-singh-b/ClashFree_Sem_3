@@ -44,6 +44,36 @@ inline void printDailyScheduleAnalytics(
         out << dayName(day) << ": "
             << sessionsPerDay[static_cast<std::size_t>(day)] << " sessions\n";
     }
+
+    if (assignedSessions == 0) {
+        out << "Busiest day: N/A (no scheduled sessions)\n";
+        out << "Least busy day: N/A (no scheduled sessions)\n";
+    } else {
+        int busiestCount = sessionsPerDay[0];
+        int leastBusyCount = sessionsPerDay[0];
+        for (int day = 1; day < numberOfDays; ++day) {
+            const int count = sessionsPerDay[static_cast<std::size_t>(day)];
+            if (count > busiestCount) busiestCount = count;
+            if (count < leastBusyCount) leastBusyCount = count;
+        }
+
+        out << "Busiest day:";
+        for (int day = 0; day < numberOfDays; ++day) {
+            if (sessionsPerDay[static_cast<std::size_t>(day)] == busiestCount) {
+                out << " " << dayName(day);
+            }
+        }
+        out << " (" << busiestCount << " sessions)\n";
+
+        out << "Least busy day:";
+        for (int day = 0; day < numberOfDays; ++day) {
+            if (sessionsPerDay[static_cast<std::size_t>(day)] == leastBusyCount) {
+                out << " " << dayName(day);
+            }
+        }
+        out << " (" << leastBusyCount << " sessions)\n";
+    }
+
     out << "Scheduled class sessions: " << assignedSessions << " / "
         << graph.size() << "\n";
     out << "==========================================\n";
