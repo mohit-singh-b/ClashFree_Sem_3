@@ -20,8 +20,12 @@ inline void printDailyScheduleAnalytics(
     const Timetable& timetable,
     std::ostream& out = std::cout
 ) {
-    const int numberOfDays = timetable.getPool().getNumDays();
+    const TimeSlotPool& pool = timetable.getPool();
+    const int numberOfDays = pool.getNumDays();
+    const int periodsPerDay = pool.getPeriodsPerDay();
+    const int totalGridPeriods = pool.size();
     std::vector<int> sessionsPerDay(static_cast<std::size_t>(numberOfDays), 0);
+    std::vector<bool> occupiedPeriods(static_cast<std::size_t>(totalGridPeriods), false);
     int assignedSessions = 0;
 
     for (const auto& nodePtr : graph.getNodes()) {
@@ -30,11 +34,27 @@ inline void printDailyScheduleAnalytics(
         if (nodeId < 0 || nodeId >= timetable.nodeCount()) continue;
         if (!timetable.isAssigned(nodeId)) continue;
 
-        const int dayIndex = static_cast<int>(timetable.slotAt(nodeId).getDay());
+        const TimeSlot& start = timetable.slotAt(nodeId);
+        const int dayIndex = static_cast<int>(start.getDay());
         if (dayIndex < 0 || dayIndex >= numberOfDays) continue;
         ++sessionsPerDay[static_cast<std::size_t>(dayIndex)];
         ++assignedSessions;
+
+        for (int offset = 0; offset < nodePtr->duration(); ++offset) {
+            const int period = start.getPeriod() + offset;
+            if (period < 1 || period > periodsPerDay) continue;
+            const int poolIndex = pool.indexOf(TimeSlot(start.getDay(), period));
+            if (poolIndex >= 0 && poolIndex < totalGridPeriods) {
+                occupiedPeriods[static_cast<std::size_t>(poolIndex)] = true;
+            }
+        }
     }
+
+    int occupiedCount = 0;
+    for (bool occupied : occupiedPeriods) {
+        if (occupied) ++occupiedCount;
+    }
+    const int freePeriods = totalGridPeriods - occupiedCount;
 
     out << "\n==========================================\n";
     out << "       DAILY SCHEDULE ANALYTICS\n";
@@ -76,6 +96,9 @@ inline void printDailyScheduleAnalytics(
 
     out << "Scheduled class sessions: " << assignedSessions << " / "
         << graph.size() << "\n";
+    out << "Occupied timetable periods: " << occupiedCount << " / "
+        << totalGridPeriods << "\n";
+    out << "Free timetable periods: " << freePeriods << "\n";
     out << "==========================================\n";
 }
 
