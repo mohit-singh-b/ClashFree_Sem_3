@@ -1,6 +1,7 @@
 #ifndef DAILY_SCHEDULE_ANALYTICS_HPP
 #define DAILY_SCHEDULE_ANALYTICS_HPP
 
+#include <iomanip>
 #include <iostream>
 #include <vector>
 
@@ -55,6 +56,9 @@ inline void printDailyScheduleAnalytics(
         if (occupied) ++occupiedCount;
     }
     const int freePeriods = totalGridPeriods - occupiedCount;
+    const double utilization = totalGridPeriods == 0
+        ? 0.0
+        : (100.0 * occupiedCount) / totalGridPeriods;
 
     out << "\n==========================================\n";
     out << "       DAILY SCHEDULE ANALYTICS\n";
@@ -99,6 +103,8 @@ inline void printDailyScheduleAnalytics(
     out << "Occupied timetable periods: " << occupiedCount << " / "
         << totalGridPeriods << "\n";
     out << "Free timetable periods: " << freePeriods << "\n";
+    out << "Weekly grid utilization: " << std::fixed
+        << std::setprecision(1) << utilization << "%\n";
     out << "==========================================\n";
 }
 
