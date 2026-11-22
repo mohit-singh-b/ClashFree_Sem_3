@@ -16,6 +16,7 @@
 #include "scheduler/RoomAllocator.hpp"
 #include "scheduler/AnnealingOptimizer.hpp"
 #include "scheduler/UnassignedSessionReport.hpp"
+#include "scheduler/DailyScheduleAnalytics.hpp"
 
 std::unique_ptr<Scheduler> makeScheduler(const std::string& name) {
     if (name == "greedy") return std::make_unique<GreedyScheduler>();
@@ -75,6 +76,7 @@ int main(int argc, char* argv[]) {
                       << " after annealing\n";
         }
         unassigned_report::printUnassignedSessionReport(graph, result.timetable);
+        daily_schedule_analytics::printDailyScheduleAnalytics(graph, result.timetable);
 
         const bool roomAllocationRequired = !dataset.getRooms().empty();
         RoomAssignmentResult roomResult;
