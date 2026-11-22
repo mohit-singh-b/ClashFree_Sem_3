@@ -4,6 +4,10 @@
 #include "json.hpp"
 #include "loader/DataLoader.hpp"
 #include "models/Dataset.hpp"
+#include "models/SectionSummary.hpp"
+#include "models/FacultyAvailabilityReport.hpp"
+#include "models/CourseSummary.hpp"
+#include "models/RoomCapacityReport.hpp"
 #include "graph/Graph.hpp"
 #include "models/TimeSlotPool.hpp"
 #include "scheduler/GreedyScheduler.hpp"
@@ -11,6 +15,7 @@
 #include "scheduler/BacktrackingScheduler.hpp"
 #include "scheduler/RoomAllocator.hpp"
 #include "scheduler/AnnealingOptimizer.hpp"
+#include "scheduler/UnassignedSessionReport.hpp"
 
 std::unique_ptr<Scheduler> makeScheduler(const std::string& name) {
     if (name == "greedy") return std::make_unique<GreedyScheduler>();
@@ -37,6 +42,10 @@ int main(int argc, char* argv[]) {
         Dataset dataset;
         DataLoader loader;
         loader.loadFromFile(filepath, dataset);
+        printSectionSummary(dataset);
+        faculty_report::printFacultyAvailabilityReport(dataset);
+        course_summary::printCourseSummary(dataset);
+        room_capacity_report::printRoomCapacityReport(dataset);
 
         for (const auto& problem : dataset.validate()) {
             std::cerr << "Warning: " << problem << "\n";
@@ -65,6 +74,8 @@ int main(int argc, char* argv[]) {
                       << " -> " << optimizer.measure(graph, result.timetable, pool).total(weights)
                       << " after annealing\n";
         }
+        unassigned_report::printUnassignedSessionReport(graph, result.timetable);
+
         const bool roomAllocationRequired = !dataset.getRooms().empty();
         RoomAssignmentResult roomResult;
         if (roomAllocationRequired) {
